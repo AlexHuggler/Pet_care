@@ -2,50 +2,48 @@ import { type IntakeData } from "./intake";
 
 export interface SubmitResult {
   ok: boolean;
-  /** Which backend stored the submission: "formspree" | "none". */
+  /** Which backend handled the submission: "formsubmit" | "none". */
   stored?: string;
   error?: string;
 }
 
 /**
- * Client-side submit for a STATIC build (GitHub Pages has no server, so there
- * is no /api route). Submissions are posted directly from the browser to
- * Formspree. Create a form at https://formspree.io, then set the form ID below
- * or provide it at build time via NEXT_PUBLIC_FORMSPREE_FORM_ID.
+ * Client-side submit for a STATIC build (GitHub Pages has no server).
+ * Uses FormSubmit.co — no account required. Submissions are emailed to the
+ * address below. The FIRST submission triggers a one-time activation email to
+ * that address; click the link in it once and submissions start flowing.
  *
- * The ID is the part after /f/ in your Formspree endpoint, e.g. for
- * https://formspree.io/f/abcdwxyz the ID is "abcdwxyz".
+ * Override the recipient at build time with NEXT_PUBLIC_FORMSUBMIT_EMAIL.
  */
-const FORMSPREE_FORM_ID = process.env.NEXT_PUBLIC_FORMSPREE_FORM_ID ?? "";
+const FORMSUBMIT_EMAIL =
+  process.env.NEXT_PUBLIC_FORMSUBMIT_EMAIL ?? "beta@furmacy.org";
 
 export async function submitIntake(data: IntakeData): Promise<SubmitResult> {
-  const record = {
-    data,
-    meta: {
-      submittedAt: new Date().toISOString(),
-      userAgent: typeof navigator !== "undefined" ? navigator.userAgent : "",
-    },
+  const record = data as Record<string, unknown>;
+
+  const payload: Record<string, unknown> = {
+    name: typeof record.name === "string" ? record.name : "",
+    email: typeof record.email === "string" ? record.email : "",
+    _subject: "New Furmacy beta-tester intake",
+    _template: "table",
+    _captcha: "false",
+    submittedAt: new Date().toISOString(),
+    // Full submission as readable JSON so nothing is lost in the email.
+    intake: JSON.stringify(data, null, 2),
   };
 
-  // No backend configured yet — don't block the tester; succeed silently.
-  if (!FORMSPREE_FORM_ID) {
-    if (typeof console !== "undefined") {
-      console.warn(
-        "[furmacy] NEXT_PUBLIC_FORMSPREE_FORM_ID is not set — the submission was not delivered anywhere.",
-      );
-    }
-    return { ok: true, stored: "none" };
-  }
-
   try {
-    const res = await fetch(`https://formspree.io/f/${FORMSPREE_FORM_ID}`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
+    const res = await fetch(
+      `https://formsubmit.co/ajax/${encodeURIComponent(FORMSUBMIT_EMAIL)}`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(payload),
       },
-      body: JSON.stringify(record),
-    });
+    );
 
     if (!res.ok) {
       return {
@@ -53,7 +51,7 @@ export async function submitIntake(data: IntakeData): Promise<SubmitResult> {
         error: "Something went wrong submitting your intake. Please try again.",
       };
     }
-    return { ok: true, stored: "formspree" };
+    return { ok: true, stored: "formsubmit" };
   } catch {
     return {
       ok: false,
