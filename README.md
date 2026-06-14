@@ -1,146 +1,140 @@
-# Furmacy — Beta-Tester Intake
+# Furmacy — Website
 
 > Your pet's health, simplified.
 
-A warm, privacy-first intake site for the **Furmacy** iOS beta. Testers open it
-from an email link, answer a short, mostly-optional multi-step form, review their
-answers, and submit. It's built to feel like a calm, real intake tool — not a
-marketing landing page or a clinical questionnaire.
+The public marketing + product site for **Furmacy**, a privacy-first iOS pet
+health & medication app, plus the legal pages and a beta-tester intake. Built
+with Next.js (App Router) + TypeScript + Tailwind and shipped as a **fully static
+export** to **GitHub Pages** at `https://furmacy.org`. Privacy-respecting, with
+**no analytics, trackers, ads, or external fonts/images**.
 
-**This intake is for beta fit and feedback — it is not veterinary advice.**
+Operated by **Huggler Holdings LLC**.
 
-## Highlights
+## Pages
 
-- **8 guided steps** with a progress bar, Back/Continue navigation, and a final
-  review screen you can jump back from to edit any section.
-- **Draft auto-save** to `localStorage` — refreshing never loses answers.
-- **Accessible by default**: real labels, `fieldset`/`legend` groups, keyboard
-  navigation, visible focus rings, inline validation that moves focus to the
-  first problem, and full `prefers-reduced-motion` support.
-- **Privacy-first**: no analytics, trackers, ads, third-party scripts, or
-  external fonts/images. Answers stay on-device until the tester submits. The
-  page is marked `noindex`.
-- **Pluggable submission backend** with a safe local-dev fallback (writes JSON
-  to `./submissions/`). No secrets in code.
-- **Inline SVG** brand icons + soft illustrations (no stock imagery).
+| Route | What it is | Indexed |
+| --- | --- | --- |
+| `/` | Public homepage: hero, features, how it works, who it's for, privacy, FAQ, CTA | ✅ |
+| `/privacy` | Privacy Policy (on-device-first posture) | ✅ |
+| `/terms` | Terms of Use / EULA (incl. Apple App Store clauses + veterinary disclaimer) | ✅ |
+| `/contact` | Contact page built around `contact@furmacy.org` | ✅ |
+| `/beta` | Beta-tester intake form (multi-step, draft-saving) | 🚫 `noindex` |
 
 ## Tech stack
 
-- [Next.js 15](https://nextjs.org) (App Router) · React · TypeScript
-- [Tailwind CSS v3](https://tailwindcss.com) with Furmacy design tokens
-- [Zod](https://zod.dev) as the single source of truth for the data model
-- `clsx` for class composition — that's the whole dependency list.
+Next.js 15 (App Router, `output: "export"`) · React · TypeScript · Tailwind CSS v3
+· Zod. Only extra runtime deps are `zod` and `clsx`.
 
 ## Getting started
 
-Prerequisites: **Node 18.18+ or 20+** (developed on Node 22) and npm.
+Requires **Node 18.18+ or 20+** (developed on Node 22) and npm.
 
 ```bash
 npm install
 npm run dev        # http://localhost:3000
+npm run build      # type-checks, lints, and exports a static site to ./out
+npm run lint
 ```
 
-Other scripts:
+`npm run build` produces a static site in **`./out`** (because of
+`output: "export"`). Serve it with any static server, e.g. `npx serve out`.
 
-```bash
-npm run build      # production build (also type-checks + lints)
-npm run start      # serve the production build
-npm run lint       # ESLint (next/core-web-vitals)
-```
+Copy env defaults (all optional): `cp .env.example .env.local`.
 
-Optionally, copy the env template:
+## Configuration (`lib/site.ts` + env)
 
-```bash
-cp .env.example .env.local
-```
+Most identity/legal/app-store values live in **`lib/site.ts`** (single source of
+truth). A few read from public env vars (baked in at build time):
 
-All env vars are optional — the app runs fully without any.
+| Variable | Purpose |
+| --- | --- |
+| `NEXT_PUBLIC_SITE_URL` | Canonical origin for metadata, canonical URLs, sitemap, OG images. Default `https://furmacy.org`. |
+| `NEXT_PUBLIC_APP_STORE_URL` | When set, the "Download on the App Store" buttons link out; blank shows **"Coming soon"**. |
+| `NEXT_PUBLIC_APPLE_APP_ID` | Apple numeric app ID — enables the `apple-itunes-app` smart-banner meta. |
+| `NEXT_PUBLIC_CONTACT_EMAIL` | Public contact alias. Default `contact@furmacy.org`. |
+| `NEXT_PUBLIC_TESTFLIGHT_URL` | Optional TestFlight link on the `/beta` success screen. |
+| `NEXT_PUBLIC_FORMSUBMIT_EMAIL` | Recipient for `/beta` submissions (via FormSubmit.co). Default `beta@furmacy.org`. |
 
-## Environment variables
+### Going live on the App Store
+Set `NEXT_PUBLIC_APP_STORE_URL` (and ideally `NEXT_PUBLIC_APPLE_APP_ID`) — the
+CTAs, JSON-LD `downloadUrl`, and smart banner update automatically.
 
-| Variable | Exposed? | Purpose |
-| --- | --- | --- |
-| `NEXT_PUBLIC_TESTFLIGHT_URL` | Browser | Public TestFlight link on the success screen. Unset → that section is hidden. |
-| `SUBMIT_WEBHOOK_URL` | Server only | Forward submissions to any endpoint (Zapier, Make, n8n, your function). |
-| `FORMSPREE_FORM_ID` | Server only | Send submissions to a [Formspree](https://formspree.io) form. |
-| `SUPABASE_*` / `AIRTABLE_*` | Server only | Commented templates in the API route — uncomment to enable. |
+## SEO
 
-Only `NEXT_PUBLIC_*` values reach the browser. Keep all keys/secrets un-prefixed.
+- Per-page `metadata` (title template `%s · Furmacy`, descriptions, **canonical**),
+  Open Graph + Twitter (`summary_large_image`).
+- **Dynamic OG/Twitter image** (`app/opengraph-image.tsx`, 1200×630) and favicon
+  (`app/icon.svg`) + **Apple touch icon** (`app/apple-icon.tsx`), prerendered to
+  static files. (For pixel-perfect social cards on a static host you can swap in
+  a committed `public/og.png`, but the dynamic image works for SEO.)
+- **JSON-LD** (`lib/structuredData.ts`): `Organization` + `WebSite` site-wide;
+  `MobileApplication` + `FAQPage` on the home page; `WebPage` + `BreadcrumbList`
+  on legal/contact pages.
+- `app/sitemap.ts`, `app/robots.ts`, `app/manifest.ts` (each `force-static` for
+  the export), semantic headings, theme-color.
 
-## Where submissions go (connect the real backend)
+## LLMO (so ChatGPT / Gemini / Claude / Perplexity can surface & cite Furmacy)
 
-All submission logic lives in **`app/api/submit/route.ts`**. The client posts to
-`/api/submit`; the route picks the first configured provider:
+- **`public/llms.txt`** — a structured markdown brief (what Furmacy is, features,
+  audience, privacy, key links, FAQ, contact).
+- **`app/robots.ts` explicitly welcomes AI crawlers** (GPTBot, OAI-SearchBot,
+  ChatGPT-User, ClaudeBot, anthropic-ai, Claude-User, Google-Extended,
+  PerplexityBot, Applebot-Extended, Amazonbot, CCBot, and more) in addition to
+  allowing all by default.
+- FAQ in clean Q&A form (`lib/faq.ts`, reused by the page, `FAQPage` JSON-LD, and
+  `llms.txt`), crisp definitional sentences, clear entity/publisher signals, and
+  dated legal content.
 
-1. **`SUBMIT_WEBHOOK_URL`** — POSTs the JSON record to your endpoint.
-2. **`FORMSPREE_FORM_ID`** — POSTs to `https://formspree.io/f/<id>`.
-3. **Supabase / Airtable** — ready-to-uncomment `TODO` blocks (server-only keys).
-4. **No provider configured** — in development, writes
-   `./submissions/intake-<timestamp>.json` (gitignored) so you can inspect real
-   responses. In production it logs a warning and returns success so a tester is
-   never blocked by backend setup.
+## ASO (App Store Optimization)
 
-To wire your backend: set the relevant variable(s) in `.env.local` (see
-`.env.example`), or uncomment the Supabase/Airtable block in the route. The data
-shape is `{ data: IntakeData, meta: {...}, receivedAt }`.
+Website hooks are in place: `apple-itunes-app` smart banner (set the app ID),
+App Store CTAs, and `MobileApplication` schema (`operatingSystem: iOS`,
+`applicationCategory: HealthApplication`). The listing itself is managed in **App
+Store Connect** — suggested starting points:
 
-## Project structure
+- **App name (30 chars):** `Furmacy: Pet Meds & Care`
+- **Subtitle (30 chars):** `Med reminders & vet records`
+- **Keywords (100 chars):** `pet,medication,reminder,dose,dog,cat,vet,records,refill,health,schedule,senior,diabetes,tracker`
+- **Description:** lead with the one-line definition, then the feature list and
+  the privacy-first/on-device angle. Avoid medical claims; include the
+  "not veterinary advice" note.
+- **Screenshots:** medication reminders, the Given/Skip dose action, refills,
+  weight/symptom logging, vet records, and care handoff.
+> Replace the in-app Apple-style button with Apple's official "Download on the
+> App Store" badge asset per Apple's marketing guidelines before launch.
 
-```
-app/
-  layout.tsx              Root layout, metadata, skip link
-  page.tsx                Two-column intake page (brand/intro + form)
-  globals.css             Tailwind + focus + reduced-motion
-  api/submit/route.ts     Submission endpoint (provider abstraction + TODOs)
-components/
-  Wizard.tsx              Multi-step controller: state, validation, persistence, submit
-  IntakeSteps.tsx         The 8 step bodies
-  ReviewScreen.tsx        Editable summary before submit
-  SuccessScreen.tsx       Thank-you + optional TestFlight link
-  StepShell / ProgressBar / NavButtons / BrandHeader / IntakeIntro
-  icons.tsx / illustrations.tsx
-  fields/                 TextField, TextArea, RadioChips, CheckboxChips, Checkbox
-lib/
-  intake.ts               Zod schema, options, IntakeData type, defaults
-  steps.ts                Step metadata + per-step validators
-  summary.ts              Human-readable review summary
-  submit.ts               Client submit helper
-  useLocalStorageDraft.ts Versioned draft persistence hook
-  cn.ts
-```
+## Email alias
 
-## Data model
+The site only ever shows **`contact@furmacy.org`**. Configure that as an alias at
+your email provider so it forwards to your team inbox (e.g. the Huggler Holdings
+admin Gmail). Update the address in one place via `NEXT_PUBLIC_CONTACT_EMAIL` /
+`lib/site.ts`.
 
-`IntakeData` is inferred from the Zod schema in `lib/intake.ts` (the single
-source of truth). The schema is intentionally lenient so partial drafts always
-parse; friendly "required" messages live in `lib/steps.ts`. Only **name, email,
-TestFlight comfort, primary care goal, and the three consent checkboxes** are
-required — everything else is clearly marked **Optional**.
+## Legal pages — please review
 
-## Accessibility & motion
+`/privacy` and `/terms` are written to reflect Furmacy's stated practices
+(**fully on-device; no accounts/analytics/cloud**) and name **Huggler Holdings
+LLC** with **Texas** governing law (centralized in `lib/site.ts`). They are a
+strong starting point, **not a substitute for legal advice** — have counsel
+review them before launch, and confirm entity details, governing law, and the
+effective date.
 
-- Every control has a real label; chip groups use `fieldset`/`legend`; selects
-  are backed by native radio/checkbox inputs for free keyboard + SR support.
-- Validation sets `aria-invalid` + `aria-describedby`, announces via `role="alert"`,
-  and moves focus to the first invalid field.
-- Focus moves to each step's heading on navigation; there's a skip link.
-- A global `prefers-reduced-motion` rule disables transitions/animations, and
-  motion utilities use the `motion-safe`/`motion-reduce` variants.
-- Buttons use a darkened teal (`accent-strong`, ~5:1 on white) so white button
-  text meets WCAG AA; the brand teal is reserved for borders, icons, and tints.
+## Beta intake
 
-## Deployment
+The multi-step intake lives at `/beta` (kept out of search via `noindex`). Because
+the site is a static export with no server, submissions are sent **client-side via
+[FormSubmit.co](https://formsubmit.co)** to `NEXT_PUBLIC_FORMSUBMIT_EMAIL`
+(default `beta@furmacy.org`). The first submission triggers a one-time FormSubmit
+activation email — confirm it once and submissions start arriving. Logic lives in
+`lib/submit.ts`.
 
-It's a standard Next.js app:
+## Deployment (GitHub Pages)
 
-- **Vercel** — import the repo; set any env vars in the project settings; deploy.
-- **Netlify** — use the Next.js runtime; set env vars; deploy.
-- **Node host** — `npm run build` then `npm run start` (the `/api/submit` route
-  needs the Node.js runtime, which it requests explicitly).
-
-> Note: the local-dev JSON fallback writes to disk and won't persist on
-> serverless hosts — configure a provider (above) for production.
+`next build` exports a static site to `./out`, deployed to GitHub Pages via
+`.github/workflows/deploy.yml`. The custom domain is set with `public/CNAME`
+(`furmacy.org`). Because it's fully static there's no server runtime — all config
+is build-time `NEXT_PUBLIC_*`.
 
 ## License
 
-Private — Furmacy beta intake.
+Private — © Huggler Holdings LLC.

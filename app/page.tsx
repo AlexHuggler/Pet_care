@@ -1,22 +1,31 @@
-import { BrandHeader } from "@/components/BrandHeader";
-import { IntakeIntro } from "@/components/IntakeIntro";
-import { Wizard } from "@/components/Wizard";
+import type { Metadata } from "next";
+import { JsonLd } from "@/components/JsonLd";
+import { CtaBand } from "@/components/marketing/CtaBand";
+import { Faq } from "@/components/marketing/Faq";
+import { Features } from "@/components/marketing/Features";
+import { Hero } from "@/components/marketing/Hero";
+import { HowItWorks } from "@/components/marketing/HowItWorks";
+import { PrivacyFirst } from "@/components/marketing/PrivacyFirst";
+import { WhoItsFor } from "@/components/marketing/WhoItsFor";
+import { faqPageLd, softwareApplicationLd } from "@/lib/structuredData";
 
-export default function Page() {
+export const metadata: Metadata = {
+  description:
+    "Furmacy is a privacy-first iOS app for pet medication reminders, dose tracking, refills, weight & symptom logging, and vet records — with care handoff for households and sitters.",
+  alternates: { canonical: "/" },
+};
+
+export default function HomePage() {
   return (
-    <main className="min-h-screen">
-      <div className="mx-auto w-full max-w-intake px-5 py-8 sm:px-8 sm:py-12 lg:py-16">
-        <div className="grid gap-8 lg:grid-cols-[minmax(0,440px)_minmax(0,1fr)] lg:gap-14">
-          <aside className="lg:sticky lg:top-12 lg:self-start">
-            <BrandHeader className="mb-8" />
-            <IntakeIntro />
-          </aside>
-
-          <div id="intake-main" className="scroll-mt-6">
-            <Wizard />
-          </div>
-        </div>
-      </div>
-    </main>
+    <>
+      <JsonLd data={[softwareApplicationLd(), faqPageLd()]} />
+      <Hero />
+      <Features />
+      <HowItWorks />
+      <WhoItsFor />
+      <PrivacyFirst />
+      <Faq />
+      <CtaBand />
+    </>
   );
 }

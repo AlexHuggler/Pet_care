@@ -1,13 +1,62 @@
 import type { Metadata, Viewport } from "next";
+import { JsonLd } from "@/components/JsonLd";
+import { SiteFooter } from "@/components/SiteFooter";
+import { SiteHeader } from "@/components/SiteHeader";
+import { site } from "@/lib/site";
+import { organizationLd, websiteLd } from "@/lib/structuredData";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Furmacy Beta · Your pet's health, simplified.",
-  description:
-    "Join the Furmacy private beta. A short, mostly-optional intake to help us tailor the beta to how you care for your pets. This is for beta fit and feedback — not veterinary advice.",
-  applicationName: "Furmacy Beta Intake",
-  // A private beta intake reached by email link — keep it out of search engines.
-  robots: { index: false, follow: false },
+  metadataBase: new URL(site.url),
+  title: {
+    default: "Furmacy — Your pet's health, simplified.",
+    template: "%s · Furmacy",
+  },
+  description: site.description,
+  applicationName: site.name,
+  keywords: [
+    "pet medication reminder app",
+    "pet health app",
+    "dog medication tracker",
+    "cat medication tracker",
+    "pet medication schedule",
+    "vet records app",
+    "pet care app",
+    "pet medication management",
+    "chronic pet care app",
+    "pet health records",
+  ],
+  authors: [{ name: site.company, url: site.url }],
+  creator: site.company,
+  publisher: site.company,
+  category: "health",
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    siteName: site.name,
+    title: "Furmacy — Your pet's health, simplified.",
+    description: site.description,
+    url: site.url,
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Furmacy — Your pet's health, simplified.",
+    description: site.description,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+  // Apple smart app banner once the app is live (set NEXT_PUBLIC_APPLE_APP_ID).
+  ...(site.appleAppId ? { itunes: { appId: site.appleAppId } } : {}),
 };
 
 export const viewport: Viewport = {
@@ -16,21 +65,22 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className="bg-bg font-sans text-text antialiased">
+      <body className="flex min-h-screen flex-col bg-bg font-sans text-text antialiased">
         <a
-          href="#intake-main"
+          href="#main"
           className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-control focus:bg-surface focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-text focus:shadow-card focus:ring-4 focus:ring-accent/30"
         >
-          Skip to the form
+          Skip to content
         </a>
-        {children}
+        <SiteHeader />
+        <main id="main" className="flex-1">
+          {children}
+        </main>
+        <SiteFooter />
+        <JsonLd data={[organizationLd(), websiteLd()]} />
       </body>
     </html>
   );

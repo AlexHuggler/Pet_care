@@ -44,3 +44,28 @@ body {
     scroll-behavior: auto;
   }
 }
+
+/* Readable prose for the legal pages (Privacy / Terms). */
+@layer components {
+  .legal h2 {
+    @apply mt-10 scroll-mt-24 text-xl font-bold text-text;
+  }
+  .legal h2:first-child {
+    @apply mt-0;
+  }
+  .legal h3 {
+    @apply mt-6 text-base font-semibold text-text;
+  }
+  .legal p {
+    @apply mt-3 text-[15px] leading-relaxed text-text-secondary;
+  }
+  .legal ul {
+    @apply mt-3 list-disc space-y-1.5 pl-5 text-[15px] leading-relaxed text-text-secondary;
+  }
+  .legal a {
+    @apply font-semibold text-accent-strong hover:underline;
+  }
+  .legal strong {
+    @apply font-semibold text-text;
+  }
+}

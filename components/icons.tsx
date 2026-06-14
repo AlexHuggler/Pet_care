@@ -18,7 +18,13 @@ export type IconName =
   | "arrow-right"
   | "edit"
   | "mail"
-  | "save";
+  | "save"
+  | "chart"
+  | "folder"
+  | "users"
+  | "download"
+  | "menu"
+  | "chevron-down";
 
 const PATHS: Record<IconName, ReactNode> = {
   user: (
@@ -102,6 +108,32 @@ const PATHS: Record<IconName, ReactNode> = {
       <path d="M8.5 4.5v4h6" />
     </>
   ),
+  chart: (
+    <>
+      <path d="M5 4v15a1 1 0 0 0 1 1h14" />
+      <path d="m8.5 14 2.5-3 2.5 2 3.5-4.5" />
+    </>
+  ),
+  folder: (
+    <path d="M4.5 7.5A1.5 1.5 0 0 1 6 6h3.1a1.5 1.5 0 0 1 1.2.6l.9 1.2a1.5 1.5 0 0 0 1.2.6H18A1.5 1.5 0 0 1 19.5 10v6A1.5 1.5 0 0 1 18 17.5H6A1.5 1.5 0 0 1 4.5 16Z" />
+  ),
+  users: (
+    <>
+      <circle cx="9" cy="9" r="3" />
+      <path d="M3.6 19a5.5 5.5 0 0 1 10.8 0" />
+      <path d="M16 6.6a3 3 0 0 1 0 5.8" />
+      <path d="M17.2 14.3A5.5 5.5 0 0 1 20.4 19" />
+    </>
+  ),
+  download: (
+    <>
+      <path d="M12 4v10" />
+      <path d="m8 11 4 4 4-4" />
+      <path d="M5 19h14" />
+    </>
+  ),
+  menu: <path d="M4 7h16M4 12h16M4 17h16" />,
+  "chevron-down": <path d="m6 9 6 6 6-6" />,
 };
 
 export function Icon({
