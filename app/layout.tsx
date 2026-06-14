@@ -34,15 +34,28 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: site.name,
-    title: "Furmacy — Your pet's health, simplified.",
+    title: "Furmacy Pro — Pet medication care without guesswork.",
     description: site.description,
     url: site.url,
     locale: "en_US",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Furmacy Pro pet medication care without guesswork",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Furmacy — Your pet's health, simplified.",
+    title: "Furmacy Pro — Pet medication care without guesswork.",
     description: site.description,
+    images: ["/twitter-image"],
+  },
+  icons: {
+    icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
+    apple: [{ url: "/brand/furmacy-app-icon.png", sizes: "1024x1024", type: "image/png" }],
   },
   robots: {
     index: true,

@@ -8,8 +8,8 @@ export function Features() {
       <div className="mx-auto max-w-intake px-5 sm:px-8">
         <SectionHeading
           eyebrow="Features"
-          title="Everything for real-life pet care"
-          subtitle="Built around the daily reality of medications, routines, and vet visits — not clinical jargon."
+          title="Everything the daily care loop needs"
+          subtitle="Furmacy focuses on the workflows that make people subscribe: medication consistency, refill confidence, long-term history, and records ready when care gets complicated."
         />
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {features.map((f) => (

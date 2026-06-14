@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 
 export const runtime = "nodejs";
 export const dynamic = "force-static";
-export const alt = "Furmacy — Your pet's health, simplified.";
+export const alt = "Furmacy Pro - pet medication care without guesswork.";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -67,13 +67,13 @@ export default function OpengraphImage() {
               fontWeight: 800,
               color: "#0D3B47",
               lineHeight: 1.05,
-              letterSpacing: "-0.02em",
+              letterSpacing: 0,
             }}
           >
-            Your pet&rsquo;s health, simplified.
+            Pet medication care without guesswork.
           </div>
           <div style={{ display: "flex", marginTop: 20, fontSize: 32, color: "#636E75", maxWidth: 980 }}>
-            Privacy-first medication reminders, dose tracking, and vet records — for iPhone.
+            Reminders, dose history, refills, vet records, and Pro upgrades for real chronic-care routines.
           </div>
         </div>
 

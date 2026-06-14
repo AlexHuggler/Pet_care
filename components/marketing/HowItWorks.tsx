@@ -4,18 +4,18 @@ import { SectionHeading } from "./SectionHeading";
 const STEPS: { icon: IconName; title: string; body: string }[] = [
   {
     icon: "paw",
-    title: "Add your pets & their care",
-    body: "Set up each pet, their medications, and routine care in a few taps.",
+    title: "Start with the real routine",
+    body: "Add each pet, medication, schedule, prescribing vet, and refill details once.",
   },
   {
     icon: "calendar",
-    title: "Get gentle reminders",
-    body: "Furmacy reminds you when care is due, and you mark each dose Given or Skipped.",
+    title: "Work from today",
+    body: "See what is due now, what is coming next, and what was already marked Given or Skipped.",
   },
   {
     icon: "users",
-    title: "Keep everyone in sync",
-    body: "Records and routines stay together, so family and sitters always know what's done.",
+    title: "Upgrade when care grows",
+    body: "Use Pro for unlimited pets and medications, full history, iCloud sync, and expanded records.",
   },
 ];
 
@@ -25,7 +25,7 @@ export function HowItWorks() {
       <div className="mx-auto max-w-intake px-5 sm:px-8">
         <SectionHeading
           eyebrow="How it works"
-          title="Calm, organized care in three steps"
+          title="A subscription-worthy workflow in three steps"
           center
         />
         <ol className="mt-12 grid gap-6 md:grid-cols-3">

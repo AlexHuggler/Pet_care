@@ -21,7 +21,7 @@ export function IntakeIntro() {
           <Icon name="sparkle" className="h-3.5 w-3.5" />
           Private beta
         </span>
-        <h1 className="text-2xl font-bold leading-tight tracking-tight text-text sm:text-[30px]">
+        <h1 className="text-2xl font-bold leading-tight text-text sm:text-[30px]">
           Help shape Furmacy&rsquo;s beta
         </h1>
         <p className="text-[15px] leading-relaxed text-text-secondary">

@@ -20,7 +20,7 @@ export function SuccessScreen({ onReset }: { onReset: () => void }) {
       <h2
         ref={headingRef}
         tabIndex={-1}
-        className="mt-2 text-2xl font-bold tracking-tight text-text outline-none"
+        className="mt-2 text-2xl font-bold text-text outline-none"
       >
         Thank you — you&rsquo;re all set.
       </h2>

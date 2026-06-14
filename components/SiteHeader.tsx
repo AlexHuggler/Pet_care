@@ -5,7 +5,8 @@ import { Logo } from "./illustrations";
 
 const NAV = [
   { href: "/#features", label: "Features" },
-  { href: "/#how", label: "How it works" },
+  { href: "/#outcome", label: "Outcome" },
+  { href: "/#pro", label: "Pro" },
   { href: "/#who", label: "Who it's for" },
   { href: "/#faq", label: "FAQ" },
   { href: "/contact", label: "Contact" },
@@ -20,7 +21,7 @@ export function SiteHeader() {
           className="flex items-center gap-2.5 rounded focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-accent/30"
         >
           <Logo className="h-9 w-9" />
-          <span className="text-lg font-bold tracking-tight text-text">Furmacy</span>
+          <span className="text-lg font-bold text-text">Furmacy</span>
         </Link>
 
         <nav aria-label="Primary" className="hidden items-center gap-7 md:flex">

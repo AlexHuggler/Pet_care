@@ -18,6 +18,11 @@ const POINTS: { icon: IconName; title: string; body: string }[] = [
     title: "No telemetry, no ads",
     body: "Furmacy isn't built around tracking. We don't sell your data, because we don't collect it.",
   },
+  {
+    icon: "download",
+    title: "Export for trust",
+    body: "Your records should stay useful outside the app, including when you need to prepare for a vet visit.",
+  },
 ];
 
 export function PrivacyFirst() {
@@ -26,11 +31,11 @@ export function PrivacyFirst() {
       <div className="mx-auto max-w-intake px-5 sm:px-8">
         <SectionHeading
           eyebrow="Privacy-first"
-          title="Privacy isn't a setting. It's the foundation."
-          subtitle="Your pet's health information is personal. Furmacy is designed to keep it that way."
+          title="Private by default, useful when you choose to share"
+          subtitle="Your pet's health information is personal. Furmacy keeps the app useful without turning your care routine into an ad profile."
           center
         />
-        <div className="mt-12 grid gap-5 md:grid-cols-3">
+        <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
           {POINTS.map((p) => (
             <div key={p.title} className="rounded-card border border-border bg-surface p-6">
               <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-hero text-accent-strong">

@@ -15,6 +15,7 @@ export default function manifest(): MetadataRoute.Manifest {
     theme_color: "#FAF7F2",
     icons: [
       { src: "/icon.svg", sizes: "any", type: "image/svg+xml", purpose: "any" },
+      { src: "/brand/furmacy-app-icon.png", sizes: "1024x1024", type: "image/png" },
       { src: "/apple-icon", sizes: "180x180", type: "image/png" },
     ],
   };

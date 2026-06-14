@@ -10,7 +10,7 @@ export interface Faq {
 export const faqs: readonly Faq[] = [
   {
     q: "What is Furmacy?",
-    a: "Furmacy is a privacy-first iOS app that helps pet caregivers manage medications and doses, refills and routine care, weight and symptom tracking, and vet records. It's designed for real-life pet care, including multi-pet households and chronic conditions.",
+    a: "Furmacy is a privacy-first iOS app that helps pet caregivers manage medication reminders, dose history, refills, weight and symptom tracking, and vet records. Furmacy Pro is built for unlimited pets, unlimited active medications, full history, iCloud sync, and expanded records.",
   },
   {
     q: "What kinds of pets does Furmacy support?",
@@ -22,11 +22,15 @@ export const faqs: readonly Faq[] = [
   },
   {
     q: "Can Furmacy help with chronic conditions like diabetes or kidney disease?",
-    a: "Yes. Furmacy is designed for complex, ongoing care — including diabetes, CKD/kidney disease, seizures, Cushing's, arthritis and mobility, senior care, and pets with multiple conditions — by keeping schedules, doses, and records organized in one place.",
+    a: "Yes. Furmacy is designed for complex, ongoing care, including diabetes, CKD/kidney disease, seizures, Cushing's, arthritis and mobility, senior care, and pets with multiple conditions. It keeps schedules, doses, refills, and records organized in one place.",
   },
   {
     q: "Can more than one person manage a pet's care?",
-    a: "Yes. Furmacy supports care handoff so households, family members, and sitters can see the routine and what's already been done — helpful for the \"did someone already give it?\" moments.",
+    a: "Furmacy is built around care handoff: the routine and dose states make it easier for households, family members, and sitters to see what's already been done. Future Pro sharing is planned for deeper household and sitter coordination.",
+  },
+  {
+    q: "What does Furmacy Pro include?",
+    a: "Furmacy Pro unlocks unlimited pets, unlimited active medications, full adherence history, an expanded document vault, iCloud sync across Apple devices, and future household and sitter sharing.",
   },
   {
     q: "Is Furmacy a substitute for veterinary care?",
@@ -38,11 +42,11 @@ export const faqs: readonly Faq[] = [
   },
   {
     q: "How much does Furmacy cost?",
-    a: "Furmacy is launching on the Apple App Store; current pricing is shown on the App Store listing.",
+    a: "The planned launch options are $4.99/week and $39.99/year, with a 7-day annual trial. Final live pricing is shown on the Apple App Store listing once purchases are available.",
   },
   {
     q: "How do I get Furmacy?",
-    a: "Furmacy is launching on the Apple App Store. Visit furmacy.org for the latest, or check the App Store.",
+    a: "Furmacy is launching on the Apple App Store. If the App Store link is not live yet, use the beta or launch-list flow at furmacy.org/beta.",
   },
   {
     q: "Who makes Furmacy?",

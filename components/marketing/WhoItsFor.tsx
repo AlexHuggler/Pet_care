@@ -14,9 +14,9 @@ const CONDITIONS = [
 ];
 
 const AUDIENCES = [
-  { icon: "users", title: "Multi-pet households", body: "Keep every pet's meds and routines straight, side by side." },
-  { icon: "heart", title: "Fosters & rescues", body: "Track care for pets coming and going, with records ready to share." },
-  { icon: "paw", title: "Pet sitters & boarders", body: "Hand off the routine clearly, so nothing is missed or doubled up." },
+  { icon: "users", title: "Multi-pet households", body: "Keep every pet's meds and routines straight without a whiteboard." },
+  { icon: "heart", title: "Senior and chronic-care families", body: "Track the care details that matter between vet visits." },
+  { icon: "paw", title: "Sitters and shared caregivers", body: "Hand off the routine clearly, so nothing is missed or doubled up." },
 ] as const;
 
 export function WhoItsFor() {
@@ -27,8 +27,8 @@ export function WhoItsFor() {
           <div>
             <SectionHeading
               eyebrow="Who it's for"
-              title="Made for complex, ongoing care"
-              subtitle="Furmacy shines when care gets complicated — multiple medications, multiple times a day, and conditions that need consistency."
+              title="Made for the families most likely to feel the value every day"
+              subtitle="Furmacy shines when care gets complicated: multiple medications, multiple times a day, and conditions that need consistency."
             />
             <ul className="mt-6 flex flex-wrap gap-2">
               {CONDITIONS.map((c) => (
