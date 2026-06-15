@@ -12,7 +12,7 @@ export function LegalPage({ title, updated, intro, toc, children }: LegalPagePro
   return (
     <div className="mx-auto max-w-3xl px-5 py-14 sm:px-8 sm:py-16">
       <p className="text-xs font-semibold uppercase tracking-wide text-accent-strong">Legal</p>
-      <h1 className="mt-2 text-3xl font-bold tracking-tight text-text sm:text-4xl">{title}</h1>
+      <h1 className="mt-2 text-3xl font-bold text-text sm:text-4xl">{title}</h1>
       <p className="mt-2 text-sm text-text-secondary">Last updated: {updated}</p>
 
       {intro && (

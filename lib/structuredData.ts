@@ -10,7 +10,7 @@ export function organizationLd(): Ld {
     "@type": "Organization",
     name: site.company,
     url: site.url,
-    logo: absoluteUrl("/icon.svg"),
+    logo: absoluteUrl("/brand/furmacy-app-icon.png"),
     brand: { "@type": "Brand", name: site.name },
     contactPoint: {
       "@type": "ContactPoint",
@@ -42,6 +42,8 @@ export function softwareApplicationLd(): Ld {
     applicationCategory: "HealthApplication",
     description: site.description,
     url: site.url,
+    image: absoluteUrl("/brand/furmacy-app-icon.png"),
+    screenshot: absoluteUrl("/screenshots/furmacy-today-clean.png"),
     featureList: features.map((f) => f.title),
     publisher: { "@type": "Organization", name: site.company },
     // No rating or price is asserted until real data exists.

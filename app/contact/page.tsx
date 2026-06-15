@@ -35,7 +35,7 @@ export default function ContactPage() {
       />
 
       <p className="text-xs font-semibold uppercase tracking-wide text-accent-strong">Contact</p>
-      <h1 className="mt-2 text-3xl font-bold tracking-tight text-text sm:text-4xl">Get in touch</h1>
+      <h1 className="mt-2 text-3xl font-bold text-text sm:text-4xl">Get in touch</h1>
       <p className="mt-3 max-w-xl text-[15px] leading-relaxed text-text-secondary">
         We&rsquo;d love to hear from you. The best way to reach the Furmacy team is by
         email — we read everything and aim to reply within a few business days.

@@ -3,7 +3,8 @@
 > Your pet's health, simplified.
 
 The public marketing + product site for **Furmacy**, a privacy-first iOS pet
-health & medication app, plus the legal pages and a beta-tester intake. Built
+health & medication app with a subscription-first Furmacy Pro launch story, plus
+the legal pages and a beta-tester intake. Built
 with Next.js (App Router) + TypeScript + Tailwind and shipped as a **fully static
 export** to **GitHub Pages** at `https://furmacy.org`. Privacy-respecting, with
 **no analytics, trackers, ads, or external fonts/images**.
@@ -14,7 +15,7 @@ Operated by **Huggler Holdings LLC**.
 
 | Route | What it is | Indexed |
 | --- | --- | --- |
-| `/` | Public homepage: hero, features, how it works, who it's for, privacy, FAQ, CTA | ✅ |
+| `/` | Public homepage: real app media, current-to-solution story, Pro offer, features, who it's for, privacy, FAQ, CTA | ✅ |
 | `/privacy` | Privacy Policy (on-device-first posture) | ✅ |
 | `/terms` | Terms of Use / EULA (incl. Apple App Store clauses + veterinary disclaimer) | ✅ |
 | `/contact` | Contact page built around `contact@furmacy.org` | ✅ |
@@ -44,7 +45,8 @@ Copy env defaults (all optional): `cp .env.example .env.local`.
 ## Configuration (`lib/site.ts` + env)
 
 Most identity/legal/app-store values live in **`lib/site.ts`** (single source of
-truth). A few read from public env vars (baked in at build time):
+truth). Subscription-first offer data lives in **`lib/marketing.ts`**. A few
+values read from public env vars (baked in at build time):
 
 | Variable | Purpose |
 | --- | --- |
@@ -59,14 +61,33 @@ truth). A few read from public env vars (baked in at build time):
 Set `NEXT_PUBLIC_APP_STORE_URL` (and ideally `NEXT_PUBLIC_APPLE_APP_ID`) — the
 CTAs, JSON-LD `downloadUrl`, and smart banner update automatically.
 
+The current public copy can mention the planned launch setup — `$4.99/week` and
+`$39.99/year` with a 7-day annual trial — but should not imply live purchases
+until the App Store URL is configured.
+
+## Marketing assets
+
+Real Furmacy app media is committed under:
+
+- `public/brand/furmacy-app-icon.png`
+- `public/screenshots/furmacy-today-clean.png`
+- `public/screenshots/furmacy-today-cat-avatar.png`
+- `public/screenshots/furmacy-today-dog-avatar.png`
+- `public/social/furmacy-email-preview-card.png`
+
+Asset provenance and usage notes live in `docs/marketing/source-assets.md`. The
+cat/dog avatar screenshots use stock-photo mockups, not beta-user pets or
+medical outcome proof.
+
+Offer strategy lives in `docs/marketing/furmacy-website-offer-brief.md`.
+
 ## SEO
 
 - Per-page `metadata` (title template `%s · Furmacy`, descriptions, **canonical**),
   Open Graph + Twitter (`summary_large_image`).
-- **Dynamic OG/Twitter image** (`app/opengraph-image.tsx`, 1200×630) and favicon
-  (`app/icon.svg`) + **Apple touch icon** (`app/apple-icon.tsx`), prerendered to
-  static files. (For pixel-perfect social cards on a static host you can swap in
-  a committed `public/og.png`, but the dynamic image works for SEO.)
+- **Dynamic OG/Twitter image** (`app/opengraph-image.tsx`, 1200×630), favicon
+  (`app/icon.svg`), **Apple touch icon** (`app/apple-icon.tsx`), and the real
+  app icon at `public/brand/furmacy-app-icon.png`.
 - **JSON-LD** (`lib/structuredData.ts`): `Organization` + `WebSite` site-wide;
   `MobileApplication` + `FAQPage` on the home page; `WebPage` + `BreadcrumbList`
   on legal/contact pages.

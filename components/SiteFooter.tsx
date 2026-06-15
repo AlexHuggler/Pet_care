@@ -40,8 +40,8 @@ export function SiteFooter() {
               <span className="text-lg font-bold text-text">Furmacy</span>
             </div>
             <p className="mt-3 max-w-xs text-sm leading-relaxed text-text-secondary">
-              {site.tagline} A privacy-first way to keep your pet&rsquo;s medications,
-              routines, and vet records organized.
+              {site.tagline} A privacy-first way to keep medication routines,
+              refills, dose history, and vet records organized.
             </p>
             <p className="mt-4 text-sm">
               <a
@@ -57,7 +57,8 @@ export function SiteFooter() {
             title="Product"
             links={[
               { href: "/#features", label: "Features" },
-              { href: "/#how", label: "How it works" },
+              { href: "/#outcome", label: "Outcome" },
+              { href: "/#pro", label: "Furmacy Pro" },
               { href: "/#who", label: "Who it's for" },
               { href: "/#faq", label: "FAQ" },
             ]}

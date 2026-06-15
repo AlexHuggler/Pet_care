@@ -13,7 +13,7 @@ export const site = {
   tagline: "Your pet's health, simplified.",
   // One-sentence, entity-clear description reused in metadata, JSON-LD, and llms.txt.
   description:
-    "Furmacy is a privacy-first iOS app that helps pet caregivers manage medications and doses, refills and routine care, weight and symptom tracking, and vet records — with care handoff for households and sitters.",
+    "Furmacy is a privacy-first iOS app for pet medication reminders, dose history, refills, weight and symptom tracking, vet records, and Pro upgrades for unlimited chronic-care routines.",
   url: SITE_URL,
 
   // Company / legal. TODO: confirm entity details and governing law with counsel.
@@ -46,32 +46,32 @@ export interface Feature {
 export const features: readonly Feature[] = [
   {
     icon: "pill",
-    title: "Medication reminders & dose tracking",
-    body: "Schedule every med and mark each dose Given or Skipped, so anyone helping knows exactly what's done.",
+    title: "Medication reminders that create a care trail",
+    body: "Schedule meds and mark each dose Given or Skipped, so the next caregiver can see exactly what happened.",
   },
   {
     icon: "check",
-    title: "Clear Given / Skip actions",
-    body: "Big, obvious dose actions answer the daily question: did someone already give it?",
+    title: "Status clarity for high-stakes routines",
+    body: "Pending, missed, given, and skipped states reduce the daily question: did someone already give it?",
   },
   {
     icon: "calendar",
-    title: "Refills & routine care",
-    body: "Track refills and recurring care — daily, weekly, or monthly — so nothing quietly runs out.",
+    title: "Refills and routine care in context",
+    body: "Track refill counts, prescribing vets, instructions, and recurring care beside the schedule itself.",
   },
   {
     icon: "chart",
-    title: "Weight & symptom logging",
-    body: "Note weight changes and symptoms over time to share a clearer picture with your vet.",
+    title: "Weight and symptom history",
+    body: "Capture changes over time so vet visits start with a clearer record instead of scattered memory.",
   },
   {
     icon: "folder",
-    title: "Vet records, all in one place",
+    title: "Expanded vet document vault",
     body: "Keep labs, prescriptions, vaccines, discharge notes, insurance, boarding, and travel records together.",
   },
   {
     icon: "users",
-    title: "Care handoff for your household",
-    body: "Share the routine with family, sitters, and boarders so care continues smoothly when you're away.",
+    title: "Pro-ready household handoff",
+    body: "Pro is built for multi-pet households, long histories, iCloud sync, and future sitter sharing.",
   },
 ];
