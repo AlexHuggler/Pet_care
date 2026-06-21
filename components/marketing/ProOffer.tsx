@@ -25,7 +25,7 @@ export function ProOffer() {
                 <div className="rounded-control border border-border bg-surface p-4">
                   <p className="text-2xl font-bold text-text">{launchPricing.annual}</p>
                   <p className="mt-1 text-sm text-text-secondary">
-                    Best value with a {launchPricing.annualTrial}.
+                    Built for ongoing care, with a {launchPricing.annualTrial}.
                   </p>
                 </div>
                 <div className="rounded-control border border-border bg-surface p-4">
@@ -36,9 +36,9 @@ export function ProOffer() {
                 </div>
               </div>
               <p className="mt-4 text-xs leading-relaxed text-text-secondary">
-                Pricing is the planned App Store launch setup. If the App Store link is not live
-                yet, join the beta or launch list and Furmacy will not automatically enroll you
-                in a paid plan.
+                Exact live prices are shown by the App Store before purchase. If the App Store
+                link is not live yet, joining the beta or launch list will not automatically
+                enroll you in a paid plan.
               </p>
             </div>
           </div>

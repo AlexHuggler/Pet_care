@@ -2,7 +2,10 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: ["claude/elegant-pascal-vmBLG"]
+    branches:
+      - "claude/elegant-pascal-vmBLG"
+      - "codex/furmacy-subscription-first-website"
+      - "main"
   workflow_dispatch:
 
 permissions:

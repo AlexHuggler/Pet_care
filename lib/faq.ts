@@ -18,7 +18,7 @@ export const faqs: readonly Faq[] = [
   },
   {
     q: "How does Furmacy protect my privacy?",
-    a: "Furmacy is built privacy-first: your pet's health information is kept on your device. There's no required account, and the app isn't built around tracking, telemetry, or ads.",
+    a: "Furmacy is built privacy-first: your pet's health information is kept on your device or, if you enable Pro sync, in your private iCloud. There's no required account, no in-app ads, and pet-care records are not sent to RevenueCat.",
   },
   {
     q: "Can Furmacy help with chronic conditions like diabetes or kidney disease?",
@@ -42,7 +42,7 @@ export const faqs: readonly Faq[] = [
   },
   {
     q: "How much does Furmacy cost?",
-    a: "The planned launch options are $4.99/week and $39.99/year, with a 7-day annual trial. Final live pricing is shown on the Apple App Store listing once purchases are available.",
+    a: "Furmacy Pro is planned with weekly and annual subscription options, and annual includes a 7-day trial for eligible subscribers. Exact live pricing is shown by the App Store before purchase.",
   },
   {
     q: "How do I get Furmacy?",

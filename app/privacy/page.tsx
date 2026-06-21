@@ -7,7 +7,7 @@ import { breadcrumbLd, webPageLd } from "@/lib/structuredData";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
-    "How Furmacy handles your information: your pet's data stays on your device. No required account, no analytics, no ads.",
+    "How Furmacy handles your information: pet-care records stay on device or in your private iCloud, with RevenueCat used for Pro purchases and Apple Ads attribution.",
   alternates: { canonical: "/privacy" },
 };
 
@@ -16,7 +16,8 @@ const TOC = [
   { id: "summary", label: "The short version" },
   { id: "on-device", label: "Information in the app" },
   { id: "you-send", label: "Information you send us" },
-  { id: "no-tracking", label: "No tracking or ads" },
+  { id: "purchases-attribution", label: "Purchases and attribution" },
+  { id: "no-tracking", label: "No behavioral tracking" },
   { id: "providers", label: "Service providers" },
   { id: "children", label: "Children's privacy" },
   { id: "security", label: "Security" },
@@ -66,27 +67,29 @@ export default function PrivacyPage() {
 
         <h2 id="summary">The short version</h2>
         <ul>
-          <li>
-            Your pet and health information in the app is stored <strong>on your device</strong>.
-          </li>
+          <li>Your pet-care records stay on your device or, if you enable Pro sync, in your private iCloud.</li>
           <li>
             You can use the app <strong>without creating an account</strong>.
           </li>
-          <li>We don&rsquo;t use third-party analytics, advertising, or tracking.</li>
-          <li>We don&rsquo;t sell your information — we don&rsquo;t collect it to begin with.</li>
+          <li>RevenueCat helps Furmacy validate Pro purchases and restore entitlements.</li>
+          <li>Apple&rsquo;s standard AdServices attribution token may be sent to RevenueCat for Apple Ads campaign reporting.</li>
+          <li>Pet names, medications, dose history, notes, photos, scans, and health entries are not sent to RevenueCat.</li>
+          <li>We do not sell personal information or build advertising profiles from your pet-care records.</li>
         </ul>
 
         <h2 id="on-device">Information in the app stays on your device</h2>
         <p>
           Furmacy is designed to keep the information you enter — such as pet
           profiles, medications and schedules, dose history, weight and symptom logs,
-          and vet documents — on your device. We do not operate servers that receive
-          or store this information, and we cannot access it.
+          photos, scanned labels, and vet documents — on your device by default. We do
+          not operate servers that receive or store this pet-care information, and we
+          cannot access it.
         </p>
         <p>
-          If you use your device&rsquo;s own backup or sync features (for example,
-          iCloud or an encrypted device backup), your data may be backed up by those
-          services under Apple&rsquo;s terms and privacy policy, not ours.
+          If you subscribe to Furmacy Pro and turn on iCloud sync, your pet-care data is
+          synced to your own private iCloud database managed by Apple and tied to your
+          Apple Account. We do not have access to that private iCloud data. Sync is off
+          by default and can be turned off in Settings.
         </p>
 
         <h2 id="you-send">Information you send us</h2>
@@ -97,20 +100,37 @@ export default function PrivacyPage() {
           message. We use it only to respond to you and to improve Furmacy.
         </p>
 
-        <h2 id="no-tracking">No tracking or ads</h2>
+        <h2 id="purchases-attribution">Purchases and Apple Ads attribution</h2>
         <p>
-          Our website and app are not built around tracking. We do not use
-          third-party advertising networks, and we do not embed analytics or tracking
-          scripts whose purpose is to profile you. We do not sell or rent personal
-          information.
+          Weekly and annual Furmacy Pro subscriptions are processed by Apple through the
+          App Store. Furmacy uses RevenueCat to manage purchase status, validate
+          entitlements, and restore access. RevenueCat may receive an anonymous app user
+          ID, App Store product identifiers, transaction and receipt data, subscription
+          status, trial status, renewal status, and related diagnostics needed to make
+          purchases and restores work.
+        </p>
+        <p>
+          Furmacy may also send RevenueCat Apple&rsquo;s standard AdServices attribution
+          token so RevenueCat can report whether subscription activity came from Apple
+          Ads campaigns. This campaign attribution does not include your pet-care
+          records and does not use the advertising identifier (IDFA).
+        </p>
+
+        <h2 id="no-tracking">No behavioral tracking or in-app ads</h2>
+        <p>
+          Our website and app are not built around behavioral tracking. We do not show
+          in-app ads, sell personal information, use IDFA, or send your pet-care records
+          to third-party analytics or advertising SDKs.
         </p>
 
         <h2 id="providers">Service providers</h2>
         <p>
           We rely on a small number of providers to operate: Apple distributes the app
-          through the App Store and processes any purchases under Apple&rsquo;s terms;
-          our email provider helps us receive and respond to messages you send us.
-          These providers process information only as needed to provide their service.
+          through the App Store, processes purchases, and provides private iCloud sync
+          if you enable it; RevenueCat helps manage Pro subscription status and Apple
+          Ads attribution reporting; and our email provider helps us receive and respond
+          to messages you send us. These providers process information only as needed to
+          provide their service.
         </p>
 
         <h2 id="children">Children&rsquo;s privacy</h2>

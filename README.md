@@ -7,7 +7,9 @@ health & medication app with a subscription-first Furmacy Pro launch story, plus
 the legal pages and a beta-tester intake. Built
 with Next.js (App Router) + TypeScript + Tailwind and shipped as a **fully static
 export** to **GitHub Pages** at `https://furmacy.org`. Privacy-respecting, with
-**no analytics, trackers, ads, or external fonts/images**.
+**no website analytics, trackers, ads, or external fonts/images**; the app's
+purchase-scoped RevenueCat and Apple Ads attribution disclosures live on the legal
+pages.
 
 Operated by **Huggler Holdings LLC**.
 
@@ -53,6 +55,7 @@ values read from public env vars (baked in at build time):
 | `NEXT_PUBLIC_SITE_URL` | Canonical origin for metadata, canonical URLs, sitemap, OG images. Default `https://furmacy.org`. |
 | `NEXT_PUBLIC_APP_STORE_URL` | When set, the "Download on the App Store" buttons link out; blank shows **"Coming soon"**. |
 | `NEXT_PUBLIC_APPLE_APP_ID` | Apple numeric app ID — enables the `apple-itunes-app` smart-banner meta. |
+| `NEXT_PUBLIC_APPLE_PROVIDER_TOKEN` | Optional App Store Connect provider token for `/go/<slug>/` campaign links. |
 | `NEXT_PUBLIC_CONTACT_EMAIL` | Public contact alias. Default `contact@furmacy.org`. |
 | `NEXT_PUBLIC_TESTFLIGHT_URL` | Optional TestFlight link on the `/beta` success screen. |
 | `NEXT_PUBLIC_FORMSUBMIT_EMAIL` | Recipient for `/beta` submissions (via FormSubmit.co). Default `beta@furmacy.org`. |
@@ -61,9 +64,10 @@ values read from public env vars (baked in at build time):
 Set `NEXT_PUBLIC_APP_STORE_URL` (and ideally `NEXT_PUBLIC_APPLE_APP_ID`) — the
 CTAs, JSON-LD `downloadUrl`, and smart banner update automatically.
 
-The current public copy can mention the planned launch setup — `$4.99/week` and
-`$39.99/year` with a 7-day annual trial — but should not imply live purchases
-until the App Store URL is configured.
+The current public copy can mention the planned weekly and annual Furmacy Pro
+subscriptions and the 7-day annual trial, but exact live prices should be shown by
+the App Store purchase sheet rather than hardcoded into the public website. Do not
+imply live purchases until the App Store URL is configured.
 
 ## Marketing assets
 
@@ -113,9 +117,9 @@ App Store CTAs, and `MobileApplication` schema (`operatingSystem: iOS`,
 `applicationCategory: HealthApplication`). The listing itself is managed in **App
 Store Connect** — suggested starting points:
 
-- **App name (30 chars):** `Furmacy: Pet Meds & Care`
-- **Subtitle (30 chars):** `Med reminders & vet records`
-- **Keywords (100 chars):** `pet,medication,reminder,dose,dog,cat,vet,records,refill,health,schedule,senior,diabetes,tracker`
+- **App name:** `Furmacy`
+- **Subtitle (30 chars):** `Pet meds, reminders, records`
+- **Keywords (100 chars):** `pet meds,dog meds,cat meds,med reminder,dose tracker,vet records,senior cat,diabetes,seizure,refills`
 - **Description:** lead with the one-line definition, then the feature list and
   the privacy-first/on-device angle. Avoid medical claims; include the
   "not veterinary advice" note.
@@ -133,12 +137,24 @@ admin Gmail). Update the address in one place via `NEXT_PUBLIC_CONTACT_EMAIL` /
 
 ## Legal pages — please review
 
-`/privacy` and `/terms` are written to reflect Furmacy's stated practices
-(**fully on-device; no accounts/analytics/cloud**) and name **Huggler Holdings
-LLC** with **Texas** governing law (centralized in `lib/site.ts`). They are a
-strong starting point, **not a substitute for legal advice** — have counsel
-review them before launch, and confirm entity details, governing law, and the
-effective date.
+`/privacy` and `/terms` are written to reflect Furmacy's current app posture:
+pet-care records stay on device by default or in the user's private iCloud when
+Pro sync is enabled; RevenueCat manages Pro purchase status and entitlement
+restores; Apple's standard AdServices attribution token may be sent to RevenueCat
+for Apple Ads campaign reporting; and pet-care records are not sent to RevenueCat.
+The pages name **Huggler Holdings LLC** with **Texas** governing law (centralized
+in `lib/site.ts`). They are a strong starting point, **not a substitute for legal
+advice** — have counsel review them before launch, and confirm entity details,
+governing law, and the effective date.
+
+## Campaign attribution links
+
+Static redirect pages live at `/go/<slug>/` and are generated from
+`lib/campaigns.ts`. Each slug points to the App Store base listing or a custom
+product page `ppid` URL and can append Apple campaign parameters when
+`NEXT_PUBLIC_APPLE_PROVIDER_TOKEN` is configured. Keep campaign names channel- or
+creative-level only; never include pet names, user names, email addresses, or other
+personal data in a slug or campaign token.
 
 ## Beta intake
 

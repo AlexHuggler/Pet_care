@@ -19,15 +19,16 @@ export const site = {
   // Company / legal. TODO: confirm entity details and governing law with counsel.
   company: "Huggler Holdings LLC",
   jurisdiction: "State of Texas, United States",
-  legalEffectiveDate: "June 13, 2026",
+  legalEffectiveDate: "June 21, 2026",
 
   // Public contact alias (forwards to the team inbox). Configure the alias at your
   // email provider; the site only ever shows this address.
   contactEmail: process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "contact@furmacy.org",
 
-  // App Store. Empty until the app is live → CTAs render a "Coming soon" state.
+  // App Store. Keep the URL empty until the app is live so primary CTAs stay
+  // in a "Coming soon" state. Campaign redirect pages use their own map.
   appStoreUrl: process.env.NEXT_PUBLIC_APP_STORE_URL ?? "",
-  appleAppId: process.env.NEXT_PUBLIC_APPLE_APP_ID ?? "",
+  appleAppId: process.env.NEXT_PUBLIC_APPLE_APP_ID ?? "6767069388",
 
   // Social profiles (add as they go live; rendered into Organization sameAs).
   social: {} as Record<string, string>,

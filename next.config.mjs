@@ -1,6 +1,12 @@
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  outputFileTracingRoot: __dirname,
   // Produce a fully static site in ./out so it can be served by GitHub Pages.
   output: "export",
   // GitHub Pages has no Next.js image optimizer, so serve images as-is.

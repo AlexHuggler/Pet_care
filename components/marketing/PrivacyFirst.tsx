@@ -15,8 +15,8 @@ const POINTS: { icon: IconName; title: string; body: string }[] = [
   },
   {
     icon: "shield-check",
-    title: "No telemetry, no ads",
-    body: "Furmacy isn't built around tracking. We don't sell your data, because we don't collect it.",
+    title: "No ad profiling",
+    body: "Furmacy does not sell your data, use IDFA, or turn pet-care records into advertising profiles.",
   },
   {
     icon: "download",
