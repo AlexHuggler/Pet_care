@@ -15,6 +15,8 @@ const TOC = [
   { id: "acceptance", label: "Acceptance" },
   { id: "eligibility", label: "Eligibility" },
   { id: "license", label: "Your license" },
+  { id: "subscriptions", label: "Subscriptions" },
+  { id: "data", label: "Your data" },
   { id: "acceptable-use", label: "Acceptable use" },
   { id: "not-vet", label: "Not veterinary advice" },
   { id: "no-warranty", label: "No warranties" },
@@ -81,6 +83,44 @@ export default function TermsPage() {
           personal, non-commercial use.
         </p>
 
+        <h2 id="subscriptions">Subscriptions and purchases</h2>
+        <p>Furmacy Pro is available as weekly and annual auto-renewable subscriptions.</p>
+        <ul>
+          <li>The annual plan includes a 7-day free trial for new eligible subscribers.</li>
+          <li>
+            Payment is charged to your Apple Account at confirmation of purchase. For
+            the annual plan&rsquo;s free trial, payment is charged when the trial ends
+            unless you cancel at least 24 hours before the end of the trial.
+          </li>
+          <li>
+            Subscriptions renew automatically unless cancelled at least 24 hours before
+            the end of the current period.
+          </li>
+          <li>
+            You can manage or cancel subscriptions in your App Store account settings;
+            deleting the app does not cancel a subscription.
+          </li>
+          <li>
+            Prices are shown in the app before purchase and may change for future
+            periods; Apple will notify you as its policies require.
+          </li>
+          <li>
+            All billing, refunds, and payment handling are performed by Apple under its
+            terms. To request a refund, use Apple&rsquo;s Report a Problem page.
+          </li>
+        </ul>
+
+        <h2 id="data">Your data</h2>
+        <p>
+          Your pet-care data is stored on your device and, if you enable it, in your
+          private iCloud database. You are responsible for maintaining backups,
+          including before deleting the app or using the in-app delete features.
+          Furmacy uses RevenueCat to manage purchase status, but pet names, medication
+          details, dose history, notes, photos, scans, documents, and other health
+          entries are not sent to RevenueCat. See the{" "}
+          <a href="/privacy">Furmacy Privacy Policy</a> for details.
+        </p>
+
         <h2 id="acceptable-use">Acceptable use</h2>
         <p>You agree not to:</p>
         <ul>
@@ -125,9 +165,10 @@ export default function TermsPage() {
           special, consequential, or punitive damages, or any loss of data, arising
           from or related to your use of (or inability to use) the Service —
           including any missed, delayed, or duplicated dose or reminder. To the extent
-          liability cannot be excluded, our total liability is limited to the amount
-          you paid for the Service in the twelve months before the claim, or USD $50,
-          whichever is greater.
+          liability cannot be excluded, our total aggregate liability for any claim
+          relating to the app is limited to the amount you paid us for the app in the
+          twelve months before the claim. Nothing in these Terms excludes liability
+          that cannot be excluded under applicable law.
         </p>
 
         <h2 id="ip">Intellectual property</h2>
@@ -145,6 +186,11 @@ export default function TermsPage() {
         </p>
         <ul>
           <li>These Terms are between you and {site.company} only, not with Apple.</li>
+          <li>
+            Apple&rsquo;s standard Licensed Application End User License Agreement also
+            applies where required by Apple. If these Terms conflict with it for
+            Apple-required topics, Apple&rsquo;s terms control.
+          </li>
           <li>
             Apple has no obligation to provide maintenance or support for the app.
           </li>

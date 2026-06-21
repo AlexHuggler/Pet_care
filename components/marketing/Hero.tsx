@@ -58,8 +58,8 @@ export function Hero() {
           </div>
 
           <p className="mt-4 max-w-xl text-sm leading-relaxed text-text-secondary">
-            Planned launch options: {launchPricing.annual} with a {launchPricing.annualTrial},
-            or {launchPricing.weekly}. Furmacy is not veterinary advice.
+            Launch setup: {launchPricing.summary} Exact live pricing is shown before purchase
+            in the App Store. Furmacy is not veterinary advice.
           </p>
         </div>
 

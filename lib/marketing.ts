@@ -1,9 +1,10 @@
 import type { IconName } from "@/components/icons";
 
 export const launchPricing = {
-  weekly: "$4.99/week",
-  annual: "$39.99/year",
+  weekly: "Weekly Pro",
+  annual: "Annual Pro",
   annualTrial: "7-day annual trial",
+  summary: "Weekly and annual Pro options; annual includes a 7-day trial for eligible subscribers.",
 } as const;
 
 export const heroScreenshots = [

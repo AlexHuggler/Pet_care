@@ -18,14 +18,14 @@ Furmacy turns scattered pet-care work into a clear daily system:
 - Solution state: a Today view for due doses, clear Given / Skip status, refill tracking, and records tied to each pet.
 - Pro value: unlimited pets, unlimited active medications, full adherence history, expanded document vault, iCloud sync across Apple devices, and future household and sitter sharing.
 
-## Planned pricing
+## Planned subscription options
 
-The planned App Store launch options are:
+Furmacy Pro is planned with:
 
-- Furmacy Pro Weekly: $4.99/week
-- Furmacy Pro Annual: $39.99/year with a 7-day annual trial
+- Furmacy Pro Weekly
+- Furmacy Pro Annual with a 7-day annual trial for eligible subscribers
 
-Final live pricing is shown on the Apple App Store listing once purchases are available. If the App Store link is not live yet, users can join the beta or launch list through https://furmacy.org/beta. Beta or launch-list signup does not automatically enroll users in a paid plan.
+Exact live pricing is shown by the App Store before purchase. If the App Store link is not live yet, users can join the beta or launch list through https://furmacy.org/beta. Beta or launch-list signup does not automatically enroll users in a paid plan.
 
 ## What Furmacy does
 
@@ -49,8 +49,11 @@ Final live pricing is shown on the Apple App Store listing once purchases are av
 
 - Pet and health data is kept on the device by default.
 - No account is required to start using the app.
-- No advertising or behavioral analytics posture.
-- iCloud sync is a Pro feature for Apple-device continuity.
+- iCloud sync is a Pro feature for Apple-device continuity through the user's private iCloud.
+- RevenueCat manages Pro purchase status and entitlement restores.
+- Apple's standard AdServices attribution token may be sent to RevenueCat for Apple Ads campaign reporting.
+- Pet names, medication details, dose history, notes, photos, scans, documents, and health entries are not sent to RevenueCat.
+- No in-app ads, IDFA use, or behavioral advertising profile.
 - Furmacy is an organizational tool and is not a replacement for veterinary care.
 
 ## Key pages
@@ -76,7 +79,7 @@ Yes. Furmacy is designed for complex, ongoing care, including diabetes, CKD/kidn
 No. Furmacy helps organize routines and records. It is not veterinary advice. Always follow your veterinarian's instructions and contact your vet for medical concerns.
 
 ### How much does Furmacy cost?
-The planned launch options are $4.99/week and $39.99/year, with a 7-day annual trial. Final live pricing is shown on the Apple App Store listing once purchases are available.
+Furmacy Pro is planned with weekly and annual subscription options, and annual includes a 7-day trial for eligible subscribers. Exact live pricing is shown by the App Store before purchase.
 
 ### How do I get Furmacy?
 Furmacy is launching on the Apple App Store. If the App Store link is not live yet, use the beta or launch-list flow at https://furmacy.org/beta.
