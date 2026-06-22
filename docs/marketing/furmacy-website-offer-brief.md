@@ -63,7 +63,7 @@ Furmacy Pro value:
 Planned launch pricing:
 
 - $4.99/week.
-- $39.99/year with a 7-day annual trial.
+- $39.99/year with a 14-day annual trial.
 
 Do not imply live purchasing unless `NEXT_PUBLIC_APP_STORE_URL` is configured. If the App Store link is unavailable, point users to `/beta` as the launch-list or beta path.
 

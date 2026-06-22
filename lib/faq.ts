@@ -42,7 +42,7 @@ export const faqs: readonly Faq[] = [
   },
   {
     q: "How much does Furmacy cost?",
-    a: "Furmacy Pro is planned with weekly and annual subscription options, and annual includes a 7-day trial for eligible subscribers. Exact live pricing is shown by the App Store before purchase.",
+    a: "Furmacy Pro is planned with weekly and annual subscription options, and annual includes a 14-day trial for eligible subscribers. Exact live pricing is shown by the App Store before purchase.",
   },
   {
     q: "How do I get Furmacy?",

@@ -65,7 +65,7 @@ Set `NEXT_PUBLIC_APP_STORE_URL` (and ideally `NEXT_PUBLIC_APPLE_APP_ID`) — the
 CTAs, JSON-LD `downloadUrl`, and smart banner update automatically.
 
 The current public copy can mention the planned weekly and annual Furmacy Pro
-subscriptions and the 7-day annual trial, but exact live prices should be shown by
+subscriptions and the 14-day annual trial, but exact live prices should be shown by
 the App Store purchase sheet rather than hardcoded into the public website. Do not
 imply live purchases until the App Store URL is configured.
 

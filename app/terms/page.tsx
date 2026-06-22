@@ -86,7 +86,7 @@ export default function TermsPage() {
         <h2 id="subscriptions">Subscriptions and purchases</h2>
         <p>Furmacy Pro is available as weekly and annual auto-renewable subscriptions.</p>
         <ul>
-          <li>The annual plan includes a 7-day free trial for new eligible subscribers.</li>
+          <li>The annual plan includes a 14-day free trial for new eligible subscribers.</li>
           <li>
             Payment is charged to your Apple Account at confirmation of purchase. For
             the annual plan&rsquo;s free trial, payment is charged when the trial ends

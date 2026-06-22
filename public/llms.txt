@@ -23,7 +23,7 @@ Furmacy turns scattered pet-care work into a clear daily system:
 Furmacy Pro is planned with:
 
 - Furmacy Pro Weekly
-- Furmacy Pro Annual with a 7-day annual trial for eligible subscribers
+- Furmacy Pro Annual with a 14-day annual trial for eligible subscribers
 
 Exact live pricing is shown by the App Store before purchase. If the App Store link is not live yet, users can join the beta or launch list through https://furmacy.org/beta. Beta or launch-list signup does not automatically enroll users in a paid plan.
 
@@ -79,7 +79,7 @@ Yes. Furmacy is designed for complex, ongoing care, including diabetes, CKD/kidn
 No. Furmacy helps organize routines and records. It is not veterinary advice. Always follow your veterinarian's instructions and contact your vet for medical concerns.
 
 ### How much does Furmacy cost?
-Furmacy Pro is planned with weekly and annual subscription options, and annual includes a 7-day trial for eligible subscribers. Exact live pricing is shown by the App Store before purchase.
+Furmacy Pro is planned with weekly and annual subscription options, and annual includes a 14-day trial for eligible subscribers. Exact live pricing is shown by the App Store before purchase.
 
 ### How do I get Furmacy?
 Furmacy is launching on the Apple App Store. If the App Store link is not live yet, use the beta or launch-list flow at https://furmacy.org/beta.
