@@ -46,8 +46,15 @@ export function softwareApplicationLd(): Ld {
     screenshot: absoluteUrl("/screenshots/furmacy-today-clean.png"),
     featureList: features.map((f) => f.title),
     publisher: { "@type": "Organization", name: site.company },
-    // No rating or price is asserted until real data exists.
-    ...(site.appStoreUrl ? { downloadUrl: site.appStoreUrl, installUrl: site.appStoreUrl } : {}),
+    downloadUrl: site.appStoreUrl,
+    installUrl: site.appStoreUrl,
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "USD",
+      availability: "https://schema.org/InStock",
+      url: site.appStoreUrl,
+    },
   };
 }
 

@@ -1,6 +1,7 @@
 import { site } from "@/lib/site";
 
-const APP_STORE_PRODUCT_URL = "https://apps.apple.com/us/app/furmacy/id6767069388";
+const APP_STORE_PRODUCT_URL =
+  "https://apps.apple.com/us/app/furmacy-pet-med-tracker/id6767069388?uo=4";
 const APPLE_PROVIDER_TOKEN = process.env.NEXT_PUBLIC_APPLE_PROVIDER_TOKEN ?? "";
 
 export interface CampaignLink {

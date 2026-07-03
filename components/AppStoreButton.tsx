@@ -15,18 +15,15 @@ interface AppStoreButtonProps {
 }
 
 /**
- * Apple-style download button. When `site.appStoreUrl` is empty it renders a
- * non-interactive "Coming soon" state. NOTE: for production, swap in Apple's
- * official "Download on the App Store" badge asset per Apple's brand guidelines.
+ * Apple-style download button. NOTE: for production, swap in Apple's official
+ * "Download on the App Store" badge asset per Apple's brand guidelines.
  */
 export function AppStoreButton({ className, size = "lg" }: AppStoreButtonProps) {
   const href = site.appStoreUrl;
-  const live = Boolean(href);
 
   const classes = cn(
     "inline-flex items-center justify-center gap-2.5 rounded-control bg-text font-semibold text-white shadow-sm transition hover:bg-[#0a2e38] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-accent/40",
     size === "lg" ? "px-5 py-3" : "px-4 py-2.5",
-    !live && "cursor-default",
     className,
   );
 
@@ -35,7 +32,7 @@ export function AppStoreButton({ className, size = "lg" }: AppStoreButtonProps) 
       <AppleGlyph className={size === "lg" ? "h-7 w-7" : "h-6 w-6"} />
       <span className="flex flex-col items-start leading-none">
         <span className="text-[10px] font-medium uppercase tracking-wide text-white/70">
-          {live ? "Download on the" : "Coming soon to the"}
+          Download on the
         </span>
         <span className={cn("font-semibold leading-tight", size === "lg" ? "text-[17px]" : "text-[15px]")}>
           App Store
@@ -44,23 +41,15 @@ export function AppStoreButton({ className, size = "lg" }: AppStoreButtonProps) 
     </>
   );
 
-  if (live) {
-    return (
-      <a
-        href={href}
-        target="_blank"
-        rel="noreferrer noopener"
-        className={classes}
-        aria-label="Download Furmacy on the App Store"
-      >
-        {inner}
-      </a>
-    );
-  }
-
   return (
-    <span className={classes} role="img" aria-label="Furmacy is coming soon to the App Store">
+    <a
+      href={href}
+      target="_blank"
+      rel="noreferrer noopener"
+      className={classes}
+      aria-label="Download Furmacy Pet Med Tracker on the App Store"
+    >
       {inner}
-    </span>
+    </a>
   );
 }

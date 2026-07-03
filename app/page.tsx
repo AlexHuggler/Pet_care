@@ -13,7 +13,7 @@ import { faqPageLd, softwareApplicationLd } from "@/lib/structuredData";
 
 export const metadata: Metadata = {
   description:
-    "Furmacy Pro helps pet caregivers manage medication reminders, dose history, refills, iCloud sync, expanded vet records, and multi-pet care without guesswork.",
+    "Furmacy is a free-to-download iPhone app for pet medication reminders, dose history, refills, weight and symptom logs, vet records, and Pro upgrades when care grows.",
   alternates: { canonical: "/" },
 };
 

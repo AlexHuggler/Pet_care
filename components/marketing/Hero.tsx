@@ -1,23 +1,21 @@
 import Image from "next/image";
 import Link from "next/link";
 import { heroScreenshots, launchPricing } from "@/lib/marketing";
-import { site } from "@/lib/site";
 import { AppStoreButton } from "../AppStoreButton";
 import { Icon } from "../icons";
 
 export function Hero() {
-  const appStoreLive = Boolean(site.appStoreUrl);
-
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-bg via-bg to-surface">
       <div className="mx-auto grid max-w-intake items-center gap-8 px-5 pb-6 pt-7 sm:gap-10 sm:px-8 sm:pb-16 sm:pt-14 lg:grid-cols-[1.02fr_0.98fr] lg:gap-12">
         <div>
           <h1 className="text-[2rem] font-bold leading-[1.06] text-text sm:text-5xl lg:text-[3.25rem]">
-            Furmacy Pro keeps pet medication care from becoming guesswork.
+            Furmacy keeps pet medication care from becoming guesswork.
           </h1>
           <p className="mt-4 max-w-xl text-base leading-relaxed text-text-secondary sm:mt-5 sm:text-lg">
-            Medication reminders, dose history, refill tracking, weight and symptom logs,
-            and vet records for chronic care, multi-pet households, and sitter handoffs.
+            A free-to-download iPhone app for medication reminders, dose history,
+            refills, weight and symptom logs, and vet records. Start with one pet
+            free, then upgrade to Pro when care grows.
           </p>
 
           <div className="mx-auto mt-4 h-[230px] w-[min(72vw,245px)] overflow-hidden rounded-[1.8rem] border border-border bg-surface shadow-card sm:hidden">
@@ -49,17 +47,17 @@ export function Hero() {
           <div className="mt-6 flex flex-col items-start gap-3 sm:mt-8 sm:flex-row sm:flex-wrap sm:items-center">
             <AppStoreButton />
             <Link
-              href={appStoreLive ? "#pro" : "/beta"}
+              href="#pro"
               className="inline-flex items-center gap-1.5 rounded-control border border-border bg-surface px-5 py-3 text-[15px] font-semibold text-text transition hover:border-accent/60 hover:bg-muted focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-accent/25"
             >
-              {appStoreLive ? "Compare Pro value" : "Join the launch list"}
+              Compare Pro value
               <Icon name="arrow-right" className="h-4 w-4" />
             </Link>
           </div>
 
           <p className="mt-4 max-w-xl text-sm leading-relaxed text-text-secondary">
-            Launch setup: {launchPricing.summary} Exact live pricing is shown before purchase
-            in the App Store. Furmacy is not veterinary advice.
+            Furmacy Pro offers {launchPricing.summary} Exact live pricing is shown
+            before purchase in the App Store. Furmacy is not veterinary advice.
           </p>
         </div>
 

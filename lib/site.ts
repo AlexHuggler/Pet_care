@@ -7,13 +7,16 @@ import type { IconName } from "@/components/icons";
  */
 
 const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://furmacy.org").replace(/\/+$/, "");
+const APP_STORE_URL =
+  process.env.NEXT_PUBLIC_APP_STORE_URL?.trim() ||
+  "https://apps.apple.com/us/app/furmacy-pet-med-tracker/id6767069388?uo=4";
 
 export const site = {
   name: "Furmacy",
   tagline: "Your pet's health, simplified.",
   // One-sentence, entity-clear description reused in metadata, JSON-LD, and llms.txt.
   description:
-    "Furmacy is a privacy-first iOS app for pet medication reminders, dose history, refills, weight and symptom tracking, vet records, and Pro upgrades for unlimited chronic-care routines.",
+    "Furmacy is a free-to-download iPhone app for pet medication reminders, dose history, refills, weight and symptom logs, vet records, and Pro upgrades for larger chronic-care routines.",
   url: SITE_URL,
 
   // Company / legal. TODO: confirm entity details and governing law with counsel.
@@ -25,9 +28,8 @@ export const site = {
   // email provider; the site only ever shows this address.
   contactEmail: process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "contact@furmacy.org",
 
-  // App Store. Keep the URL empty until the app is live so primary CTAs stay
-  // in a "Coming soon" state. Campaign redirect pages use their own map.
-  appStoreUrl: process.env.NEXT_PUBLIC_APP_STORE_URL ?? "",
+  // Public App Store listing. NEXT_PUBLIC_APP_STORE_URL may override this at build time.
+  appStoreUrl: APP_STORE_URL,
   appleAppId: process.env.NEXT_PUBLIC_APPLE_APP_ID ?? "6767069388",
 
   // Social profiles (add as they go live; rendered into Organization sameAs).
@@ -72,7 +74,7 @@ export const features: readonly Feature[] = [
   },
   {
     icon: "users",
-    title: "Pro-ready household handoff",
-    body: "Pro is built for multi-pet households, long histories, iCloud sync, and future sitter sharing.",
+    title: "Pro for bigger care routines",
+    body: "Upgrade for unlimited pets and medications, full history, iCloud sync, and expanded records.",
   },
 ];

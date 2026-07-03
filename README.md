@@ -2,9 +2,9 @@
 
 > Your pet's health, simplified.
 
-The public marketing + product site for **Furmacy**, a privacy-first iOS pet
-health & medication app with a subscription-first Furmacy Pro launch story, plus
-the legal pages and a beta-tester intake. Built
+The public marketing + product site for **Furmacy**, a free-to-download,
+privacy-first iPhone pet health and medication app with a Furmacy Pro upgrade
+path, plus the legal pages and campaign redirects. Built
 with Next.js (App Router) + TypeScript + Tailwind and shipped as a **fully static
 export** to **GitHub Pages** at `https://furmacy.org`. Privacy-respecting, with
 **no website analytics, trackers, ads, or external fonts/images**; the app's
@@ -21,12 +21,12 @@ Operated by **Huggler Holdings LLC**.
 | `/privacy` | Privacy Policy (on-device-first posture) | ✅ |
 | `/terms` | Terms of Use / EULA (incl. Apple App Store clauses + veterinary disclaimer) | ✅ |
 | `/contact` | Contact page built around `contact@furmacy.org` | ✅ |
-| `/beta` | Beta-tester intake form (multi-step, draft-saving) | 🚫 `noindex` |
+| `/beta` | Legacy handoff page that points visitors to the public App Store listing and contact page | 🚫 `noindex` |
 
 ## Tech stack
 
-Next.js 15 (App Router, `output: "export"`) · React · TypeScript · Tailwind CSS v3
-· Zod. Only extra runtime deps are `zod` and `clsx`.
+Next.js 15 (App Router, `output: "export"`) · React · TypeScript · Tailwind CSS v3.
+Only extra runtime dependency is `clsx`.
 
 ## Getting started
 
@@ -53,21 +53,20 @@ values read from public env vars (baked in at build time):
 | Variable | Purpose |
 | --- | --- |
 | `NEXT_PUBLIC_SITE_URL` | Canonical origin for metadata, canonical URLs, sitemap, OG images. Default `https://furmacy.org`. |
-| `NEXT_PUBLIC_APP_STORE_URL` | When set, the "Download on the App Store" buttons link out; blank shows **"Coming soon"**. |
+| `NEXT_PUBLIC_APP_STORE_URL` | Optional override for the public App Store listing. Default `https://apps.apple.com/us/app/furmacy-pet-med-tracker/id6767069388?uo=4`. |
 | `NEXT_PUBLIC_APPLE_APP_ID` | Apple numeric app ID — enables the `apple-itunes-app` smart-banner meta. |
 | `NEXT_PUBLIC_APPLE_PROVIDER_TOKEN` | Optional App Store Connect provider token for `/go/<slug>/` campaign links. |
 | `NEXT_PUBLIC_CONTACT_EMAIL` | Public contact alias. Default `contact@furmacy.org`. |
-| `NEXT_PUBLIC_TESTFLIGHT_URL` | Optional TestFlight link on the `/beta` success screen. |
-| `NEXT_PUBLIC_FORMSUBMIT_EMAIL` | Recipient for `/beta` submissions (via FormSubmit.co). Default `beta@furmacy.org`. |
 
-### Going live on the App Store
-Set `NEXT_PUBLIC_APP_STORE_URL` (and ideally `NEXT_PUBLIC_APPLE_APP_ID`) — the
-CTAs, JSON-LD `downloadUrl`, and smart banner update automatically.
+### Public App Store listing
+`lib/site.ts` defaults to the live public App Store URL, so CTAs, JSON-LD
+`downloadUrl`, campaign fallback links, and the smart banner are public-launch
+ready without extra environment configuration.
 
-The current public copy can mention the planned weekly and annual Furmacy Pro
-subscriptions and the 14-day annual trial, but exact live prices should be shown by
-the App Store purchase sheet rather than hardcoded into the public website. Do not
-imply live purchases until the App Store URL is configured.
+The current public copy can mention that Furmacy is free to download, one pet is
+free, Furmacy Pro has weekly and annual subscription options, and annual includes
+a 14-day trial for eligible subscribers. Exact live prices should be shown by the
+App Store purchase sheet rather than hardcoded into the public website.
 
 ## Marketing assets
 
@@ -80,8 +79,8 @@ Real Furmacy app media is committed under:
 - `public/social/furmacy-email-preview-card.png`
 
 Asset provenance and usage notes live in `docs/marketing/source-assets.md`. The
-cat/dog avatar screenshots use stock-photo mockups, not beta-user pets or
-medical outcome proof.
+cat/dog avatar screenshots use stock-photo mockups, not customer pets,
+endorsements, or medical outcome proof.
 
 Offer strategy lives in `docs/marketing/furmacy-website-offer-brief.md`.
 
@@ -126,14 +125,18 @@ Store Connect** — suggested starting points:
 - **Screenshots:** medication reminders, the Given/Skip dose action, refills,
   weight/symptom logging, vet records, and care handoff.
 > Replace the in-app Apple-style button with Apple's official "Download on the
-> App Store" badge asset per Apple's marketing guidelines before launch.
+> App Store" badge asset per Apple's marketing guidelines.
 
 ## Email alias
 
 The site only ever shows **`contact@furmacy.org`**. Configure that as an alias at
-your email provider so it forwards to your team inbox (e.g. the Huggler Holdings
-admin Gmail). Update the address in one place via `NEXT_PUBLIC_CONTACT_EMAIL` /
-`lib/site.ts`.
+your email provider so it forwards to your team inbox. Update the address in one
+place via `NEXT_PUBLIC_CONTACT_EMAIL` / `lib/site.ts`.
+
+For Furmacy outbound email outreach, use the Furmacy alias inside the
+`hugglerholdings.com` Gmail account. Do not send new Furmacy outreach from
+`alexhuggler@gmail.com` unless explicitly overridden, and verify the exact sender
+alias in Gmail before sending.
 
 ## Legal pages — please review
 
@@ -144,8 +147,8 @@ restores; Apple's standard AdServices attribution token may be sent to RevenueCa
 for Apple Ads campaign reporting; and pet-care records are not sent to RevenueCat.
 The pages name **Huggler Holdings LLC** with **Texas** governing law (centralized
 in `lib/site.ts`). They are a strong starting point, **not a substitute for legal
-advice** — have counsel review them before launch, and confirm entity details,
-governing law, and the effective date.
+advice** — have counsel review them periodically, and confirm entity details,
+governing law, and the effective date after material changes.
 
 ## Campaign attribution links
 
@@ -156,14 +159,11 @@ product page `ppid` URL and can append Apple campaign parameters when
 creative-level only; never include pet names, user names, email addresses, or other
 personal data in a slug or campaign token.
 
-## Beta intake
+## Legacy `/beta` route
 
-The multi-step intake lives at `/beta` (kept out of search via `noindex`). Because
-the site is a static export with no server, submissions are sent **client-side via
-[FormSubmit.co](https://formsubmit.co)** to `NEXT_PUBLIC_FORMSUBMIT_EMAIL`
-(default `beta@furmacy.org`). The first submission triggers a one-time FormSubmit
-activation email — confirm it once and submissions start arriving. Logic lives in
-`lib/submit.ts`.
+The legacy `/beta` URL is retained as a `noindex` handoff page. It no longer
+collects intake submissions; it points visitors to the public App Store listing
+and the contact page.
 
 ## Deployment (GitHub Pages)
 

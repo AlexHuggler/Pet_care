@@ -1,11 +1,12 @@
 # Furmacy
 
-> Furmacy is a privacy-first iOS app for pet medication reminders, dose history, refill tracking, weight and symptom logs, vet records, and Pro upgrades for unlimited chronic-care routines.
+> Furmacy is a free-to-download, privacy-first iPhone app for pet medication reminders, dose history, refill tracking, weight and symptom logs, vet records, and Pro upgrades for larger chronic-care routines.
 
 Furmacy is made by Huggler Holdings LLC. It is designed for pet caregivers managing senior pets, chronic medications, multi-pet households, and shared care with family or sitters. Furmacy helps organize care and reduce missed-dose confusion, but it is not veterinary advice, medication advice, treatment advice, supplements, or alternative medicine.
 
 - Platform: iOS (iPhone)
-- Status: launching on the Apple App Store
+- Status: available on the Apple App Store
+- App Store: https://apps.apple.com/us/app/furmacy-pet-med-tracker/id6767069388?uo=4
 - Maker: Huggler Holdings LLC
 - Contact: contact@furmacy.org
 - Website: https://furmacy.org/
@@ -16,16 +17,17 @@ Furmacy turns scattered pet-care work into a clear daily system:
 
 - Current state: phone alarms, sticky notes, whiteboards, text threads, and memory.
 - Solution state: a Today view for due doses, clear Given / Skip status, refill tracking, and records tied to each pet.
-- Pro value: unlimited pets, unlimited active medications, full adherence history, expanded document vault, iCloud sync across Apple devices, and future household and sitter sharing.
+- Free value: download the iPhone app and try it with one pet for free.
+- Pro value: unlimited pets, unlimited active medications, full adherence history, expanded document storage, and iCloud sync across Apple devices.
 
-## Planned subscription options
+## Subscription options
 
-Furmacy Pro is planned with:
+Furmacy Pro has:
 
 - Furmacy Pro Weekly
-- Furmacy Pro Annual with a 14-day annual trial for eligible subscribers
+- Furmacy Pro Annual with a 14-day trial for eligible subscribers
 
-Exact live pricing is shown by the App Store before purchase. If the App Store link is not live yet, users can join the beta or launch list through https://furmacy.org/beta. Beta or launch-list signup does not automatically enroll users in a paid plan.
+Exact live pricing is shown by the App Store before purchase. The free plan supports one pet so caregivers can try the app before deciding whether Pro is useful.
 
 ## What Furmacy does
 
@@ -35,7 +37,7 @@ Exact live pricing is shown by the App Store before purchase. If the App Store l
 - Weight and symptom logging - record patterns over time.
 - Vet records - store labs, prescriptions, vaccines, discharge notes, insurance, boarding, and travel records.
 - Care handoff - help family and sitters understand what has already happened.
-- Pro upgrades - unlimited pets and medications, full history, expanded documents, iCloud sync, and future sharing.
+- Pro upgrades - unlimited pets and medications, full history, expanded documents, and iCloud sync.
 
 ## Who it is for
 
@@ -58,8 +60,8 @@ Exact live pricing is shown by the App Store before purchase. If the App Store l
 
 ## Key pages
 
-- [Home](https://furmacy.org/): subscription-first product page and launch path.
-- [Beta / launch list](https://furmacy.org/beta): beta-tester intake and fallback signup while App Store links are unavailable.
+- [Home](https://furmacy.org/): public product page and App Store download path.
+- [App Store](https://apps.apple.com/us/app/furmacy-pet-med-tracker/id6767069388?uo=4): public iPhone app listing.
 - [Privacy Policy](https://furmacy.org/privacy): how information is handled.
 - [Terms of Use](https://furmacy.org/terms): terms, including the veterinary-advice disclaimer.
 - [Contact](https://furmacy.org/contact): how to reach the team.
@@ -67,10 +69,10 @@ Exact live pricing is shown by the App Store before purchase. If the App Store l
 ## FAQ
 
 ### What is Furmacy?
-Furmacy is a privacy-first iOS app that helps pet caregivers manage medication reminders, dose history, refills, weight and symptom tracking, and vet records. Furmacy Pro is built for unlimited pets, unlimited active medications, full history, iCloud sync, and expanded records.
+Furmacy is a free-to-download, privacy-first iPhone app that helps pet caregivers manage medication reminders, dose history, refills, weight and symptom tracking, and vet records. You can start with one pet for free, and Furmacy Pro unlocks unlimited pets, unlimited active medications, full history, iCloud sync, and expanded records.
 
 ### What does Furmacy Pro include?
-Furmacy Pro unlocks unlimited pets, unlimited active medications, full adherence history, an expanded document vault, iCloud sync across Apple devices, and future household and sitter sharing.
+Furmacy Pro unlocks unlimited pets, unlimited active medications, full adherence history, an expanded document vault, iCloud sync across Apple devices, and fuller records for ongoing care.
 
 ### Can Furmacy help with chronic conditions like diabetes or kidney disease?
 Yes. Furmacy is designed for complex, ongoing care, including diabetes, CKD/kidney disease, seizures, Cushing's, arthritis and mobility, senior care, and pets with multiple conditions.
@@ -79,10 +81,10 @@ Yes. Furmacy is designed for complex, ongoing care, including diabetes, CKD/kidn
 No. Furmacy helps organize routines and records. It is not veterinary advice. Always follow your veterinarian's instructions and contact your vet for medical concerns.
 
 ### How much does Furmacy cost?
-Furmacy Pro is planned with weekly and annual subscription options, and annual includes a 14-day trial for eligible subscribers. Exact live pricing is shown by the App Store before purchase.
+Furmacy is free to download and supports one pet for free. Furmacy Pro has weekly and annual subscription options, and annual includes a 14-day trial for eligible subscribers. Exact live pricing is shown by the App Store before purchase.
 
 ### How do I get Furmacy?
-Furmacy is launching on the Apple App Store. If the App Store link is not live yet, use the beta or launch-list flow at https://furmacy.org/beta.
+Download Furmacy from the App Store: https://apps.apple.com/us/app/furmacy-pet-med-tracker/id6767069388?uo=4.
 
 ### Who makes Furmacy?
 Huggler Holdings LLC. Contact: contact@furmacy.org.

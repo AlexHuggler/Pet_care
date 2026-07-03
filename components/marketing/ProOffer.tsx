@@ -1,13 +1,10 @@
 import Link from "next/link";
 import { launchPricing, proBenefits, valuePoints } from "@/lib/marketing";
-import { site } from "@/lib/site";
 import { AppStoreButton } from "../AppStoreButton";
 import { Icon } from "../icons";
 import { SectionHeading } from "./SectionHeading";
 
 export function ProOffer() {
-  const appStoreLive = Boolean(site.appStoreUrl);
-
   return (
     <section id="pro" className="scroll-mt-20 bg-surface py-16 sm:py-20">
       <div className="mx-auto max-w-intake px-5 sm:px-8">
@@ -16,11 +13,11 @@ export function ProOffer() {
             <SectionHeading
               eyebrow="Furmacy Pro"
               title="Worth subscribing to when care gets bigger than the free starter vault"
-              subtitle="The free plan is useful for getting started. Pro is for households where missing context costs time, stress, and confidence."
+              subtitle="Start with one pet for free. Pro is for households where unlimited pets, active medications, sync, history, and records are worth having in one place."
             />
 
             <div className="mt-7 rounded-card border border-border bg-bg/70 p-6">
-              <p className="text-sm font-semibold text-text">Launch plan</p>
+              <p className="text-sm font-semibold text-text">Pro options</p>
               <div className="mt-4 grid gap-3 sm:grid-cols-2">
                 <div className="rounded-control border border-border bg-surface p-4">
                   <p className="text-2xl font-bold text-text">{launchPricing.annual}</p>
@@ -31,14 +28,12 @@ export function ProOffer() {
                 <div className="rounded-control border border-border bg-surface p-4">
                   <p className="text-2xl font-bold text-text">{launchPricing.weekly}</p>
                   <p className="mt-1 text-sm text-text-secondary">
-                    Flexible weekly access when App Store purchases are live.
+                    Flexible weekly access when ongoing care needs more room.
                   </p>
                 </div>
               </div>
               <p className="mt-4 text-xs leading-relaxed text-text-secondary">
-                Exact live prices are shown by the App Store before purchase. If the App Store
-                link is not live yet, joining the beta or launch list will not automatically
-                enroll you in a paid plan.
+                Exact live prices are shown by the App Store before purchase.
               </p>
             </div>
           </div>
@@ -70,15 +65,13 @@ export function ProOffer() {
 
             <div className="flex flex-wrap items-center gap-3">
               <AppStoreButton />
-              {!appStoreLive && (
-                <Link
-                  href="/beta"
-                  className="inline-flex items-center gap-1.5 rounded-control border border-border bg-surface px-5 py-3 text-[15px] font-semibold text-text transition hover:border-accent/60 hover:bg-muted focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-accent/25"
-                >
-                  Join the launch list
-                  <Icon name="arrow-right" className="h-4 w-4" />
-                </Link>
-              )}
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-1.5 rounded-control border border-border bg-surface px-5 py-3 text-[15px] font-semibold text-text transition hover:border-accent/60 hover:bg-muted focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-accent/25"
+              >
+                Ask a question
+                <Icon name="arrow-right" className="h-4 w-4" />
+              </Link>
             </div>
           </div>
         </div>

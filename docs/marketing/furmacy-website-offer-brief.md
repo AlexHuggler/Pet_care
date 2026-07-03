@@ -2,9 +2,9 @@
 
 ## Positioning
 
-Furmacy is a privacy-first iOS app for pet medication reminders, dose history, refill tracking, weight and symptom logs, vet records, and Pro upgrades for unlimited chronic-care routines.
+Furmacy is a free-to-download, privacy-first iPhone app for pet medication reminders, dose history, refill tracking, weight and symptom logs, vet records, and Pro upgrades for larger chronic-care routines.
 
-The homepage should sell the value of Furmacy Pro while keeping the beta or launch-list flow available until App Store purchase links are live.
+The homepage should lead with the public App Store download, one-pet free value, and the Pro upgrade path for larger routines.
 
 ## Target Avatar
 
@@ -58,14 +58,14 @@ Furmacy Pro value:
 - Full adherence history.
 - Expanded document vault.
 - iCloud sync across Apple devices.
-- Future household and sitter sharing.
+- Fuller records for ongoing care.
 
-Planned launch pricing:
+Public pricing guidance:
 
-- $4.99/week.
-- $39.99/year with a 14-day annual trial.
-
-Do not imply live purchasing unless `NEXT_PUBLIC_APP_STORE_URL` is configured. If the App Store link is unavailable, point users to `/beta` as the launch-list or beta path.
+- Furmacy Pro has weekly and annual subscription options.
+- Annual includes a 14-day trial for eligible subscribers.
+- Exact live prices are shown by the App Store before purchase.
+- Do not hardcode weekly or annual prices in public website copy.
 
 ## Offer Frame
 
@@ -87,4 +87,4 @@ Furmacy is not:
 - Alternative medicine.
 - A replacement for a veterinarian.
 
-Use fictional or stock-photo pet data only as product mockup material. Do not imply real customers, medical outcomes, endorsements, or beta-user pets.
+Use fictional or stock-photo pet data only as product mockup material. Do not imply real customers, medical outcomes, or endorsements.

@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 
 export const runtime = "nodejs";
 export const dynamic = "force-static";
-export const alt = "Furmacy Pro - pet medication care without guesswork.";
+export const alt = "Furmacy - pet medication care without guesswork.";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -73,7 +73,7 @@ export default function OpengraphImage() {
             Pet medication care without guesswork.
           </div>
           <div style={{ display: "flex", marginTop: 20, fontSize: 32, color: "#636E75", maxWidth: 980 }}>
-            Reminders, dose history, refills, vet records, and Pro upgrades for real chronic-care routines.
+            Free to download for one pet. Upgrade for unlimited pets, history, sync, and records.
           </div>
         </div>
 

@@ -81,5 +81,5 @@ export const proBenefits = [
   "Full adherence history",
   "Expanded document vault",
   "iCloud sync across Apple devices",
-  "Future household and sitter sharing",
+  "Fuller records for ongoing care",
 ] as const;
