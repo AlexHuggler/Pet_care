@@ -14,7 +14,11 @@ export const faqs: readonly Faq[] = [
   },
   {
     q: "What kinds of pets does Furmacy support?",
-    a: "Furmacy works for many companion animals, including dogs, cats, birds, rabbits, and reptiles.",
+    a: "Furmacy works for many companion animals, including dogs, cats, birds, rabbits, reptiles, and other pets with medication and record-keeping routines.",
+  },
+  {
+    q: "Can I use Furmacy for a senior dog or cat?",
+    a: "Yes. Furmacy is built for everyday senior-pet care routines, including medication reminders, dose history, refills, weight and symptom logs, and vet records.",
   },
   {
     q: "How does Furmacy protect my privacy?",
@@ -25,12 +29,16 @@ export const faqs: readonly Faq[] = [
     a: "Yes. Furmacy is designed for complex, ongoing care, including diabetes, CKD/kidney disease, seizures, Cushing's, arthritis and mobility, senior care, and pets with multiple conditions. It keeps schedules, doses, refills, and records organized in one place.",
   },
   {
-    q: "Can more than one person manage a pet's care?",
-    a: "Furmacy is built around care handoff: the routine and dose states make it easier for households, family members, and sitters to see what's already been done.",
+    q: "Can I track more than one pet?",
+    a: "Yes. One pet is included free, and Furmacy Pro unlocks unlimited pets and unlimited active medications for households that need more room.",
+  },
+  {
+    q: "Can Furmacy help with family or sitter handoffs?",
+    a: "Yes. Dose states and history make it easier for partners, family members, and sitters to see what was given, skipped, missed, or is still pending.",
   },
   {
     q: "What does Furmacy Pro include?",
-    a: "Furmacy Pro unlocks unlimited pets, unlimited active medications, full adherence history, an expanded document vault, iCloud sync across Apple devices, and fuller records for ongoing care.",
+    a: "Furmacy Pro unlocks unlimited pets, unlimited active medications, full dose history, more room for vet documents, iCloud sync across Apple devices, and fuller records for ongoing care.",
   },
   {
     q: "Is Furmacy a substitute for veterinary care?",

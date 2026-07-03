@@ -12,7 +12,7 @@ const PLAN_COMPARISON = [
   },
   {
     name: "Pro",
-    note: "For bigger routines",
+    note: "When care needs more room",
     items: ["Unlimited pets", "Unlimited active medications", "Full history", "iCloud sync and expanded documents"],
   },
 ] as const;
@@ -25,8 +25,8 @@ export function ProOffer() {
           <div>
             <SectionHeading
               eyebrow="Furmacy Pro"
-              title="Start free. Upgrade when care grows."
-              subtitle="One pet is included free so you can try the core routine. Pro is for households where unlimited pets, active medications, sync, history, and records are worth having in one place."
+              title="Use it free for one pet. Upgrade only when you need more room."
+              subtitle="Start with the core routine at no cost. Pro is there for bigger care setups: unlimited pets, unlimited active medications, iCloud sync, full history, and expanded documents."
             />
 
             <div className="mt-7 grid gap-3 sm:grid-cols-2">
@@ -57,7 +57,7 @@ export function ProOffer() {
                 <div className="rounded-control border border-border bg-surface p-4">
                   <p className="text-2xl font-bold text-text">{launchPricing.annual}</p>
                   <p className="mt-1 text-sm text-text-secondary">
-                    Built for ongoing care, with a {launchPricing.annualTrial}.
+                    Built for ongoing care, with a {launchPricing.annualTrial} for eligible subscribers.
                   </p>
                 </div>
                 <div className="rounded-control border border-border bg-surface p-4">

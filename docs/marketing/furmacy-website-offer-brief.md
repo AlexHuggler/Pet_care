@@ -4,7 +4,7 @@
 
 Furmacy is a free-to-download, privacy-first iPhone app for pet medication reminders, dose history, refill tracking, weight and symptom logs, vet records, and Pro upgrades for larger chronic-care routines.
 
-The homepage should lead with the public App Store download, one-pet free value, and the Pro upgrade path for larger routines.
+The homepage should lead with the public App Store download, one-pet free value, and a low-pressure Pro upgrade path for larger routines. Copy should feel warm, casual, and caregiver-aware: pet parents are doing their best for a loved pet, and Furmacy helps make the day easier to follow.
 
 ## Target Avatar
 
@@ -13,6 +13,7 @@ Primary target:
 - iPhone pet caregivers managing senior pets, chronic medications, or multiple pets.
 - People who already feel the stress of remembering doses, refills, symptoms, and vet paperwork.
 - Households where more than one person might give care and everyone wants to avoid missed or doubled doses.
+- People who do not want a big system; they want a calmer way to know what is due, what happened, and where the important records live.
 
 High-fit care contexts:
 
@@ -38,6 +39,7 @@ Furmacy should make the caregiver feel:
 - Refills and prescribing-vet details are beside the medication.
 - Weight, symptoms, and documents are attached to the right pet.
 - The household has a calmer handoff path.
+- They can start free with one pet and upgrade only when the routine needs more room.
 
 ## Pro Value Stack
 
@@ -48,15 +50,15 @@ Free starter value:
 - Core dose reminders.
 - Basic weight and symptom logs.
 - Last 30 days of dose history.
-- Starter document vault with 3 documents.
+- Starter document storage with 3 documents.
 - Data export for trust and ownership.
 
 Furmacy Pro value:
 
 - Unlimited pets.
 - Unlimited active medications.
-- Full adherence history.
-- Expanded document vault.
+- Full dose history.
+- More room for vet documents.
 - iCloud sync across Apple devices.
 - Fuller records for ongoing care.
 
@@ -69,12 +71,19 @@ Public pricing guidance:
 
 ## Offer Frame
 
-Use a Hormozi-style value equation without naming the framework on the public page:
+Use a warm, practical value frame without naming the framework on the public page:
 
 - Desired outcome: calmer, more reliable daily medication care.
 - Perceived likelihood: real screenshots, clear dose states, privacy-first posture, focused chronic-care use case.
 - Time delay: useful after setup, with the first loop being pet -> medication -> Today -> Given / Skip.
 - Effort and sacrifice: small daily actions, no account required, data stays private by default.
+
+## Copy Tone
+
+- Low stakes and friendly: "start free," "upgrade only when you need more room," "a little less to hold in your head."
+- Relatable to pet parents: "the pets you love," "care days are a lot," "your vet's directions still come first."
+- Specific to care moments: senior dogs, cats with labs and prescriptions, timing-sensitive dog meds, multi-pet homes, family and sitter handoffs.
+- Avoid salesy/internal language about conversion mechanics or who is most likely to subscribe.
 
 ## Boundaries
 

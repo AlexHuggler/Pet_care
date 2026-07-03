@@ -5,7 +5,7 @@ const STEPS: { icon: IconName; title: string; body: string }[] = [
   {
     icon: "paw",
     title: "Start with the real routine",
-    body: "Add each pet, medication, schedule, prescribing vet, and refill details once.",
+    body: "Add the pet you are caring for, the medication, the schedule, the prescribing vet, and refill details once.",
   },
   {
     icon: "calendar",
@@ -14,8 +14,8 @@ const STEPS: { icon: IconName; title: string; body: string }[] = [
   },
   {
     icon: "users",
-    title: "Upgrade when care grows",
-    body: "Use Pro for unlimited pets and medications, full history, iCloud sync, and expanded records.",
+    title: "Upgrade if care grows",
+    body: "Use Pro when unlimited pets and medications, full history, iCloud sync, and expanded records would make the routine easier.",
   },
 ];
 
@@ -25,7 +25,7 @@ export function HowItWorks() {
       <div className="mx-auto max-w-intake px-5 sm:px-8">
         <SectionHeading
           eyebrow="How it works"
-          title="A subscription-worthy workflow in three steps"
+          title="Set up the routine once. Use it today."
           center
         />
         <ol className="mt-12 grid gap-6 md:grid-cols-3">

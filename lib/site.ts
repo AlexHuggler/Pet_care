@@ -13,10 +13,10 @@ const APP_STORE_URL =
 
 export const site = {
   name: "Furmacy",
-  tagline: "Your pet's health, simplified.",
+  tagline: "Pet meds, refills, and vet records, easier to keep up with.",
   // One-sentence, entity-clear description reused in metadata, JSON-LD, and llms.txt.
   description:
-    "Furmacy is a free-to-download iPhone app for pet medication reminders, dose history, refills, weight and symptom logs, vet records, and Pro upgrades for larger chronic-care routines.",
+    "Furmacy is a free-to-download iPhone pet medication reminder app for dose history, refills, weight and symptom logs, vet records, senior pet care, chronic routines, and multi-pet households.",
   url: SITE_URL,
 
   // Company / legal. TODO: confirm entity details and governing law with counsel.
@@ -49,17 +49,17 @@ export interface Feature {
 export const features: readonly Feature[] = [
   {
     icon: "pill",
-    title: "Medication reminders that create a care trail",
-    body: "Schedule meds and mark each dose Given or Skipped, so the next caregiver can see exactly what happened.",
+    title: "Medication reminders with a care trail",
+    body: "Schedule meds and mark each dose Given or Skipped so you and the next helper can see what happened.",
   },
   {
     icon: "check",
-    title: "Status clarity for high-stakes routines",
-    body: "Pending, missed, given, and skipped states reduce the daily question: did someone already give it?",
+    title: "Dose status at a glance",
+    body: "Pending, Missed, Given, and Skipped states answer the daily question: did someone already give it?",
   },
   {
     icon: "calendar",
-    title: "Refills and routine care in context",
+    title: "Refills beside the routine",
     body: "Track refill counts, prescribing vets, instructions, and recurring care beside the schedule itself.",
   },
   {
@@ -69,12 +69,12 @@ export const features: readonly Feature[] = [
   },
   {
     icon: "folder",
-    title: "Expanded vet document vault",
+    title: "Vet records in the right place",
     body: "Keep labs, prescriptions, vaccines, discharge notes, insurance, boarding, and travel records together.",
   },
   {
     icon: "users",
-    title: "Pro for bigger care routines",
+    title: "Pro when care needs more room",
     body: "Upgrade for unlimited pets and medications, full history, iCloud sync, and expanded records.",
   },
 ];

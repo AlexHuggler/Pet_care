@@ -9,7 +9,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: "Furmacy — Your pet's health, simplified.",
+    default: "Furmacy — Pet Medication Reminder App for Dogs & Cats",
     template: "%s · Furmacy",
   },
   description: site.description,
@@ -25,6 +25,15 @@ export const metadata: Metadata = {
     "pet medication management",
     "chronic pet care app",
     "pet health records",
+    "senior dog medication reminder",
+    "senior cat medication tracker",
+    "dog diabetes medication reminder",
+    "cat kidney disease medication tracker",
+    "pet refill reminder app",
+    "multi pet medication tracker",
+    "pet medication log",
+    "pet dose history app",
+    "vet records app for pets",
   ],
   authors: [{ name: site.company, url: site.url }],
   creator: site.company,
@@ -34,7 +43,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: site.name,
-    title: "Furmacy — Pet medication care without guesswork.",
+    title: "Furmacy — Pet medication reminders for the pets you love.",
     description: site.description,
     url: site.url,
     locale: "en_US",
@@ -49,7 +58,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Furmacy — Pet medication care without guesswork.",
+    title: "Furmacy — Pet medication reminders for the pets you love.",
     description: site.description,
     images: ["/social/furmacy-og-product-card.png"],
   },

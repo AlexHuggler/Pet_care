@@ -8,8 +8,8 @@ export function StateShift() {
       <div className="mx-auto max-w-intake px-5 sm:px-8">
         <SectionHeading
           eyebrow="The shift"
-          title="From scattered care to a clear daily plan"
-          subtitle="Furmacy is built for the moment pet care stops fitting in your head: chronic meds, senior routines, refills, records, and more than one person helping."
+          title="A little less mental load, every day"
+          subtitle="Furmacy is for the moment pet care stops fitting neatly in your head: chronic meds, senior routines, refills, records, and more than one person helping."
         />
 
         <div className="mt-10 grid gap-4 lg:grid-cols-2">
@@ -20,7 +20,7 @@ export function StateShift() {
             >
               <div className="border-b border-border bg-bg/60 p-5 sm:border-b-0 sm:border-r">
                 <p className="text-xs font-semibold uppercase tracking-wide text-text-secondary">
-                  Current state
+                  What it can feel like
                 </p>
                 <p className="mt-3 text-[15px] leading-relaxed text-text-secondary">
                   {pair.current}
@@ -29,7 +29,7 @@ export function StateShift() {
               <div className="bg-hero/60 p-5">
                 <p className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-accent-strong">
                   <Icon name="check" className="h-4 w-4" />
-                  Solution state
+                  How Furmacy helps
                 </p>
                 <p className="mt-3 text-[15px] font-medium leading-relaxed text-text">
                   {pair.solution}

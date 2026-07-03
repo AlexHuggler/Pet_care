@@ -8,11 +8,11 @@ export function CtaBand() {
       <div className="mx-auto max-w-intake px-5 sm:px-8">
         <div className="relative overflow-hidden rounded-[28px] border border-border bg-gradient-to-br from-hero to-muted px-6 py-12 text-center sm:px-12 sm:py-16">
           <h2 className="mx-auto max-w-2xl text-3xl font-bold text-text sm:text-4xl">
-            Turn pet medication care into a calmer daily system.
+            Care days are a lot. Furmacy helps make them easier to follow.
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-[15px] leading-relaxed text-text-secondary">
-            Start with reminders and records. Upgrade to Pro when unlimited pets,
-            medications, full history, and sync are worth having in one place.
+            Start free with one pet, then upgrade when unlimited pets, medications,
+            full history, iCloud sync, and expanded documents would make life calmer.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <AppStoreButton />
@@ -25,7 +25,7 @@ export function CtaBand() {
             </Link>
           </div>
           <p className="mt-4 text-sm text-text-secondary">
-            Furmacy helps organize care. It is not veterinary advice.
+            Furmacy helps organize care; it is not veterinary advice.
           </p>
         </div>
       </div>

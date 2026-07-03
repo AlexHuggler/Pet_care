@@ -44,9 +44,10 @@ export function softwareApplicationLd(): Ld {
     url: site.url,
     image: absoluteUrl("/brand/furmacy-app-icon.png"),
     screenshot: [
-      absoluteUrl("/screenshots/furmacy-today-clean.png"),
-      absoluteUrl("/screenshots/furmacy-today-cat-avatar.png"),
-      absoluteUrl("/screenshots/furmacy-today-dog-avatar.png"),
+      absoluteUrl("/screenshots/scenarios/maple-dog-today-plan.png"),
+      absoluteUrl("/screenshots/scenarios/scout-dog-medication-detail.png"),
+      absoluteUrl("/screenshots/scenarios/olive-cat-vet-records.png"),
+      absoluteUrl("/screenshots/scenarios/kiwi-bird-health-trends.png"),
     ],
     featureList: features.map((f) => f.title),
     publisher: { "@type": "Organization", name: site.company },

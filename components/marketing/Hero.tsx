@@ -21,12 +21,13 @@ export function Hero() {
             ))}
           </ul>
           <h1 className="text-[2rem] font-bold leading-[1.06] text-text sm:text-5xl lg:text-[3.25rem]">
-            Furmacy keeps pet medication care from becoming guesswork.
+            Pet medication reminders for the pets you love.
           </h1>
           <p className="mt-4 max-w-xl text-base leading-relaxed text-text-secondary sm:mt-5 sm:text-lg">
-            A free-to-download iPhone app for medication reminders, dose history,
-            refills, weight and symptom logs, and vet records. Start with one pet
-            free, then upgrade to Pro when care grows.
+            When your dog, cat, or other companion needs ongoing care, Furmacy
+            gives you a gentle place to track what is due, what happened, refills,
+            weight and symptom notes, and vet records. Download it free on iPhone
+            and start with one pet.
           </p>
 
           <div className="mx-auto mt-4 h-[230px] w-[min(72vw,245px)] overflow-hidden rounded-[1.8rem] border border-border bg-surface shadow-card sm:hidden">
@@ -43,10 +44,10 @@ export function Hero() {
 
           <ul className="mt-6 hidden max-w-xl gap-3 text-[15px] leading-relaxed text-text sm:grid sm:grid-cols-2">
             {[
-              "Know what is due today",
-              "See Given, Skip, Pending, and Missed",
+              "See what needs attention today",
+              "Mark Given, Skip, Pending, or Missed",
               "Keep refills and vet records close",
-              "Start free, upgrade when care grows",
+              "Upgrade only when care needs more room",
             ].map((item) => (
               <li key={item} className="flex items-start gap-2.5">
                 <Icon name="check" className="mt-0.5 h-4 w-4 flex-none text-accent-strong" />
@@ -67,8 +68,9 @@ export function Hero() {
           </div>
 
           <p className="mt-4 max-w-xl text-sm leading-relaxed text-text-secondary">
-            Furmacy Pro offers {launchPricing.summary} Exact live pricing is shown
-            before purchase in the App Store. Furmacy is not veterinary advice.
+            Use the free one-pet plan as long as it fits. Pro offers{" "}
+            {launchPricing.summary} Exact live pricing is shown before purchase
+            in the App Store. Furmacy is not veterinary advice.
           </p>
         </div>
 
@@ -111,7 +113,7 @@ export function Hero() {
           <div className="absolute bottom-0 left-1/2 w-[min(92%,420px)] -translate-x-1/2 rounded-card border border-border bg-surface/95 p-4 shadow-card backdrop-blur">
             <p className="text-sm font-semibold text-text">Fictional pet data, real product UI</p>
             <p className="mt-1 text-xs leading-relaxed text-text-secondary">
-              Screenshots use mock pet profiles and stock-photo avatars for marketing previews.
+              Screenshots use fictional pet profiles and stock-photo avatars for marketing previews.
             </p>
           </div>
         </div>

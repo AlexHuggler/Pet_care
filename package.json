@@ -2,7 +2,7 @@
   "name": "furmacy-website",
   "version": "0.1.0",
   "private": true,
-  "description": "Public website for Furmacy — your pet's health, simplified.",
+  "description": "Public website for Furmacy, the pet medication reminder app for iPhone.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

@@ -9,16 +9,16 @@ export const launchPricing = {
 
 export const heroScreenshots = [
   {
-    src: "/screenshots/furmacy-today-clean.png",
-    alt: "Furmacy Today screen showing upcoming pet medication doses",
+    src: "/screenshots/scenarios/maple-dog-today-plan.png",
+    alt: "Furmacy Today screen showing Maple's dog medication plan with pending and given doses",
   },
   {
-    src: "/screenshots/furmacy-today-cat-avatar.png",
-    alt: "Furmacy Today screen with a cat profile photo mockup",
+    src: "/screenshots/scenarios/olive-cat-vet-records.png",
+    alt: "Furmacy Documents screen showing Olive's cat vet records and prescriptions",
   },
   {
-    src: "/screenshots/furmacy-today-dog-avatar.png",
-    alt: "Furmacy Today screen with a dog profile photo mockup",
+    src: "/screenshots/scenarios/scout-dog-medication-detail.png",
+    alt: "Furmacy medication detail screen showing Scout's anti-seizure med schedule and refills",
   },
 ] as const;
 
@@ -31,28 +31,36 @@ export const launchHighlights = [
 
 export const productTour = [
   {
-    src: "/screenshots/furmacy-today-clean.png",
-    alt: "Furmacy Today screen showing missed, pending, and upcoming pet medication doses",
-    kicker: "Daily plan",
-    title: "See what is due before the routine drifts",
-    body: "The Today view turns a pet's medication schedule into a short action list with timing, pet, medication, and dose state in one place.",
-    points: ["Missed and pending states", "Next-dose timing", "Dose history starts from daily action"],
+    src: "/screenshots/scenarios/maple-dog-today-plan.png",
+    alt: "Furmacy Today screen for Maple showing a household plan, next dose, Given action, and today's doses",
+    kicker: "Today plan",
+    title: "See what is due before the day gets away from you",
+    body: "Maple's Today view shows what is pending, what was already given, and the next dose in one calm place.",
+    points: ["Pending, Given, Skipped, and Missed states", "Next-dose timing", "A care trail for later"],
   },
   {
-    src: "/screenshots/furmacy-today-cat-avatar.png",
-    alt: "Furmacy Today screen using a stock cat avatar for a pet medication routine",
-    kicker: "Care context",
-    title: "Keep the right details attached to the right pet",
-    body: "Pet profiles, medication names, instructions, refills, symptoms, weight, and vet records stay organized around the care routine.",
-    points: ["One pet included free", "Refill and vet-record context", "Weight and symptom logs"],
+    src: "/screenshots/scenarios/scout-dog-medication-detail.png",
+    alt: "Furmacy medication detail screen for Scout showing schedule, adherence, refills, and vet notes",
+    kicker: "Medication details",
+    title: "Keep chronic-care timing from living in your head",
+    body: "Scout's med screen keeps the schedule, refill count, instructions, and vet note beside the medication itself.",
+    points: ["Schedule and next dose", "Refill tracking", "Vet and note context"],
   },
   {
-    src: "/screenshots/furmacy-today-dog-avatar.png",
-    alt: "Furmacy Today screen using a stock dog avatar for a pet medication routine",
-    kicker: "Pro path",
-    title: "Upgrade when the household needs more room",
-    body: "Pro is positioned for larger routines: unlimited pets and medications, iCloud sync, full history, and expanded document storage.",
-    points: ["Unlimited pets and meds", "iCloud sync", "Full history and expanded documents"],
+    src: "/screenshots/scenarios/olive-cat-vet-records.png",
+    alt: "Furmacy Documents screen for Olive showing kidney panel results, thyroid prescription label, and recheck records",
+    kicker: "Vet records",
+    title: "Keep the paperwork with the pet who needs it",
+    body: "Olive's lab results, prescription labels, and recheck notes stay easy to find when the clinic asks.",
+    points: ["Labs and prescriptions", "Expanded documents with Pro", "Records tied to the right pet"],
+  },
+  {
+    src: "/screenshots/scenarios/kiwi-bird-health-trends.png",
+    alt: "Furmacy health screen for Kiwi showing weight trend, symptoms, medications, and documents",
+    kicker: "Health notes",
+    title: "Notice small changes sooner",
+    body: "Kiwi's weight and symptom logs make it easier to bring clear notes into the next check-in.",
+    points: ["Weight trends", "Symptom logs", "Helpful context between visits"],
   },
 ] as const;
 
@@ -92,20 +100,20 @@ export interface StatePair {
 
 export const statePairs: readonly StatePair[] = [
   {
-    current: "Phone alarms, sticky notes, and memory all disagree about the next dose.",
-    solution: "One Today view shows what is due, what is pending, and what already happened.",
+    current: "You are trying to remember whether the morning dose actually happened.",
+    solution: "Furmacy gives the day one place to show what is due, what is pending, and what was already marked.",
   },
   {
-    current: "Refills sneak up after the bottle is already low.",
-    solution: "Medication details keep refill counts and reminders beside the care routine.",
+    current: "The bottle is getting low, but the refill reminder lives somewhere in your head.",
+    solution: "Refill counts, instructions, and vet details stay beside the medication instead of in a text thread.",
   },
   {
-    current: "Vet records, labs, prescriptions, and notes live in different places.",
-    solution: "Documents, symptoms, weight, and dose history stay attached to the right pet.",
+    current: "The clinic asks about a trend, and the notes are scattered across photos, paper, and memory.",
+    solution: "Weight, symptoms, documents, and dose history stay attached to the pet they belong to.",
   },
   {
-    current: "Family or sitters ask the same question: did someone already give it?",
-    solution: "Given and Skip actions create a shared care trail without guesswork.",
+    current: "Someone else helps for the day, and everyone is checking the same thing by text.",
+    solution: "A clearer care trail makes handoffs feel less risky for family, sitters, and busy households.",
   },
 ] as const;
 
@@ -118,31 +126,31 @@ export interface ValuePoint {
 export const valuePoints: readonly ValuePoint[] = [
   {
     icon: "heart",
-    title: "Calmer daily routines",
-    body: "Keep the medication plan visible for pets who need consistency, records, and follow-through.",
+    title: "Less to hold in your head",
+    body: "Keep the routine visible when your pet needs consistency, follow-through, and a little extra care.",
   },
   {
     icon: "shield-check",
-    title: "Visible dose states",
-    body: "Given, Skipped, Pending, and Missed states make handoffs easier to understand.",
+    title: "Clearer handoffs",
+    body: "Given, Skipped, Pending, and Missed states help the next caregiver see what already happened.",
   },
   {
     icon: "calendar",
-    title: "Useful on day one",
-    body: "Add a pet, add meds, see today, and mark Given or Skip without building a whole system first.",
+    title: "Useful without a project",
+    body: "Add one pet, add the meds, see today, and mark Given or Skip without rebuilding your whole routine.",
   },
   {
     icon: "check",
-    title: "History when it matters",
-    body: "Daily actions build the fuller record you may need for refills, vet visits, and ongoing care.",
+    title: "Better notes for later",
+    body: "Small daily actions build a record you can use for refills, vet conversations, and ongoing care.",
   },
 ] as const;
 
 export const proBenefits = [
   "Unlimited pets",
   "Unlimited active medications",
-  "Full adherence history",
-  "Expanded document vault",
+  "Full dose history",
+  "More room for vet documents",
   "iCloud sync across Apple devices",
   "Fuller records for ongoing care",
 ] as const;

@@ -1,6 +1,6 @@
 # Furmacy — Website
 
-> Your pet's health, simplified.
+> Pet meds, refills, and vet records, easier to keep up with.
 
 The public marketing + product site for **Furmacy**, a free-to-download,
 privacy-first iPhone pet health and medication app with a Furmacy Pro upgrade
@@ -18,6 +18,8 @@ Operated by **Huggler Holdings LLC**.
 | Route | What it is | Indexed |
 | --- | --- | --- |
 | `/` | Public homepage: real app media, current-to-solution story, Pro offer, features, who it's for, privacy, FAQ, CTA | ✅ |
+| `/use-cases` | Indexed care examples for senior dog medication reminders, cat medication tracking, dog seizure medication schedules, and multi-pet routines | ✅ |
+| `/use-cases/<slug>` | Long-tail SEO/LLM use-case pages with matched product screenshots and App Store CTAs | ✅ |
 | `/privacy` | Privacy Policy (on-device-first posture) | ✅ |
 | `/terms` | Terms of Use / EULA (incl. Apple App Store clauses + veterinary disclaimer) | ✅ |
 | `/contact` | Contact page built around `contact@furmacy.org` | ✅ |
@@ -76,14 +78,18 @@ Real Furmacy app media is committed under:
 - `public/screenshots/furmacy-today-clean.png`
 - `public/screenshots/furmacy-today-cat-avatar.png`
 - `public/screenshots/furmacy-today-dog-avatar.png`
+- `public/screenshots/scenarios/maple-dog-today-plan.png`
+- `public/screenshots/scenarios/scout-dog-medication-detail.png`
+- `public/screenshots/scenarios/olive-cat-vet-records.png`
+- `public/screenshots/scenarios/kiwi-bird-health-trends.png`
 - `public/social/furmacy-public-launch-card.svg`
 - `public/social/furmacy-og-product-card.png`
 - `public/social/furmacy-share-square.png`
 - `public/badges/download-on-the-app-store.svg`
 
 Asset provenance and usage notes live in `docs/marketing/source-assets.md`. The
-cat/dog avatar screenshots use stock-photo mockups, not customer pets,
-endorsements, or medical outcome proof.
+scenario screenshots use fictional simulator data and stock-photo pet avatars,
+not customer pets, endorsements, or medical outcome proof.
 
 Offer strategy lives in `docs/marketing/furmacy-website-offer-brief.md`.
 
@@ -91,6 +97,9 @@ Offer strategy lives in `docs/marketing/furmacy-website-offer-brief.md`.
 
 - Per-page `metadata` (title template `%s · Furmacy`, descriptions, **canonical**),
   Open Graph + Twitter (`summary_large_image`).
+- Indexed long-tail use-case pages for senior dog medication reminders, cat
+  medication tracking and vet records, dog seizure medication schedules, and
+  multi-pet medication tracking.
 - Static product-led OG/Twitter image
   (`public/social/furmacy-og-product-card.png`, 1200×630), favicon
   (`app/icon.svg`), **Apple touch icon** (`app/apple-icon.tsx`), and the real

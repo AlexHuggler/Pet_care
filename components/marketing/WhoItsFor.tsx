@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Icon } from "../icons";
 import { SectionHeading } from "./SectionHeading";
 
@@ -14,9 +15,10 @@ const CONDITIONS = [
 ];
 
 const AUDIENCES = [
-  { icon: "users", title: "Multi-pet households", body: "Keep every pet's meds and routines straight without a whiteboard." },
-  { icon: "heart", title: "Senior and chronic-care families", body: "Track the care details that matter between vet visits." },
-  { icon: "paw", title: "Sitters and shared caregivers", body: "Hand off the routine clearly, so nothing is missed or doubled up." },
+  { icon: "heart", title: "Senior dogs and cats", body: "When the routine has more check-ins than it used to, Furmacy keeps the next step easier to see." },
+  { icon: "pill", title: "Chronic medication routines", body: "Keep schedules, refills, notes, and dose history together for pets who need steady follow-through." },
+  { icon: "users", title: "Multi-pet homes", body: "Give each pet their own care context, then upgrade to Pro when one free pet is not enough room." },
+  { icon: "paw", title: "Family and sitter handoffs", body: "Make it easier for the next helper to see what was given, skipped, missed, or still pending." },
 ] as const;
 
 export function WhoItsFor() {
@@ -27,8 +29,8 @@ export function WhoItsFor() {
           <div>
             <SectionHeading
               eyebrow="Who it's for"
-              title="Made for the families most likely to feel the value every day"
-              subtitle="Furmacy shines when care gets complicated: multiple medications, multiple times a day, and conditions that need consistency."
+              title="For pet parents doing their best with a lot to remember"
+              subtitle="Some pets just need more care. Furmacy is built for the routines that come with senior pets, chronic meds, recovery, multiple pets, and shared caregiving."
             />
             <ul className="mt-6 flex flex-wrap gap-2">
               {CONDITIONS.map((c) => (
@@ -41,10 +43,17 @@ export function WhoItsFor() {
               ))}
             </ul>
             <p className="mt-5 text-sm leading-relaxed text-text-secondary">
-              Furmacy helps you stay organized and reduce missed-dose confusion. It
-              isn&rsquo;t veterinary advice — always follow your veterinarian&rsquo;s
-              instructions.
+              Furmacy helps you stay organized and reduce missed-dose confusion.
+              It isn&rsquo;t veterinary advice; always follow your veterinarian&rsquo;s
+              instructions and contact your vet for medical concerns.
             </p>
+            <Link
+              href="/use-cases"
+              className="mt-5 inline-flex items-center gap-1.5 rounded-control border border-border bg-bg px-4 py-2.5 text-sm font-semibold text-text transition hover:border-accent/60 hover:bg-muted focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-accent/25"
+            >
+              Explore care examples
+              <Icon name="arrow-right" className="h-4 w-4" />
+            </Link>
           </div>
 
           <ul className="grid gap-4">

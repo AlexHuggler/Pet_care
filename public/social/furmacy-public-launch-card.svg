@@ -27,23 +27,23 @@
   </g>
 
   <text x="206" y="126" fill="#0D3B47" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="62" font-weight="800">Furmacy</text>
-  <text x="208" y="170" fill="#0E7A75" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="25" font-weight="700">Pet medication reminders and records for iPhone</text>
+  <text x="208" y="170" fill="#0E7A75" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="25" font-weight="700">Pet meds, refills, and vet records for iPhone</text>
 
   <g transform="translate(86 218)">
     <text fill="#0D3B47" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="52" font-weight="800">
-      <tspan x="0" dy="0">Free to download.</tspan>
-      <tspan x="0" dy="62">One pet free.</tspan>
+      <tspan x="0" dy="0">Care days are a lot.</tspan>
+      <tspan x="0" dy="62">Furmacy helps.</tspan>
     </text>
     <text x="0" y="146" fill="#636E75" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="28" font-weight="500">
-      <tspan x="0" dy="0">Upgrade to Pro for unlimited pets and meds,</tspan>
-      <tspan x="0" dy="42">iCloud sync, full history, and expanded documents.</tspan>
+      <tspan x="0" dy="0">Start free with one pet. Upgrade when</tspan>
+      <tspan x="0" dy="42">care needs more room.</tspan>
     </text>
 
     <g transform="translate(0 268)">
       <rect width="360" height="64" rx="20" fill="#0D3B47"/>
       <text x="32" y="41" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="22" font-weight="800">Download on the App Store</text>
     </g>
-    <text x="0" y="338" fill="#0E7A75" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="28" font-weight="800">furmacy.org</text>
+    <text x="390" y="310" fill="#0E7A75" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="28" font-weight="800">furmacy.org</text>
   </g>
 
   <g transform="translate(802 92)" filter="url(#shadow)">
@@ -51,12 +51,12 @@
     <rect x="15" y="15" width="220" height="426" rx="34" fill="#FFFFFF"/>
     <rect x="86" y="30" width="98" height="20" rx="10" fill="#0D3B47"/>
     <text x="40" y="105" fill="#0D3B47" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="31" font-weight="800">Today</text>
-    <text x="40" y="136" fill="#636E75" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="17" font-weight="600">Medication plan</text>
+    <text x="40" y="136" fill="#636E75" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="17" font-weight="600">Household plan</text>
     <rect x="40" y="166" width="170" height="78" rx="23" fill="#E8FAF7" stroke="#C8E4E0" stroke-width="2"/>
     <text x="60" y="205" fill="#0E7A75" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="28" font-weight="800">in 5h</text>
-    <text x="60" y="232" fill="#636E75" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16" font-weight="700">8:00 PM · Luna</text>
+    <text x="60" y="232" fill="#636E75" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16" font-weight="700">7:20 PM · Maple</text>
     <rect x="40" y="270" width="170" height="66" rx="21" fill="#FFFFFF" stroke="#C8E4E0" stroke-width="2"/>
-    <text x="60" y="322" fill="#0D3B47" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="18" font-weight="800">Amoxicillin</text>
+    <text x="60" y="322" fill="#0D3B47" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="18" font-weight="800">Meal dose</text>
     <rect x="158" y="300" width="52" height="24" rx="12" fill="#FCE2DF"/>
     <text x="172" y="318" fill="#E86861" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="800">Missed</text>
     <rect x="40" y="356" width="170" height="66" rx="21" fill="#FFFFFF" stroke="#C8E4E0" stroke-width="2"/>

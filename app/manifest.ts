@@ -6,7 +6,7 @@ export const dynamic = "force-static";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Furmacy — Your pet's health, simplified.",
+    name: "Furmacy - Pet Medication Reminder App",
     short_name: "Furmacy",
     description: site.description,
     start_url: "/",

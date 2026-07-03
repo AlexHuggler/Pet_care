@@ -9,7 +9,7 @@ export function Features() {
         <SectionHeading
           eyebrow="Features"
           title="Everything the daily care loop needs"
-          subtitle="Furmacy focuses on the workflows that make people subscribe: medication consistency, refill confidence, long-term history, and records ready when care gets complicated."
+          subtitle="Small, practical tools for the parts of pet care that are easy to lose track of: dose timing, refill confidence, notes, history, and records when care gets complicated."
         />
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {features.map((f) => (
