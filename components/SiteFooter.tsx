@@ -56,6 +56,7 @@ export function SiteFooter() {
           <FooterCol
             title="Product"
             links={[
+              { href: "/#product-tour", label: "Product tour" },
               { href: "/#features", label: "Features" },
               { href: "/#outcome", label: "Outcome" },
               { href: "/#pro", label: "Furmacy Pro" },

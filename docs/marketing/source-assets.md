@@ -10,7 +10,10 @@ The website branch includes web-ready copies under `public/`:
 | `public/screenshots/furmacy-today-clean.png` | `/Users/alexhuggler/Desktop/AI Work/PawTrack/docs/gtm/assets/furmacy_2026-06-04_media/furmacy_app_today_screen_clean.png` | Primary hero product proof |
 | `public/screenshots/furmacy-today-cat-avatar.png` | `/Users/alexhuggler/Desktop/AI Work/PawTrack/docs/gtm/assets/furmacy_2026-06-04_media/furmacy_today_screen_real_cat_avatar.png` | Secondary product proof with stock pet avatar |
 | `public/screenshots/furmacy-today-dog-avatar.png` | `/Users/alexhuggler/Desktop/AI Work/PawTrack/docs/gtm/assets/furmacy_2026-06-04_media/furmacy_today_screen_real_dog_avatar.png` | Secondary product proof with stock pet avatar |
-| `public/social/furmacy-email-preview-card.png` | `/Users/alexhuggler/Desktop/AI Work/PawTrack/docs/gtm/assets/furmacy_2026-06-04_media/furmacy_email_inline_preview_card.png` | Future email/social preview reference |
+| `public/social/furmacy-public-launch-card.svg` | Created for the public-launch website refresh | Editable public-launch media card source |
+| `public/social/furmacy-og-product-card.png` | Generated from `public/social/furmacy-public-launch-card.svg` with `sharp` | 1200×630 Open Graph / Twitter preview |
+| `public/social/furmacy-share-square.png` | Generated from `public/social/furmacy-public-launch-card.svg` with `sharp` | 1080×1080 manual social/share asset |
+| `public/badges/download-on-the-app-store.svg` | Apple badge API (`tools.applemediaservices.com`) | Official App Store CTA badge |
 | `public/screenshots/pet-photo-sources.txt` | `/Users/alexhuggler/Desktop/AI Work/PawTrack/docs/gtm/assets/furmacy_2026-06-04_media/pet_photo_sources.txt` | Pexels source and use note |
 
 The screenshot copies were resized with `sips` for static hosting. Original source assets remain in the PawTrack workspace.
@@ -29,6 +32,7 @@ The screenshot copies were resized with `sips` for static hosting. Original sour
 
 - `design Templates/Mock up Image *.png`: polished but PawTrack-branded and older than the current Furmacy product state.
 - `docs/gtm/assets/furmacy_2026-06-04_outreach_evidence/`: browser/contact-form evidence screenshots, not public marketing assets.
+- `docs/gtm/assets/furmacy_2026-06-04_media/furmacy_email_inline_preview_card.png`: polished but pre-release; do not reuse without updating the launch-state copy.
 - Older PawTrack beta GTM language without revision: it predates current Furmacy Pro, RevenueCat, weekly/annual subscription setup, and current legal URLs.
 
 ## Pet Photo Use Note

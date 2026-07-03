@@ -76,7 +76,10 @@ Real Furmacy app media is committed under:
 - `public/screenshots/furmacy-today-clean.png`
 - `public/screenshots/furmacy-today-cat-avatar.png`
 - `public/screenshots/furmacy-today-dog-avatar.png`
-- `public/social/furmacy-email-preview-card.png`
+- `public/social/furmacy-public-launch-card.svg`
+- `public/social/furmacy-og-product-card.png`
+- `public/social/furmacy-share-square.png`
+- `public/badges/download-on-the-app-store.svg`
 
 Asset provenance and usage notes live in `docs/marketing/source-assets.md`. The
 cat/dog avatar screenshots use stock-photo mockups, not customer pets,
@@ -88,7 +91,8 @@ Offer strategy lives in `docs/marketing/furmacy-website-offer-brief.md`.
 
 - Per-page `metadata` (title template `%s · Furmacy`, descriptions, **canonical**),
   Open Graph + Twitter (`summary_large_image`).
-- **Dynamic OG/Twitter image** (`app/opengraph-image.tsx`, 1200×630), favicon
+- Static product-led OG/Twitter image
+  (`public/social/furmacy-og-product-card.png`, 1200×630), favicon
   (`app/icon.svg`), **Apple touch icon** (`app/apple-icon.tsx`), and the real
   app icon at `public/brand/furmacy-app-icon.png`.
 - **JSON-LD** (`lib/structuredData.ts`): `Organization` + `WebSite` site-wide;
@@ -124,8 +128,6 @@ Store Connect** — suggested starting points:
   "not veterinary advice" note.
 - **Screenshots:** medication reminders, the Given/Skip dose action, refills,
   weight/symptom logging, vet records, and care handoff.
-> Replace the in-app Apple-style button with Apple's official "Download on the
-> App Store" badge asset per Apple's marketing guidelines.
 
 ## Email alias
 

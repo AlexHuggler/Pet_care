@@ -4,8 +4,8 @@ import { Icon } from "./icons";
 import { Logo } from "./illustrations";
 
 const NAV = [
+  { href: "/#product-tour", label: "Tour" },
   { href: "/#features", label: "Features" },
-  { href: "/#outcome", label: "Outcome" },
   { href: "/#pro", label: "Pro" },
   { href: "/#who", label: "Who it's for" },
   { href: "/#faq", label: "FAQ" },

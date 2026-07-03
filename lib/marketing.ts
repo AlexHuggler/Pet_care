@@ -22,6 +22,69 @@ export const heroScreenshots = [
   },
 ] as const;
 
+export const launchHighlights = [
+  "Now on the App Store",
+  "One pet free",
+  "Built for iPhone",
+  "No account required",
+] as const;
+
+export const productTour = [
+  {
+    src: "/screenshots/furmacy-today-clean.png",
+    alt: "Furmacy Today screen showing missed, pending, and upcoming pet medication doses",
+    kicker: "Daily plan",
+    title: "See what is due before the routine drifts",
+    body: "The Today view turns a pet's medication schedule into a short action list with timing, pet, medication, and dose state in one place.",
+    points: ["Missed and pending states", "Next-dose timing", "Dose history starts from daily action"],
+  },
+  {
+    src: "/screenshots/furmacy-today-cat-avatar.png",
+    alt: "Furmacy Today screen using a stock cat avatar for a pet medication routine",
+    kicker: "Care context",
+    title: "Keep the right details attached to the right pet",
+    body: "Pet profiles, medication names, instructions, refills, symptoms, weight, and vet records stay organized around the care routine.",
+    points: ["One pet included free", "Refill and vet-record context", "Weight and symptom logs"],
+  },
+  {
+    src: "/screenshots/furmacy-today-dog-avatar.png",
+    alt: "Furmacy Today screen using a stock dog avatar for a pet medication routine",
+    kicker: "Pro path",
+    title: "Upgrade when the household needs more room",
+    body: "Pro is positioned for larger routines: unlimited pets and medications, iCloud sync, full history, and expanded document storage.",
+    points: ["Unlimited pets and meds", "iCloud sync", "Full history and expanded documents"],
+  },
+] as const;
+
+export const marketingMedia = [
+  {
+    src: "/social/furmacy-og-product-card.png",
+    width: 1200,
+    height: 630,
+    alt: "Furmacy public launch card with App Store CTA and product UI",
+    useCase: "Open Graph, Twitter, and link previews",
+    disclosure: "Public-launch graphic using drafted UI illustration and verified positioning.",
+    status: "current",
+  },
+  {
+    src: "/social/furmacy-share-square.png",
+    width: 1080,
+    height: 1080,
+    alt: "Square Furmacy public launch card",
+    useCase: "Manual social posts and lightweight launch outreach",
+    disclosure: "Public-launch graphic using drafted UI illustration and verified positioning.",
+    status: "current",
+  },
+  ...heroScreenshots.map((screenshot) => ({
+    ...screenshot,
+    width: 736,
+    height: 1600,
+    useCase: "Website product proof",
+    disclosure: "Fictional pet data and stock-photo avatars; not customer pets or outcome evidence.",
+    status: "current",
+  })),
+] as const;
+
 export interface StatePair {
   current: string;
   solution: string;
@@ -55,23 +118,23 @@ export interface ValuePoint {
 export const valuePoints: readonly ValuePoint[] = [
   {
     icon: "heart",
-    title: "Desired outcome",
-    body: "A calmer daily care routine for pets who need consistent medication, records, and follow-through.",
+    title: "Calmer daily routines",
+    body: "Keep the medication plan visible for pets who need consistency, records, and follow-through.",
   },
   {
     icon: "shield-check",
-    title: "Confidence it will work",
-    body: "Real product screens, on-device storage, visible dose states, and a focused chronic-care workflow.",
+    title: "Visible dose states",
+    body: "Given, Skipped, Pending, and Missed states make handoffs easier to understand.",
   },
   {
     icon: "calendar",
-    title: "Faster relief",
-    body: "The first useful loop is simple: add a pet, add meds, see today, mark Given or Skip.",
+    title: "Useful on day one",
+    body: "Add a pet, add meds, see today, and mark Given or Skip without building a whole system first.",
   },
   {
     icon: "check",
-    title: "Low effort",
-    body: "Furmacy keeps the daily action small while preserving the history you need for longer-term care.",
+    title: "History when it matters",
+    body: "Daily actions build the fuller record you may need for refills, vet visits, and ongoing care.",
   },
 ] as const;
 

@@ -40,10 +40,10 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "/opengraph-image",
+        url: "/social/furmacy-og-product-card.png",
         width: 1200,
         height: 630,
-        alt: "Furmacy pet medication care without guesswork",
+        alt: "Furmacy public launch card showing pet medication care on iPhone",
       },
     ],
   },
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Furmacy — Pet medication care without guesswork.",
     description: site.description,
-    images: ["/twitter-image"],
+    images: ["/social/furmacy-og-product-card.png"],
   },
   icons: {
     icon: [{ url: "/icon.svg", type: "image/svg+xml" }],

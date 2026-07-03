@@ -62,6 +62,7 @@ Exact live pricing is shown by the App Store before purchase. The free plan supp
 
 - [Home](https://furmacy.org/): public product page and App Store download path.
 - [App Store](https://apps.apple.com/us/app/furmacy-pet-med-tracker/id6767069388?uo=4): public iPhone app listing.
+- [Full LLM brief](https://furmacy.org/llms-full.txt): detailed public-launch facts and canonical answers.
 - [Privacy Policy](https://furmacy.org/privacy): how information is handled.
 - [Terms of Use](https://furmacy.org/terms): terms, including the veterinary-advice disclaimer.
 - [Contact](https://furmacy.org/contact): how to reach the team.

@@ -6,6 +6,7 @@ import { Features } from "@/components/marketing/Features";
 import { Hero } from "@/components/marketing/Hero";
 import { HowItWorks } from "@/components/marketing/HowItWorks";
 import { PrivacyFirst } from "@/components/marketing/PrivacyFirst";
+import { ProductTour } from "@/components/marketing/ProductTour";
 import { ProOffer } from "@/components/marketing/ProOffer";
 import { StateShift } from "@/components/marketing/StateShift";
 import { WhoItsFor } from "@/components/marketing/WhoItsFor";
@@ -23,11 +24,12 @@ export default function HomePage() {
       <JsonLd data={[softwareApplicationLd(), faqPageLd()]} />
       <Hero />
       <StateShift />
-      <ProOffer />
+      <ProductTour />
       <Features />
       <HowItWorks />
       <WhoItsFor />
       <PrivacyFirst />
+      <ProOffer />
       <Faq />
       <CtaBand />
     </>

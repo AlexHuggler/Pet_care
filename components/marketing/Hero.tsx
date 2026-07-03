@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { heroScreenshots, launchPricing } from "@/lib/marketing";
+import { heroScreenshots, launchHighlights, launchPricing } from "@/lib/marketing";
 import { AppStoreButton } from "../AppStoreButton";
 import { Icon } from "../icons";
 
@@ -9,6 +9,17 @@ export function Hero() {
     <section className="relative overflow-hidden bg-gradient-to-b from-bg via-bg to-surface">
       <div className="mx-auto grid max-w-intake items-center gap-8 px-5 pb-6 pt-7 sm:gap-10 sm:px-8 sm:pb-16 sm:pt-14 lg:grid-cols-[1.02fr_0.98fr] lg:gap-12">
         <div>
+          <ul className="mb-4 flex flex-wrap gap-2">
+            {launchHighlights.map((highlight) => (
+              <li
+                key={highlight}
+                className="inline-flex items-center gap-1.5 rounded-chip border border-border bg-surface px-3 py-1.5 text-xs font-semibold text-accent-strong shadow-sm"
+              >
+                <Icon name={highlight === "Now on the App Store" ? "download" : "check"} className="h-3.5 w-3.5" />
+                <span>{highlight}</span>
+              </li>
+            ))}
+          </ul>
           <h1 className="text-[2rem] font-bold leading-[1.06] text-text sm:text-5xl lg:text-[3.25rem]">
             Furmacy keeps pet medication care from becoming guesswork.
           </h1>
@@ -47,10 +58,10 @@ export function Hero() {
           <div className="mt-6 flex flex-col items-start gap-3 sm:mt-8 sm:flex-row sm:flex-wrap sm:items-center">
             <AppStoreButton />
             <Link
-              href="#pro"
+              href="#product-tour"
               className="inline-flex items-center gap-1.5 rounded-control border border-border bg-surface px-5 py-3 text-[15px] font-semibold text-text transition hover:border-accent/60 hover:bg-muted focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-accent/25"
             >
-              Compare Pro value
+              See the product
               <Icon name="arrow-right" className="h-4 w-4" />
             </Link>
           </div>
