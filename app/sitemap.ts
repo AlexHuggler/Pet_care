@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { resourceGuides } from "@/lib/resources";
 import { site } from "@/lib/site";
 import { useCases } from "@/lib/useCases";
 
@@ -14,9 +15,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }[] = [
     { path: "/", priority: 1.0, changeFrequency: "weekly" },
     { path: "/use-cases", priority: 0.8, changeFrequency: "monthly" },
+    { path: "/resources", priority: 0.8, changeFrequency: "monthly" },
     ...useCases.map((useCase) => ({
       path: `/use-cases/${useCase.slug}`,
       priority: 0.7,
+      changeFrequency: "monthly" as const,
+    })),
+    ...resourceGuides.map((guide) => ({
+      path: `/resources/${guide.slug}`,
+      priority: 0.72,
       changeFrequency: "monthly" as const,
     })),
     { path: "/contact", priority: 0.6, changeFrequency: "monthly" },

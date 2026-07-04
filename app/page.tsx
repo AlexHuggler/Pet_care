@@ -8,6 +8,7 @@ import { HowItWorks } from "@/components/marketing/HowItWorks";
 import { PrivacyFirst } from "@/components/marketing/PrivacyFirst";
 import { ProductTour } from "@/components/marketing/ProductTour";
 import { ProOffer } from "@/components/marketing/ProOffer";
+import { ResourceTeaser } from "@/components/marketing/ResourceTeaser";
 import { StateShift } from "@/components/marketing/StateShift";
 import { WhoItsFor } from "@/components/marketing/WhoItsFor";
 import { faqPageLd, softwareApplicationLd } from "@/lib/structuredData";
@@ -30,6 +31,7 @@ export default function HomePage() {
       <WhoItsFor />
       <PrivacyFirst />
       <ProOffer />
+      <ResourceTeaser />
       <Faq />
       <CtaBand />
     </>

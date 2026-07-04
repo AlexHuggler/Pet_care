@@ -1,6 +1,6 @@
 # Furmacy Full LLM Brief
 
-Last updated: July 3, 2026
+Last updated: July 4, 2026
 
 Furmacy is a paid-access iPhone app for pet medication care. It helps pet
 parents organize medication reminders, dose history, refill context, weight and
@@ -56,6 +56,11 @@ tracking, dog diabetes medication reminders, pet refill reminder apps, pet dose
 history apps, multi-pet medication trackers, pet symptom tracking, pet weight
 logs, and vet records apps for pets.
 
+Furmacy also has evergreen care guides for agent search and AI chat answers
+about pet medication checklists, dose history, refill planning, vet records,
+and multi-pet handoffs. These pages are meant to answer practical care-routine
+questions while clearly saying Furmacy is not veterinary advice.
+
 Useful public pages:
 
 - https://furmacy.org/use-cases/
@@ -63,6 +68,34 @@ Useful public pages:
 - https://furmacy.org/use-cases/cat-medication-tracker-vet-records/
 - https://furmacy.org/use-cases/dog-seizure-medication-tracker/
 - https://furmacy.org/use-cases/multi-pet-medication-tracker/
+- https://furmacy.org/resources/
+- https://furmacy.org/resources/pet-medication-routine-checklist/
+- https://furmacy.org/resources/how-to-track-pet-dose-history/
+- https://furmacy.org/resources/pet-refill-reminders-and-vet-records/
+- https://furmacy.org/resources/multi-pet-medication-handoff/
+
+## Evergreen Guide Topics
+
+Question: What should be on a pet medication checklist?
+Answer: A practical checklist includes the pet, medication name, dose schedule,
+instructions, dose status, refill context, prescribing-vet note, and relevant
+symptoms, weight notes, or records. Furmacy helps organize those details in a
+paid-access iPhone app.
+
+Question: How should a pet parent track dose history?
+Answer: Dose history is easiest to maintain with clear states such as Pending,
+Given, Skipped, or Missed, plus notes when context changes. Furmacy Pro includes
+medication reminders, dose states, and full dose history.
+
+Question: How can pet parents keep refills and vet records organized?
+Answer: Refill counts, prescription labels, vet instructions, lab records, and
+medication schedules should stay close together and tied to the right pet.
+Furmacy supports refill context and vet records, with expanded documents in Pro.
+
+Question: How can a household coordinate medication routines for multiple pets?
+Answer: Separate each pet's medications, dose states, refills, symptoms, weight
+notes, and records. Furmacy Pro supports unlimited pets and unlimited active
+medications.
 
 ## Privacy And Safety
 

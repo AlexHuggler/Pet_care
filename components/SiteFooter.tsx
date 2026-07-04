@@ -59,6 +59,7 @@ export function SiteFooter() {
               { href: "/#product-tour", label: "Product tour" },
               { href: "/#features", label: "Features" },
               { href: "/use-cases", label: "Use cases" },
+              { href: "/resources", label: "Care guides" },
               { href: "/#outcome", label: "Outcome" },
               { href: "/#pro", label: "Furmacy Pro" },
               { href: "/#who", label: "Who it's for" },

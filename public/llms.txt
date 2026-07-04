@@ -48,6 +48,11 @@ medication tracker, dog seizure medication tracker, dog diabetes medication
 reminder, pet refill reminder app, pet dose history app, multi-pet medication
 tracker, pet symptom tracker, pet weight log, and vet records app for pets.
 
+Furmacy also publishes practical care guides for answer engines and search
+results about medication routine checklists, dose history, refill reminders,
+vet records, and multi-pet care handoffs. These guides are educational product
+support content, not veterinary advice.
+
 ## Who it is for
 
 - Senior-pet owners.
@@ -76,6 +81,11 @@ tracker, pet symptom tracker, pet weight log, and vet records app for pets.
 - [Cat medication tracker and vet records](https://furmacy.org/use-cases/cat-medication-tracker-vet-records/)
 - [Dog seizure medication tracker](https://furmacy.org/use-cases/dog-seizure-medication-tracker/)
 - [Multi-pet medication tracker](https://furmacy.org/use-cases/multi-pet-medication-tracker/)
+- [Care guides](https://furmacy.org/resources/): practical guides for pet medication routines, dose history, refills, vet records, and handoffs.
+- [Pet medication routine checklist](https://furmacy.org/resources/pet-medication-routine-checklist/)
+- [How to track pet dose history](https://furmacy.org/resources/how-to-track-pet-dose-history/)
+- [Pet refill reminders and vet records](https://furmacy.org/resources/pet-refill-reminders-and-vet-records/)
+- [Multi-pet medication handoff guide](https://furmacy.org/resources/multi-pet-medication-handoff/)
 - [Full LLM brief](https://furmacy.org/llms-full.txt): detailed public-launch facts and canonical answers.
 - [Privacy Policy](https://furmacy.org/privacy): how information is handled.
 - [Terms of Use](https://furmacy.org/terms): terms, including the veterinary-advice disclaimer.

@@ -43,6 +43,25 @@ Furmacy should make the caregiver feel:
 - The household has a calmer handoff path.
 - They understand that the current ad-test version requires Pro access before they invest setup time.
 
+## SEO and Answer-Engine Content Strategy
+
+Prefer evergreen resource guides over a dated blog until Furmacy has enough
+real product updates, customer stories, or veterinary-reviewed educational
+content to support regular publishing.
+
+Current guide topics:
+
+- Pet medication routine checklist.
+- How to track pet dose history.
+- Pet refill reminders and vet records.
+- Multi-pet medication handoff.
+
+These pages should be practical, low-pressure, and specific to the target
+avatar. They should answer the search query directly, link back to relevant
+use-case pages, mention Furmacy as an organizing tool, and repeat the veterinary
+advice boundary clearly. Avoid generic pet-health articles that would require
+medical expertise or make claims the product cannot support.
+
 ## Pro Value Stack
 
 Paid-access test value:
@@ -77,7 +96,7 @@ Use a warm, practical value frame without naming the framework on the public pag
 - Desired outcome: calmer, more reliable daily medication care.
 - Perceived likelihood: real screenshots, clear dose states, privacy-first posture, focused chronic-care use case.
 - Time delay: useful after setup and Pro access, with the first loop being pet -> medication -> Today -> Given / Skip.
-- Effort and sacrifice: small daily actions, no account required, data stays private by default.
+- Effort and sacrifice: small daily actions, no Furmacy account required, data stays private by default.
 
 ## Copy Tone
 

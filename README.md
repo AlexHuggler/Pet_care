@@ -20,6 +20,8 @@ Operated by **Huggler Holdings LLC**.
 | `/` | Public homepage: real app media, current-to-solution story, Pro offer, features, who it's for, privacy, FAQ, CTA | ✅ |
 | `/use-cases` | Indexed care examples for senior dog medication reminders, cat medication tracking, dog seizure medication schedules, and multi-pet routines | ✅ |
 | `/use-cases/<slug>` | Long-tail SEO/LLM use-case pages with matched product screenshots and App Store CTAs | ✅ |
+| `/resources` | Evergreen care-guide hub for pet medication checklists, dose history, refills, records, and handoffs | ✅ |
+| `/resources/<slug>` | Article-style SEO/LLM guides with FAQ schema, quick answers, and related use-case links | ✅ |
 | `/privacy` | Privacy Policy (on-device-first posture) | ✅ |
 | `/terms` | Terms of Use / EULA (incl. Apple App Store clauses + veterinary disclaimer) | ✅ |
 | `/contact` | Contact page built around `contact@furmacy.org` | ✅ |
@@ -104,13 +106,18 @@ Offer strategy lives in `docs/marketing/furmacy-website-offer-brief.md`.
 - Indexed long-tail use-case pages for senior dog medication reminders, cat
   medication tracking and vet records, dog seizure medication schedules, and
   multi-pet medication tracking.
+- Indexed evergreen resource guides for high-intent informational searches:
+  pet medication routine checklists, pet dose history, refill reminders, vet
+  records, and multi-pet handoffs. These are the preferred content path before a
+  dated blog because they answer durable questions that search and AI-answer
+  engines can cite.
 - Static product-led OG/Twitter image
   (`public/social/furmacy-og-product-card.png`, 1200×630), favicon
   (`app/icon.svg`), **Apple touch icon** (`app/apple-icon.tsx`), and the real
   app icon at `public/brand/furmacy-app-icon.png`.
 - **JSON-LD** (`lib/structuredData.ts`): `Organization` + `WebSite` site-wide;
-  `MobileApplication` + `FAQPage` on the home page; `WebPage` + `BreadcrumbList`
-  on legal/contact pages.
+  `MobileApplication` + `FAQPage` on the home page; `CollectionPage`, `Article`,
+  `WebPage`, `FAQPage`, and `BreadcrumbList` on guide/use-case surfaces.
 - `app/sitemap.ts`, `app/robots.ts`, `app/manifest.ts` (each `force-static` for
   the export), semantic headings, theme-color.
 
@@ -118,6 +125,8 @@ Offer strategy lives in `docs/marketing/furmacy-website-offer-brief.md`.
 
 - **`public/llms.txt`** — a structured markdown brief (what Furmacy is, features,
   audience, privacy, key links, FAQ, contact).
+- **`public/llms-full.txt`** — a detailed answer-engine brief with canonical
+  answers and links to the use-case and resource-guide pages.
 - **`app/robots.ts` explicitly welcomes AI crawlers** (GPTBot, OAI-SearchBot,
   ChatGPT-User, ClaudeBot, anthropic-ai, Claude-User, Google-Extended,
   PerplexityBot, Applebot-Extended, Amazonbot, CCBot, and more) in addition to
