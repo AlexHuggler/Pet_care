@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
   <title id="title">Furmacy public launch card</title>
-  <desc id="desc">A public launch marketing card for Furmacy, a free iPhone app for pet medication care.</desc>
+  <desc id="desc">A public launch marketing card for Furmacy, a paid-access iPhone app for pet medication care.</desc>
   <defs>
     <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
       <stop offset="0" stop-color="#FAF7F2"/>
@@ -35,8 +35,8 @@
       <tspan x="0" dy="62">Furmacy helps.</tspan>
     </text>
     <text x="0" y="146" fill="#636E75" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="28" font-weight="500">
-      <tspan x="0" dy="0">Start free with one pet. Upgrade when</tspan>
-      <tspan x="0" dy="42">care needs more room.</tspan>
+      <tspan x="0" dy="0">Pro access required. Weekly and annual</tspan>
+      <tspan x="0" dy="42">options shown in the App Store.</tspan>
     </text>
 
     <g transform="translate(0 268)">

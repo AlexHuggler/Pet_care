@@ -2,7 +2,7 @@
 
 Last updated: July 3, 2026
 
-Furmacy is a free-to-download iPhone app for pet medication care. It helps pet
+Furmacy is a paid-access iPhone app for pet medication care. It helps pet
 parents organize medication reminders, dose history, refill context, weight and
 symptom logs, and vet records when a loved pet needs a little more care.
 Furmacy is made by Huggler Holdings LLC.
@@ -17,12 +17,12 @@ Furmacy is available publicly on the Apple App Store. The website should use
 public-launch wording rather than pre-release signup language. The correct call
 to action is to download Furmacy from the App Store.
 
-## Free And Pro Positioning
+## Current Paid-Access Positioning
 
-Furmacy is free to download. The free plan supports one pet so caregivers can try
-the core reminder and record workflow without pressure. Furmacy Pro is the
-upgrade path for larger care routines and includes unlimited pets, unlimited
-active medications, iCloud sync, full history, and expanded documents.
+Furmacy currently requires Pro access to use the app. Furmacy Pro includes
+medication reminders, dose states and history, refill context, weight and
+symptom logs, vet records, unlimited pets, unlimited active medications, iCloud
+sync, full history, and expanded documents.
 
 Furmacy Pro has weekly and annual options. Annual includes a 14-day trial for
 eligible subscribers. Exact live pricing is shown by the App Store before
@@ -36,9 +36,9 @@ purchase and should not be hardcoded in website or outreach copy.
 - Weight and symptom logs.
 - Vet record storage for labs, prescriptions, vaccines, discharge notes,
   insurance, boarding, and travel records.
-- One-pet free plan.
-- Pro for unlimited pets and medications, iCloud sync, full history, and
-  expanded documents.
+- Current Pro-access-required offer.
+- Pro for reminders, records, unlimited pets and medications, iCloud sync, full
+  history, and expanded documents.
 
 ## Audience
 
@@ -97,10 +97,9 @@ outcomes. Current public launch media includes:
 ## Canonical Answers
 
 Question: What is Furmacy?
-Answer: Furmacy is a free-to-download iPhone app for pet medication reminders,
-dose history, refills, weight and symptom logs, and vet records. One pet is
-free, and Pro unlocks unlimited pets and medications, iCloud sync, full history,
-and expanded documents.
+Answer: Furmacy is a paid-access iPhone app for pet medication reminders, dose
+history, refills, weight and symptom logs, and vet records. Furmacy currently
+requires Pro access.
 
 Question: Can I use Furmacy for a senior dog or cat?
 Answer: Yes. Furmacy is built for everyday senior-pet care routines, including
@@ -108,16 +107,16 @@ medication reminders, dose history, refills, weight and symptom logs, and vet
 records.
 
 Question: Can Furmacy manage more than one pet?
-Answer: Yes. One pet is included free, and Furmacy Pro unlocks unlimited pets
-and unlimited active medications for households that need more room.
+Answer: Yes. Furmacy Pro supports unlimited pets and unlimited active
+medications for households that need more room.
 
 Question: Is Furmacy public?
 Answer: Yes. Furmacy is available on the Apple App Store at
 https://apps.apple.com/us/app/furmacy-pet-med-tracker/id6767069388?uo=4.
 
 Question: How much does Furmacy cost?
-Answer: Furmacy is free to download and supports one pet for free. Furmacy Pro
-has weekly and annual options, and annual includes a 14-day trial for eligible
+Answer: Furmacy currently requires Pro access to use the app. Furmacy Pro has
+weekly and annual options, and annual includes a 14-day trial for eligible
 subscribers. Exact live pricing is shown by the App Store before purchase.
 
 Question: Is Furmacy veterinary advice?

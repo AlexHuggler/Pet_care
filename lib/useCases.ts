@@ -45,7 +45,7 @@ export const useCases = [
       "Track today's senior dog medication schedule",
       "Mark doses Given, Skipped, Pending, or Missed",
       "Keep refill and vet details near the medication",
-      "Use one pet free, then upgrade to Pro if the routine grows",
+      "Choose weekly or annual Pro access when you are ready to use Furmacy",
     ],
     sections: [
       {
@@ -165,7 +165,7 @@ export const useCases = [
     title: "A multi-pet medication tracker for households with more to coordinate",
     metaTitle: "Multi-Pet Medication Tracker App",
     description:
-      "Furmacy starts with one pet free and offers Pro for households that need unlimited pets, unlimited active medications, iCloud sync, full history, and expanded documents.",
+      "Furmacy currently requires Pro access and supports households that need unlimited pets, unlimited active medications, iCloud sync, full history, and expanded documents.",
     eyebrow: "Multi-pet homes",
     image: {
       src: "/screenshots/scenarios/maple-dog-today-plan.png",
@@ -180,8 +180,8 @@ export const useCases = [
     intro:
       "One pet can be simple. Two, three, or four pets can turn into a lot of tiny details: who needs what, what was given, which refill is low, and where the records live. Furmacy gives each pet their own care context.",
     bullets: [
-      "Start with one pet free",
-      "Upgrade to Pro for unlimited pets and active medications",
+      "Choose Pro access to use Furmacy",
+      "Track unlimited pets and active medications with Pro",
       "Keep records, symptoms, weight, and dose history attached to the right pet",
       "Use iCloud sync with Pro across Apple devices",
     ],
@@ -198,7 +198,7 @@ export const useCases = [
     faqs: [
       {
         q: "Can Furmacy manage more than one pet?",
-        a: "Yes. One pet is free. Furmacy Pro unlocks unlimited pets and unlimited active medications.",
+        a: "Yes. Furmacy Pro supports unlimited pets and unlimited active medications.",
       },
       {
         q: "Does Furmacy support different kinds of pets?",

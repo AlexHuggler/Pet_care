@@ -16,7 +16,7 @@ export const site = {
   tagline: "Pet meds, refills, and vet records, easier to keep up with.",
   // One-sentence, entity-clear description reused in metadata, JSON-LD, and llms.txt.
   description:
-    "Furmacy is a free-to-download iPhone pet medication reminder app for dose history, refills, weight and symptom logs, vet records, senior pet care, chronic routines, and multi-pet households.",
+    "Furmacy is a paid-access iPhone pet medication reminder app for dose history, refills, weight and symptom logs, vet records, senior pet care, chronic routines, and multi-pet households.",
   url: SITE_URL,
 
   // Company / legal. TODO: confirm entity details and governing law with counsel.
@@ -74,7 +74,7 @@ export const features: readonly Feature[] = [
   },
   {
     icon: "users",
-    title: "Pro when care needs more room",
-    body: "Upgrade for unlimited pets and medications, full history, iCloud sync, and expanded records.",
+    title: "Pro access for care routines",
+    body: "Pro access supports unlimited pets and medications, full history, iCloud sync, and expanded records.",
   },
 ];

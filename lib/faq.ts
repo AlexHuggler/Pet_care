@@ -10,7 +10,7 @@ export interface Faq {
 export const faqs: readonly Faq[] = [
   {
     q: "What is Furmacy?",
-    a: "Furmacy is a free-to-download, privacy-first iPhone app that helps pet caregivers manage medication reminders, dose history, refills, weight and symptom tracking, and vet records. You can start with one pet for free, and Furmacy Pro unlocks unlimited pets, unlimited active medications, full history, iCloud sync, and expanded records.",
+    a: "Furmacy is a privacy-first iPhone app that helps pet caregivers manage medication reminders, dose history, refills, weight and symptom tracking, and vet records. Furmacy currently requires Pro access, with weekly and annual options shown by the App Store before purchase.",
   },
   {
     q: "What kinds of pets does Furmacy support?",
@@ -30,7 +30,7 @@ export const faqs: readonly Faq[] = [
   },
   {
     q: "Can I track more than one pet?",
-    a: "Yes. One pet is included free, and Furmacy Pro unlocks unlimited pets and unlimited active medications for households that need more room.",
+    a: "Yes. Furmacy Pro supports unlimited pets and unlimited active medications for households that need more room.",
   },
   {
     q: "Can Furmacy help with family or sitter handoffs?",
@@ -50,7 +50,7 @@ export const faqs: readonly Faq[] = [
   },
   {
     q: "How much does Furmacy cost?",
-    a: "Furmacy is free to download and supports one pet for free. Furmacy Pro has weekly and annual subscription options, and annual includes a 14-day trial for eligible subscribers. Exact live pricing is shown by the App Store before purchase.",
+    a: "Furmacy currently requires Pro access to use the app. Furmacy Pro has weekly and annual subscription options, and annual includes a 14-day trial for eligible subscribers. Exact live pricing is shown by the App Store before purchase.",
   },
   {
     q: "How do I get Furmacy?",

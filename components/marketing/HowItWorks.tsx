@@ -14,8 +14,8 @@ const STEPS: { icon: IconName; title: string; body: string }[] = [
   },
   {
     icon: "users",
-    title: "Upgrade if care grows",
-    body: "Use Pro when unlimited pets and medications, full history, iCloud sync, and expanded records would make the routine easier.",
+    title: "Choose Pro access",
+    body: "Furmacy currently requires Pro access, with weekly and annual options shown by the App Store before purchase.",
   },
 ];
 

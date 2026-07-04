@@ -7,6 +7,115 @@ export const launchPricing = {
   summary: "Weekly and annual Pro options; annual includes a 14-day trial for eligible subscribers.",
 } as const;
 
+export const offerMode = "paidOnly" as const;
+
+export const offerCopyByMode = {
+  paidOnly: {
+    highlights: [
+      "Now on the App Store",
+      "Pro access required",
+      "Built for iPhone",
+      "No Furmacy account",
+    ],
+    heroBody:
+      "When your dog, cat, or other companion needs ongoing care, Furmacy gives you a gentle place to track what is due, what happened, refills, weight and symptom notes, and vet records. Download it on iPhone and choose Pro access to use the care tools.",
+    heroBullets: [
+      "See what needs attention today",
+      "Mark Given, Skip, Pending, or Missed",
+      "Keep refills and vet records close",
+      "Choose weekly or annual Pro access",
+    ],
+    heroFinePrint:
+      "Furmacy currently requires Pro access. Pro offers weekly and annual options; annual includes a 14-day trial for eligible subscribers. Exact live pricing is shown before purchase in the App Store. Furmacy is not veterinary advice.",
+    screenshotCalloutTitle: "Care routines, easier to follow",
+    screenshotCalloutBody:
+      "A calmer place for doses, refills, notes, weight, symptoms, and records when your pet needs steady follow-through.",
+    proHeading: "Furmacy currently requires Pro access.",
+    proSubtitle:
+      "Download Furmacy from the App Store, then choose weekly or annual Pro access to use reminders, records, history, and sync.",
+    planComparison: [
+      {
+        name: "Pro access",
+        note: "Required to use Furmacy",
+        items: [
+          "Medication reminders",
+          "Dose states and history",
+          "Refills, weight, symptoms, and vet records",
+          "Weekly or annual options",
+        ],
+      },
+      {
+        name: "Annual Pro",
+        note: "For ongoing care",
+        items: [
+          "14-day trial for eligible subscribers",
+          "Unlimited pets",
+          "Unlimited active medications",
+          "iCloud sync and expanded documents",
+        ],
+      },
+    ],
+    ctaTitle: "Ready for a calmer care routine?",
+    ctaBody:
+      "Download Furmacy from the App Store and choose Pro access when you are ready to keep meds, refills, history, and records in one place.",
+    rollbackNote:
+      "Rollback path: change offerMode to onePetFree if the ad test moves back to a free starter plan.",
+  },
+  onePetFree: {
+    highlights: [
+      "Now on the App Store",
+      "One pet free",
+      "Built for iPhone",
+      "No account required",
+    ],
+    heroBody:
+      "When your dog, cat, or other companion needs ongoing care, Furmacy gives you a gentle place to track what is due, what happened, refills, weight and symptom notes, and vet records. Download it free on iPhone and start with one pet.",
+    heroBullets: [
+      "See what needs attention today",
+      "Mark Given, Skip, Pending, or Missed",
+      "Keep refills and vet records close",
+      "Upgrade only when care needs more room",
+    ],
+    heroFinePrint:
+      "Use the free one-pet plan as long as it fits. Pro offers weekly and annual options; annual includes a 14-day trial for eligible subscribers. Exact live pricing is shown before purchase in the App Store. Furmacy is not veterinary advice.",
+    screenshotCalloutTitle: "Care routines, easier to follow",
+    screenshotCalloutBody:
+      "A calmer place for doses, refills, notes, weight, symptoms, and records when your pet needs steady follow-through.",
+    proHeading: "Use it free for one pet. Upgrade only when you need more room.",
+    proSubtitle:
+      "Start with the core routine at no cost. Pro is there for bigger care setups: unlimited pets, unlimited active medications, iCloud sync, full history, and expanded documents.",
+    planComparison: [
+      {
+        name: "Free",
+        note: "Start with one pet",
+        items: [
+          "One pet",
+          "Medication reminders",
+          "Dose states",
+          "Refill, weight, symptom, and vet-record basics",
+        ],
+      },
+      {
+        name: "Pro",
+        note: "When care needs more room",
+        items: [
+          "Unlimited pets",
+          "Unlimited active medications",
+          "Full history",
+          "iCloud sync and expanded documents",
+        ],
+      },
+    ],
+    ctaTitle: "Care days are a lot. Furmacy helps make them easier to follow.",
+    ctaBody:
+      "Start free with one pet, then upgrade when unlimited pets, medications, full history, iCloud sync, and expanded documents would make life calmer.",
+    rollbackNote:
+      "This mode is the rollback option for restoring the free one-pet starter plan.",
+  },
+} as const;
+
+export const offerCopy = offerCopyByMode[offerMode];
+
 export const heroScreenshots = [
   {
     src: "/screenshots/scenarios/maple-dog-today-plan.png",
@@ -23,10 +132,7 @@ export const heroScreenshots = [
 ] as const;
 
 export const launchHighlights = [
-  "Now on the App Store",
-  "One pet free",
-  "Built for iPhone",
-  "No account required",
+  ...offerCopy.highlights,
 ] as const;
 
 export const productTour = [
@@ -137,7 +243,7 @@ export const valuePoints: readonly ValuePoint[] = [
   {
     icon: "calendar",
     title: "Useful without a project",
-    body: "Add one pet, add the meds, see today, and mark Given or Skip without rebuilding your whole routine.",
+    body: "Add the pet you are caring for, add the meds, see today, and mark Given or Skip without rebuilding your whole routine.",
   },
   {
     icon: "check",

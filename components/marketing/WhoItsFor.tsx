@@ -17,7 +17,7 @@ const CONDITIONS = [
 const AUDIENCES = [
   { icon: "heart", title: "Senior dogs and cats", body: "When the routine has more check-ins than it used to, Furmacy keeps the next step easier to see." },
   { icon: "pill", title: "Chronic medication routines", body: "Keep schedules, refills, notes, and dose history together for pets who need steady follow-through." },
-  { icon: "users", title: "Multi-pet homes", body: "Give each pet their own care context, then upgrade to Pro when one free pet is not enough room." },
+  { icon: "users", title: "Multi-pet homes", body: "Give each pet their own care context, with Pro built for unlimited pets and active medications." },
   { icon: "paw", title: "Family and sitter handoffs", body: "Make it easier for the next helper to see what was given, skipped, missed, or still pending." },
 ] as const;
 

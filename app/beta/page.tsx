@@ -21,10 +21,9 @@ export default function BetaPage() {
         Furmacy is ready to download.
       </h1>
       <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-text-secondary sm:text-lg">
-        The old intake page has been retired. Furmacy is now a free-to-download
-        iPhone app, and you can try it with one pet for free before deciding
-        whether Pro is useful for unlimited pets, medications, sync, history,
-        and expanded records.
+        The old intake page has been retired. Furmacy is now on the App Store,
+        and the current version requires Pro access to use medication
+        reminders, history, refills, sync, and expanded records.
       </p>
       <div className="mt-8 flex flex-wrap justify-center gap-3">
         <AppStoreButton />

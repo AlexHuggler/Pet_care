@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { heroScreenshots, launchHighlights, launchPricing } from "@/lib/marketing";
+import { heroScreenshots, launchHighlights, offerCopy } from "@/lib/marketing";
 import { AppStoreButton } from "../AppStoreButton";
 import { Icon } from "../icons";
 
@@ -24,10 +24,7 @@ export function Hero() {
             Pet medication reminders for the pets you love.
           </h1>
           <p className="mt-4 max-w-xl text-base leading-relaxed text-text-secondary sm:mt-5 sm:text-lg">
-            When your dog, cat, or other companion needs ongoing care, Furmacy
-            gives you a gentle place to track what is due, what happened, refills,
-            weight and symptom notes, and vet records. Download it free on iPhone
-            and start with one pet.
+            {offerCopy.heroBody}
           </p>
 
           <div className="mx-auto mt-4 h-[230px] w-[min(72vw,245px)] overflow-hidden rounded-[1.8rem] border border-border bg-surface shadow-card sm:hidden">
@@ -43,12 +40,7 @@ export function Hero() {
           </div>
 
           <ul className="mt-6 hidden max-w-xl gap-3 text-[15px] leading-relaxed text-text sm:grid sm:grid-cols-2">
-            {[
-              "See what needs attention today",
-              "Mark Given, Skip, Pending, or Missed",
-              "Keep refills and vet records close",
-              "Upgrade only when care needs more room",
-            ].map((item) => (
+            {offerCopy.heroBullets.map((item) => (
               <li key={item} className="flex items-start gap-2.5">
                 <Icon name="check" className="mt-0.5 h-4 w-4 flex-none text-accent-strong" />
                 <span>{item}</span>
@@ -68,9 +60,7 @@ export function Hero() {
           </div>
 
           <p className="mt-4 max-w-xl text-sm leading-relaxed text-text-secondary">
-            Use the free one-pet plan as long as it fits. Pro offers{" "}
-            {launchPricing.summary} Exact live pricing is shown before purchase
-            in the App Store. Furmacy is not veterinary advice.
+            {offerCopy.heroFinePrint}
           </p>
         </div>
 
@@ -111,9 +101,9 @@ export function Hero() {
             />
           </div>
           <div className="absolute bottom-0 left-1/2 w-[min(92%,420px)] -translate-x-1/2 rounded-card border border-border bg-surface/95 p-4 shadow-card backdrop-blur">
-            <p className="text-sm font-semibold text-text">Fictional pet data, real product UI</p>
+            <p className="text-sm font-semibold text-text">{offerCopy.screenshotCalloutTitle}</p>
             <p className="mt-1 text-xs leading-relaxed text-text-secondary">
-              Screenshots use fictional pet profiles and stock-photo avatars for marketing previews.
+              {offerCopy.screenshotCalloutBody}
             </p>
           </div>
         </div>

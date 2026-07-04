@@ -2,9 +2,9 @@
 
 > Pet meds, refills, and vet records, easier to keep up with.
 
-The public marketing + product site for **Furmacy**, a free-to-download,
-privacy-first iPhone pet health and medication app with a Furmacy Pro upgrade
-path, plus the legal pages and campaign redirects. Built
+The public marketing + product site for **Furmacy**, a privacy-first iPhone pet
+health and medication app currently testing paid Pro access as the required path
+after App Store download, plus the legal pages and campaign redirects. Built
 with Next.js (App Router) + TypeScript + Tailwind and shipped as a **fully static
 export** to **GitHub Pages** at `https://furmacy.org`. Privacy-respecting, with
 **no website analytics, trackers, ads, or external fonts/images**; the app's
@@ -65,10 +65,14 @@ values read from public env vars (baked in at build time):
 `downloadUrl`, campaign fallback links, and the smart banner are public-launch
 ready without extra environment configuration.
 
-The current public copy can mention that Furmacy is free to download, one pet is
-free, Furmacy Pro has weekly and annual subscription options, and annual includes
-a 14-day trial for eligible subscribers. Exact live prices should be shown by the
-App Store purchase sheet rather than hardcoded into the public website.
+The current public offer mode is `paidOnly` in `lib/marketing.ts`: Furmacy
+currently requires Pro access as a temporary hard-paywall test for paid ads.
+Pro has weekly and annual subscription options, and annual includes a 14-day
+trial for eligible subscribers. Exact live prices should be shown by the App
+Store purchase sheet rather than hardcoded into the public website.
+
+Rollback note: change `offerMode` from `paidOnly` to `onePetFree` in
+`lib/marketing.ts` if the site should return to the free one-pet starter plan.
 
 ## Marketing assets
 

@@ -10,8 +10,8 @@ const POINTS: { icon: IconName; title: string; body: string }[] = [
   },
   {
     icon: "user",
-    title: "No account required",
-    body: "Start using Furmacy without signing up. No email, no password, no profile to create.",
+    title: "No Furmacy account required",
+    body: "Pro access is handled through the App Store. Furmacy does not ask you to create a separate login.",
   },
   {
     icon: "shield-check",

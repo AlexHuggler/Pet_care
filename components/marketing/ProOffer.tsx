@@ -1,21 +1,10 @@
 import Link from "next/link";
-import { launchPricing, proBenefits, valuePoints } from "@/lib/marketing";
+import { launchPricing, offerCopy, proBenefits, valuePoints } from "@/lib/marketing";
 import { AppStoreButton } from "../AppStoreButton";
 import { Icon } from "../icons";
 import { SectionHeading } from "./SectionHeading";
 
-const PLAN_COMPARISON = [
-  {
-    name: "Free",
-    note: "Start with one pet",
-    items: ["One pet", "Medication reminders", "Dose states", "Refill, weight, symptom, and vet-record basics"],
-  },
-  {
-    name: "Pro",
-    note: "When care needs more room",
-    items: ["Unlimited pets", "Unlimited active medications", "Full history", "iCloud sync and expanded documents"],
-  },
-] as const;
+const PLAN_COMPARISON = offerCopy.planComparison;
 
 export function ProOffer() {
   return (
@@ -25,8 +14,8 @@ export function ProOffer() {
           <div>
             <SectionHeading
               eyebrow="Furmacy Pro"
-              title="Use it free for one pet. Upgrade only when you need more room."
-              subtitle="Start with the core routine at no cost. Pro is there for bigger care setups: unlimited pets, unlimited active medications, iCloud sync, full history, and expanded documents."
+              title={offerCopy.proHeading}
+              subtitle={offerCopy.proSubtitle}
             />
 
             <div className="mt-7 grid gap-3 sm:grid-cols-2">

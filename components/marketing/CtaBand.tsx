@@ -1,6 +1,7 @@
 import { AppStoreButton } from "../AppStoreButton";
 import Link from "next/link";
 import { Icon } from "../icons";
+import { offerCopy } from "@/lib/marketing";
 
 export function CtaBand() {
   return (
@@ -8,11 +9,10 @@ export function CtaBand() {
       <div className="mx-auto max-w-intake px-5 sm:px-8">
         <div className="relative overflow-hidden rounded-[28px] border border-border bg-gradient-to-br from-hero to-muted px-6 py-12 text-center sm:px-12 sm:py-16">
           <h2 className="mx-auto max-w-2xl text-3xl font-bold text-text sm:text-4xl">
-            Care days are a lot. Furmacy helps make them easier to follow.
+            {offerCopy.ctaTitle}
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-[15px] leading-relaxed text-text-secondary">
-            Start free with one pet, then upgrade when unlimited pets, medications,
-            full history, iCloud sync, and expanded documents would make life calmer.
+            {offerCopy.ctaBody}
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <AppStoreButton />
