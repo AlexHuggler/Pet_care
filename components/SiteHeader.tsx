@@ -6,7 +6,7 @@ import { Logo } from "./illustrations";
 const NAV = [
   { href: "/#product-tour", label: "Tour" },
   { href: "/#features", label: "Features" },
-  { href: "/#pro", label: "Pro" },
+  { href: "/#pricing", label: "Pricing" },
   { href: "/#who", label: "Who it's for" },
   { href: "/resources", label: "Guides" },
   { href: "/#faq", label: "FAQ" },

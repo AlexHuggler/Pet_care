@@ -40,7 +40,7 @@ export const resourceGuides = [
       "pet medicine organization",
     ],
     answerSummary:
-      "A reliable pet medication routine usually includes the medication name, dose timing, given or skipped status, refill context, vet instructions, symptoms, weight notes, and records tied to the right pet. Furmacy helps organize those details in one paid-access iPhone app.",
+      "A reliable pet medication routine usually includes the medication name, dose timing, given or skipped status, refill context, vet instructions, symptoms, weight notes, and records tied to the right pet. Furmacy helps organize those details in one one-time purchase iPhone app.",
     intro:
       "Pet care gets harder when the routine lives in alarms, texts, sticky notes, and memory. A simple checklist can lower the mental load: what is due, what happened, what is running low, and what the vet may ask about later.",
     takeaways: [
@@ -102,14 +102,14 @@ export const resourceGuides = [
       "pet medication log app",
     ],
     answerSummary:
-      "Pet dose history is easiest to maintain when each scheduled dose has a clear state such as Pending, Given, Skipped, or Missed, plus optional notes for refills, symptoms, and vet context. Furmacy records this history inside a paid-access iPhone app.",
+      "Pet dose history is easiest to maintain when each scheduled dose has a clear state such as Pending, Given, Skipped, or Missed, plus optional notes for refills, symptoms, and vet context. Furmacy records this history inside a one-time purchase iPhone app.",
     intro:
       "Dose history is the care trail that answers the question everyone asks sooner or later: did someone already give it? It does not need to be complicated. It just needs to be clear, consistent, and easy to check.",
     takeaways: [
       "Use a small set of dose states so the history stays readable.",
       "Add notes only when they help future-you or your vet understand context.",
       "Keep dose history tied to the pet and medication, not scattered across alarms.",
-      "Furmacy Pro includes medication reminders, dose states, and full history.",
+      "Furmacy includes medication reminders, dose states, and full history.",
     ],
     sections: [
       {
@@ -136,7 +136,7 @@ export const resourceGuides = [
       },
       {
         q: "Does Furmacy support full dose history?",
-        a: "Yes. Furmacy Pro includes full dose history along with medication reminders, refills, records, and iCloud sync.",
+        a: "Yes. Furmacy includes full dose history along with medication reminders, refills, records, and iCloud sync.",
       },
     ],
     relatedUseCases: ["dog-seizure-medication-tracker", "multi-pet-medication-tracker"],
@@ -158,14 +158,14 @@ export const resourceGuides = [
       "pet medication records",
     ],
     answerSummary:
-      "Pet refill reminders work best when refill counts, prescription labels, vet instructions, lab records, and medication schedules stay together. Furmacy helps store refill context and vet records in a paid-access iPhone app.",
+      "Pet refill reminders work best when refill counts, prescription labels, vet instructions, lab records, and medication schedules stay together. Furmacy helps store refill context and vet records in a one-time purchase iPhone app.",
     intro:
       "Refills and records are easy to lose track of because they often live outside the daily medication routine. Bringing them closer to the schedule can make care feel less scattered.",
     takeaways: [
       "Track refill counts beside the medication schedule.",
       "Keep prescription labels, lab results, discharge notes, and recheck records tied to the pet.",
       "Use records to support vet conversations, not to self-diagnose.",
-      "Furmacy Pro adds expanded documents, full history, and iCloud sync.",
+      "Furmacy includes documents, full history, and optional private iCloud sync with the app purchase.",
     ],
     sections: [
       {
@@ -182,7 +182,7 @@ export const resourceGuides = [
       },
       {
         heading: "Use expanded documents when the routine grows",
-        body: "Furmacy Pro is built for larger care setups with expanded documents, full history, unlimited pets, unlimited active medications, and iCloud sync.",
+        body: "Furmacy is built for larger care setups with expanded documents, full history, unlimited pets, unlimited active medications, and iCloud sync.",
       },
     ],
     faqs: [
@@ -192,7 +192,7 @@ export const resourceGuides = [
       },
       {
         q: "Can I store vet records in Furmacy?",
-        a: "Yes. Furmacy supports vet record storage, with expanded documents included in Pro.",
+        a: "Yes. Furmacy supports vet record storage, with documents included in the app purchase.",
       },
     ],
     relatedUseCases: ["cat-medication-tracker-vet-records", "senior-dog-medication-reminders"],
@@ -214,14 +214,14 @@ export const resourceGuides = [
       "foster pet medication tracker",
     ],
     answerSummary:
-      "A multi-pet medication handoff should separate each pet's medications, dose states, refills, symptoms, weight notes, and records. Furmacy Pro supports unlimited pets and unlimited active medications in a paid-access iPhone app.",
+      "A multi-pet medication handoff should separate each pet's medications, dose states, refills, symptoms, weight notes, and records. Furmacy includes unlimited pets and unlimited active medications in a one-time purchase iPhone app.",
     intro:
       "Multi-pet care can get busy fast. A good handoff plan helps the next caregiver see which pet needs what, what already happened, and where the important records live.",
     takeaways: [
       "Give each pet their own medication and record context.",
       "Use plain dose states for shared routines: Pending, Given, Skipped, Missed.",
       "Keep sitter instructions close to medications and records.",
-      "Furmacy Pro supports unlimited pets, unlimited active medications, full history, and iCloud sync.",
+      "Furmacy includes unlimited pets, unlimited active medications, full history, and iCloud sync.",
     ],
     sections: [
       {
@@ -237,18 +237,18 @@ export const resourceGuides = [
         body: "The handoff gets easier when each dose leaves a small trail. Given, Skipped, Missed, and Pending states help the next person understand what happened without guessing.",
       },
       {
-        heading: "Use Pro when the household needs more room",
-        body: "Furmacy currently requires Pro access. Pro supports unlimited pets, unlimited active medications, full history, iCloud sync, and expanded documents for larger care routines.",
+        heading: "Keep every pet’s records together",
+        body: "The one-time app purchase includes unlimited pets, unlimited active medications, full history, iCloud sync, and expanded documents for larger care routines.",
       },
     ],
     faqs: [
       {
         q: "Can Furmacy manage multiple pets?",
-        a: "Yes. Furmacy Pro supports unlimited pets and unlimited active medications.",
+        a: "Yes. Furmacy includes unlimited pets and unlimited active medications.",
       },
       {
         q: "Is Furmacy useful for pet sitters or family handoffs?",
-        a: "Yes. Furmacy helps organize dose states, history, refills, and records so shared care is easier to understand.",
+        a: "Share a PDF of selected records with a caregiver and coordinate new doses directly. Furmacy does not offer shared accounts or live household updates.",
       },
     ],
     relatedUseCases: ["multi-pet-medication-tracker", "dog-seizure-medication-tracker"],

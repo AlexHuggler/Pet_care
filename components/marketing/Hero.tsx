@@ -15,7 +15,7 @@ export function Hero() {
                 key={highlight}
                 className="inline-flex items-center gap-1.5 rounded-chip border border-border bg-surface px-3 py-1.5 text-xs font-semibold text-accent-strong shadow-sm"
               >
-                <Icon name={highlight === "Now on the App Store" ? "download" : "check"} className="h-3.5 w-3.5" />
+                <Icon name={highlight === "Pay once" ? "download" : "check"} className="h-3.5 w-3.5" />
                 <span>{highlight}</span>
               </li>
             ))}

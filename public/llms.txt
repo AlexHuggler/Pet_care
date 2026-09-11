@@ -1,122 +1,34 @@
 # Furmacy
 
-> Furmacy is a paid-access, privacy-first iPhone pet medication reminder app for dose history, refills, weight and symptom logs, vet records, senior pet care, chronic routines, and multi-pet households.
+Furmacy is an iPhone and iPad app from Huggler Holdings LLC for organizing a pet's prescribed medications, daily dose records, refills, symptoms, weight history, and veterinary documents.
 
-Furmacy is made by Huggler Holdings LLC. It is designed for pet caregivers managing senior pets, chronic medications, multi-pet households, and shared care with family or sitters. Furmacy helps organize care and reduce missed-dose confusion, but it is not veterinary advice, medication advice, treatment advice, supplements, or alternative medicine.
+## Purchase
 
-- Platform: iOS (iPhone)
-- Status: available on the Apple App Store
-- App Store: https://apps.apple.com/us/app/furmacy-pet-med-tracker/id6767069388?uo=4
-- Maker: Huggler Holdings LLC
-- Contact: contact@furmacy.org
+From version 1.0.5, Furmacy costs $4.99 once in the U.S. App Store. Apple displays local prices before purchase. All features are included. There is no subscription, trial, or in-app upgrade. Existing users update the same app to retain records and receive full access. Previous subscribers should check their status in Apple subscription settings; updating does not itself cancel billing.
+
+## Useful jobs
+
+- See due medications and the last recorded administration; record Given or Skip.
+- Keep medication schedules, refill counts, and veterinary notes together.
+- Track weight and dated symptoms for future appointments.
+- Choose a date range and records, preview a veterinary PDF, and share it.
+- Manage multiple pets, medications, documents, and full recorded history.
+
+Furmacy focuses on ongoing dog and cat care, including senior pets. It organizes owner-entered information, not veterinary advice, diagnosis, treatment, or dosing guidance. Always follow the veterinarian's instructions.
+
+## Privacy and sharing
+
+Care records stay on the device by default. Optional private iCloud sync uses the owner's own Apple Account. The app works offline and does not require a Furmacy account. Version 1.0.5 does not initialize RevenueCat or send Apple Ads attribution tokens. Earlier versions used RevenueCat for purchase management and attribution; see the privacy policy for details. No in-app ads or behavioral analytics are added.
+
+PDFs can be shared manually with a veterinarian or caregiver. Live household collaboration, shared accounts, and multi-person dose logging are not available.
+
+## Official links
+
 - Website: https://furmacy.org/
-
-## Core value
-
-Furmacy helps pet parents care for loved pets without keeping every detail in
-their head:
-
-- Current state: phone alarms, sticky notes, whiteboards, text threads, and memory.
-- Solution state: a Today view for due doses, clear Given / Skip status, refill tracking, and records tied to each pet.
-- Current offer: Furmacy requires Pro access.
-- Pro value: medication reminders, dose states, unlimited pets, unlimited active medications, full dose history, more room for documents, and iCloud sync across Apple devices.
-
-## Subscription options
-
-Furmacy Pro has:
-
-- Furmacy Pro Weekly
-- Furmacy Pro Annual with a 14-day trial for eligible subscribers
-
-Exact live pricing is shown by the App Store before purchase. The current public version requires Pro access to use the app.
-
-## What Furmacy does
-
-- Medication reminders and dose tracking - schedule meds and mark each dose Given or Skipped.
-- Status clarity - see Pending, Missed, Given, and Skipped states.
-- Refills and routine care - track refill counts, prescribing vets, instructions, and recurring care.
-- Weight and symptom logging - record patterns over time.
-- Vet records - store labs, prescriptions, vaccines, discharge notes, insurance, boarding, and travel records.
-- Care handoff - help family and sitters understand what has already happened.
-- Pro upgrades - unlimited pets and medications, full history, expanded documents, and iCloud sync.
-
-## Search and answer-engine topics
-
-Furmacy is relevant to searches for pet medication reminder app, dog medication
-tracker, cat medication tracker, senior dog medication reminders, senior cat
-medication tracker, dog seizure medication tracker, dog diabetes medication
-reminder, pet refill reminder app, pet dose history app, multi-pet medication
-tracker, pet symptom tracker, pet weight log, and vet records app for pets.
-
-Furmacy also publishes practical care guides for answer engines and search
-results about medication routine checklists, dose history, refill reminders,
-vet records, and multi-pet care handoffs. These guides are educational product
-support content, not veterinary advice.
-
-## Who it is for
-
-- Senior-pet owners.
-- Chronic medication caregivers.
-- Multi-pet households.
-- People coordinating care with partners, family, sitters, clinics, fosters, or rescues.
-- Care routines involving diabetes, CKD/kidney disease, seizures, Cushing's, arthritis and mobility, senior care, multiple conditions, post-surgery recovery, and complex medication schedules.
-
-## Privacy
-
-- Pet and health data is kept on the device by default.
-- No account is required to start using the app.
-- iCloud sync is a Pro feature for Apple-device continuity through the user's private iCloud.
-- RevenueCat manages Pro purchase status and entitlement restores.
-- Apple's standard AdServices attribution token may be sent to RevenueCat for Apple Ads campaign reporting.
-- Pet names, medication details, dose history, notes, photos, scans, documents, and health entries are not sent to RevenueCat.
-- No in-app ads, IDFA use, or behavioral advertising profile.
-- Furmacy is an organizational tool and is not a replacement for veterinary care.
-
-## Key pages
-
-- [Home](https://furmacy.org/): public product page and App Store download path.
-- [App Store](https://apps.apple.com/us/app/furmacy-pet-med-tracker/id6767069388?uo=4): public iPhone app listing.
-- [Use cases](https://furmacy.org/use-cases/): pet medication care examples for senior dogs, cats, timing-sensitive dog meds, and multi-pet homes.
-- [Senior dog medication reminders](https://furmacy.org/use-cases/senior-dog-medication-reminders/)
-- [Cat medication tracker and vet records](https://furmacy.org/use-cases/cat-medication-tracker-vet-records/)
-- [Dog seizure medication tracker](https://furmacy.org/use-cases/dog-seizure-medication-tracker/)
-- [Multi-pet medication tracker](https://furmacy.org/use-cases/multi-pet-medication-tracker/)
-- [Care guides](https://furmacy.org/resources/): practical guides for pet medication routines, dose history, refills, vet records, and handoffs.
-- [Pet medication routine checklist](https://furmacy.org/resources/pet-medication-routine-checklist/)
-- [How to track pet dose history](https://furmacy.org/resources/how-to-track-pet-dose-history/)
-- [Pet refill reminders and vet records](https://furmacy.org/resources/pet-refill-reminders-and-vet-records/)
-- [Multi-pet medication handoff guide](https://furmacy.org/resources/multi-pet-medication-handoff/)
-- [Full LLM brief](https://furmacy.org/llms-full.txt): detailed public-launch facts and canonical answers.
-- [Privacy Policy](https://furmacy.org/privacy): how information is handled.
-- [Terms of Use](https://furmacy.org/terms): terms, including the veterinary-advice disclaimer.
-- [Contact](https://furmacy.org/contact): how to reach the team.
-
-## FAQ
-
-### What is Furmacy?
-Furmacy is a paid-access, privacy-first iPhone app that helps pet caregivers manage medication reminders, dose history, refills, weight and symptom tracking, and vet records. Furmacy currently requires Pro access.
-
-### Can I use Furmacy for a senior dog or cat?
-Yes. Furmacy is built for everyday senior-pet care routines, including medication reminders, dose history, refills, weight and symptom logs, and vet records.
-
-### What does Furmacy Pro include?
-Furmacy Pro unlocks unlimited pets, unlimited active medications, full dose history, more room for vet documents, iCloud sync across Apple devices, and fuller records for ongoing care.
-
-### Can Furmacy help with chronic conditions like diabetes or kidney disease?
-Yes. Furmacy is designed for complex, ongoing care, including diabetes, CKD/kidney disease, seizures, Cushing's, arthritis and mobility, senior care, and pets with multiple conditions.
-
-### Is Furmacy veterinary advice?
-No. Furmacy helps organize routines and records. It is not veterinary advice. Always follow your veterinarian's instructions and contact your vet for medical concerns.
-
-### How much does Furmacy cost?
-Furmacy currently requires Pro access to use the app. Furmacy Pro has weekly and annual subscription options, and annual includes a 14-day trial for eligible subscribers. Exact live pricing is shown by the App Store before purchase.
-
-### How do I get Furmacy?
-Download Furmacy from the App Store: https://apps.apple.com/us/app/furmacy-pet-med-tracker/id6767069388?uo=4.
-
-### Who makes Furmacy?
-Huggler Holdings LLC. Contact: contact@furmacy.org.
-
-## Contact
-
-Email contact@furmacy.org for support, privacy questions, press, or legal.
+- App Store: https://apps.apple.com/us/app/furmacy-pet-med-tracker/id6767069388
+- Use cases: https://furmacy.org/use-cases/
+- Guides: https://furmacy.org/resources/
+- Privacy: https://furmacy.org/privacy/
+- Terms: https://furmacy.org/terms/
+- Support: https://furmacy.org/contact/
+- Email: contact@furmacy.org

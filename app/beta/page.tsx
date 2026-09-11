@@ -22,8 +22,8 @@ export default function BetaPage() {
       </h1>
       <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-text-secondary sm:text-lg">
         The old intake page has been retired. Furmacy is now on the App Store,
-        and the current version requires Pro access to use medication
-        reminders, history, refills, sync, and expanded records.
+        with all features included in a one-time app purchase: medication
+        reminders, history, refills, optional private iCloud sync, and records.
       </p>
       <div className="mt-8 flex flex-wrap justify-center gap-3">
         <AppStoreButton />

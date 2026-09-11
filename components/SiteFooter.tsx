@@ -61,7 +61,7 @@ export function SiteFooter() {
               { href: "/use-cases", label: "Use cases" },
               { href: "/resources", label: "Care guides" },
               { href: "/#outcome", label: "Outcome" },
-              { href: "/#pro", label: "Furmacy Pro" },
+              { href: "/#pricing", label: "Pricing" },
               { href: "/#who", label: "Who it's for" },
               { href: "/#faq", label: "FAQ" },
             ]}

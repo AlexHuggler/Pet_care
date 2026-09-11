@@ -45,7 +45,7 @@ export const useCases = [
       "Track today's senior dog medication schedule",
       "Mark doses Given, Skipped, Pending, or Missed",
       "Keep refill and vet details near the medication",
-      "Choose weekly or annual Pro access when you are ready to use Furmacy",
+      "Buy Furmacy once from the App Store and use all features",
     ],
     sections: [
       {
@@ -91,7 +91,7 @@ export const useCases = [
       "Keep cat medication reminders and dose states together",
       "Store labs, prescriptions, and recheck notes",
       "Track symptoms and weight between visits",
-      "Upgrade to Pro for expanded documents and full history",
+      "Keep documents and full recorded history with no upgrade",
     ],
     sections: [
       {
@@ -110,7 +110,7 @@ export const useCases = [
       },
       {
         q: "Can I store cat vet records in Furmacy?",
-        a: "Yes. Furmacy includes vet record storage, with expanded documents available through Pro.",
+        a: "Yes. Furmacy includes vet record storage, with documents included in the app purchase.",
       },
     ],
   },
@@ -137,7 +137,7 @@ export const useCases = [
       "See the next dose and schedule",
       "Track dose history and status",
       "Keep refill counts and vet notes near the medication",
-      "Use Pro for full history, sync, expanded records, and more pets",
+      "Use included history, optional sync, records, and multiple pets",
     ],
     sections: [
       {
@@ -165,7 +165,7 @@ export const useCases = [
     title: "A multi-pet medication tracker for households with more to coordinate",
     metaTitle: "Multi-Pet Medication Tracker App",
     description:
-      "Furmacy currently requires Pro access and supports households that need unlimited pets, unlimited active medications, iCloud sync, full history, and expanded documents.",
+      "Furmacy includes all pets, active medications, optional private iCloud sync, full recorded history, and documents with one app purchase.",
     eyebrow: "Multi-pet homes",
     image: {
       src: "/screenshots/scenarios/maple-dog-today-plan.png",
@@ -180,10 +180,10 @@ export const useCases = [
     intro:
       "One pet can be simple. Two, three, or four pets can turn into a lot of tiny details: who needs what, what was given, which refill is low, and where the records live. Furmacy gives each pet their own care context.",
     bullets: [
-      "Choose Pro access to use Furmacy",
-      "Track unlimited pets and active medications with Pro",
+      "Buy the app once to use Furmacy",
+      "Track unlimited pets and active medications",
       "Keep records, symptoms, weight, and dose history attached to the right pet",
-      "Use iCloud sync with Pro across Apple devices",
+      "Use optional private iCloud sync across your own Apple devices",
     ],
     sections: [
       {
@@ -198,7 +198,7 @@ export const useCases = [
     faqs: [
       {
         q: "Can Furmacy manage more than one pet?",
-        a: "Yes. Furmacy Pro supports unlimited pets and unlimited active medications.",
+        a: "Yes. Furmacy includes unlimited pets and unlimited active medications.",
       },
       {
         q: "Does Furmacy support different kinds of pets?",

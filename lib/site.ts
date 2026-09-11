@@ -16,13 +16,13 @@ export const site = {
   tagline: "Pet meds, refills, and vet records, easier to keep up with.",
   // One-sentence, entity-clear description reused in metadata, JSON-LD, and llms.txt.
   description:
-    "Furmacy is a paid-access iPhone pet medication reminder app for dose history, refills, weight and symptom logs, vet records, senior pet care, chronic routines, and multi-pet households.",
+    "Furmacy is a one-time purchase iPhone pet medication reminder app for dose history, refills, weight and symptom logs, vet records, senior pet care, chronic routines, and multi-pet households.",
   url: SITE_URL,
 
   // Company / legal. TODO: confirm entity details and governing law with counsel.
   company: "Huggler Holdings LLC",
   jurisdiction: "State of Texas, United States",
-  legalEffectiveDate: "June 21, 2026",
+  legalEffectiveDate: "September 10, 2026",
 
   // Public contact alias (forwards to the team inbox). Configure the alias at your
   // email provider; the site only ever shows this address.
@@ -74,7 +74,7 @@ export const features: readonly Feature[] = [
   },
   {
     icon: "users",
-    title: "Pro access for care routines",
-    body: "Pro access supports unlimited pets and medications, full history, iCloud sync, and expanded records.",
+    title: "All features included",
+    body: "Your app purchase includes unlimited pets and medications, full history, iCloud sync, and expanded records.",
   },
 ];
