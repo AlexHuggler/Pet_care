@@ -1,133 +1,31 @@
 import type { IconName } from "@/components/icons";
 
-export const launchPricing = {
-  weekly: "Weekly Pro",
-  annual: "Annual Pro",
-  annualTrial: "14-day annual trial",
-  summary: "Weekly and annual Pro options; annual includes a 14-day trial for eligible subscribers.",
+export const launchPricing = { price: "$4.99", summary: "One-time U.S. App Store download. All features included." } as const;
+export const offerCopy = {
+  highlights: ["Pay once", "All features included", "iPhone and iPad", "No Furmacy account"],
+  heroBody: "When your dog or cat needs ongoing care, Furmacy keeps the prescribed routine, dose history, refills, weight and symptom notes, and vet records together. Pay once to download the app and use every feature.",
+  heroBullets: ["See what needs attention today", "Record Given or Skip and review dose history", "Prepare a veterinary PDF with selected records", "One purchase. No subscription."],
+  heroFinePrint: "$4.99 once in the U.S. App Store. Local prices are shown by Apple before purchase. Furmacy is an organization tool, not veterinary advice.",
+  screenshotCalloutTitle: "Care routines, easier to follow",
+  screenshotCalloutBody: "A clear place for doses, refills, notes, weight, symptoms, and records when your pet needs steady follow-through.",
+  proHeading: "Pay once. All features included.",
+  proSubtitle: "Download Furmacy for $4.99 in the U.S. App Store. No subscription, trial, or in-app upgrade.",
+  ctaTitle: "Ready for a clearer care routine?",
+  ctaBody: "One app purchase includes medications, reminders, full recorded history, documents, veterinary PDFs, and optional private iCloud sync.",
 } as const;
-
-export const offerMode = "paidOnly" as const;
-
-export const offerCopyByMode = {
-  paidOnly: {
-    highlights: [
-      "Now on the App Store",
-      "Pro access required",
-      "Built for iPhone",
-      "No Furmacy account",
-    ],
-    heroBody:
-      "When your dog, cat, or other companion needs ongoing care, Furmacy gives you a gentle place to track what is due, what happened, refills, weight and symptom notes, and vet records. Download it on iPhone and choose Pro access to use the care tools.",
-    heroBullets: [
-      "See what needs attention today",
-      "Mark Given, Skip, Pending, or Missed",
-      "Keep refills and vet records close",
-      "Choose weekly or annual Pro access",
-    ],
-    heroFinePrint:
-      "Furmacy currently requires Pro access. Pro offers weekly and annual options; annual includes a 14-day trial for eligible subscribers. Exact live pricing is shown before purchase in the App Store. Furmacy is not veterinary advice.",
-    screenshotCalloutTitle: "Care routines, easier to follow",
-    screenshotCalloutBody:
-      "A calmer place for doses, refills, notes, weight, symptoms, and records when your pet needs steady follow-through.",
-    proHeading: "Furmacy currently requires Pro access.",
-    proSubtitle:
-      "Download Furmacy from the App Store, then choose weekly or annual Pro access to use reminders, records, history, and sync.",
-    planComparison: [
-      {
-        name: "Pro access",
-        note: "Required to use Furmacy",
-        items: [
-          "Medication reminders",
-          "Dose states and history",
-          "Refills, weight, symptoms, and vet records",
-          "Weekly or annual options",
-        ],
-      },
-      {
-        name: "Annual Pro",
-        note: "For ongoing care",
-        items: [
-          "14-day trial for eligible subscribers",
-          "Unlimited pets",
-          "Unlimited active medications",
-          "iCloud sync and expanded documents",
-        ],
-      },
-    ],
-    ctaTitle: "Ready for a calmer care routine?",
-    ctaBody:
-      "Download Furmacy from the App Store and choose Pro access when you are ready to keep meds, refills, history, and records in one place.",
-    rollbackNote:
-      "Rollback path: change offerMode to onePetFree if the ad test moves back to a free starter plan.",
-  },
-  onePetFree: {
-    highlights: [
-      "Now on the App Store",
-      "One pet free",
-      "Built for iPhone",
-      "No account required",
-    ],
-    heroBody:
-      "When your dog, cat, or other companion needs ongoing care, Furmacy gives you a gentle place to track what is due, what happened, refills, weight and symptom notes, and vet records. Download it free on iPhone and start with one pet.",
-    heroBullets: [
-      "See what needs attention today",
-      "Mark Given, Skip, Pending, or Missed",
-      "Keep refills and vet records close",
-      "Upgrade only when care needs more room",
-    ],
-    heroFinePrint:
-      "Use the free one-pet plan as long as it fits. Pro offers weekly and annual options; annual includes a 14-day trial for eligible subscribers. Exact live pricing is shown before purchase in the App Store. Furmacy is not veterinary advice.",
-    screenshotCalloutTitle: "Care routines, easier to follow",
-    screenshotCalloutBody:
-      "A calmer place for doses, refills, notes, weight, symptoms, and records when your pet needs steady follow-through.",
-    proHeading: "Use it free for one pet. Upgrade only when you need more room.",
-    proSubtitle:
-      "Start with the core routine at no cost. Pro is there for bigger care setups: unlimited pets, unlimited active medications, iCloud sync, full history, and expanded documents.",
-    planComparison: [
-      {
-        name: "Free",
-        note: "Start with one pet",
-        items: [
-          "One pet",
-          "Medication reminders",
-          "Dose states",
-          "Refill, weight, symptom, and vet-record basics",
-        ],
-      },
-      {
-        name: "Pro",
-        note: "When care needs more room",
-        items: [
-          "Unlimited pets",
-          "Unlimited active medications",
-          "Full history",
-          "iCloud sync and expanded documents",
-        ],
-      },
-    ],
-    ctaTitle: "Care days are a lot. Furmacy helps make them easier to follow.",
-    ctaBody:
-      "Start free with one pet, then upgrade when unlimited pets, medications, full history, iCloud sync, and expanded documents would make life calmer.",
-    rollbackNote:
-      "This mode is the rollback option for restoring the free one-pet starter plan.",
-  },
-} as const;
-
-export const offerCopy = offerCopyByMode[offerMode];
 
 export const heroScreenshots = [
   {
-    src: "/screenshots/scenarios/maple-dog-today-plan.png",
-    alt: "Furmacy Today screen showing Maple's dog medication plan with pending and given doses",
+    src: "/screenshots/paid-1.0.5/today.png",
+    alt: "Furmacy Today screen showing Olive's cat medication plan with pending and given doses",
   },
   {
-    src: "/screenshots/scenarios/olive-cat-vet-records.png",
+    src: "/screenshots/paid-1.0.5/records.png",
     alt: "Furmacy Documents screen showing Olive's cat vet records and prescriptions",
   },
   {
-    src: "/screenshots/scenarios/scout-dog-medication-detail.png",
-    alt: "Furmacy medication detail screen showing Scout's anti-seizure med schedule and refills",
+    src: "/screenshots/paid-1.0.5/medications.png",
+    alt: "Furmacy medication detail screen showing Olive's blood pressure medication schedule and refills",
   },
 ] as const;
 
@@ -137,35 +35,35 @@ export const launchHighlights = [
 
 export const productTour = [
   {
-    src: "/screenshots/scenarios/maple-dog-today-plan.png",
-    alt: "Furmacy Today screen for Maple showing a household plan, next dose, Given action, and today's doses",
+    src: "/screenshots/paid-1.0.5/today.png",
+    alt: "Furmacy Today screen for Olive showing a household plan, next dose, Given action, and today's doses",
     kicker: "Today plan",
     title: "See what is due before the day gets away from you",
-    body: "Maple's Today view shows what is pending, what was already given, and the next dose in one calm place.",
+    body: "Olive's Today view shows what is pending, what was already given, and the next dose in one calm place.",
     points: ["Pending, Given, Skipped, and Missed states", "Next-dose timing", "A care trail for later"],
   },
   {
-    src: "/screenshots/scenarios/scout-dog-medication-detail.png",
-    alt: "Furmacy medication detail screen for Scout showing schedule, adherence, refills, and vet notes",
+    src: "/screenshots/paid-1.0.5/medications.png",
+    alt: "Furmacy medication detail screen for Olive showing schedule, recorded completion, refills, and vet notes",
     kicker: "Medication details",
     title: "Keep chronic-care timing from living in your head",
-    body: "Scout's med screen keeps the schedule, refill count, instructions, and vet note beside the medication itself.",
+    body: "Olive's med screen keeps the schedule, refill count, instructions, and vet note beside the medication itself.",
     points: ["Schedule and next dose", "Refill tracking", "Vet and note context"],
   },
   {
-    src: "/screenshots/scenarios/olive-cat-vet-records.png",
+    src: "/screenshots/paid-1.0.5/records.png",
     alt: "Furmacy Documents screen for Olive showing kidney panel results, thyroid prescription label, and recheck records",
     kicker: "Vet records",
     title: "Keep the paperwork with the pet who needs it",
     body: "Olive's lab results, prescription labels, and recheck notes stay easy to find when the clinic asks.",
-    points: ["Labs and prescriptions", "Expanded documents with Pro", "Records tied to the right pet"],
+    points: ["Labs and prescriptions", "Documents included", "Records tied to the right pet"],
   },
   {
-    src: "/screenshots/scenarios/kiwi-bird-health-trends.png",
-    alt: "Furmacy health screen for Kiwi showing weight trend, symptoms, medications, and documents",
+    src: "/screenshots/paid-1.0.5/health.png",
+    alt: "Furmacy health screen for Olive showing weight trend, symptoms, medications, and documents",
     kicker: "Health notes",
     title: "Notice small changes sooner",
-    body: "Kiwi's weight and symptom logs make it easier to bring clear notes into the next check-in.",
+    body: "Olive's weight and symptom logs make it easier to bring clear notes into the next check-in.",
     points: ["Weight trends", "Symptom logs", "Helpful context between visits"],
   },
 ] as const;
@@ -219,7 +117,7 @@ export const statePairs: readonly StatePair[] = [
   },
   {
     current: "Someone else helps for the day, and everyone is checking the same thing by text.",
-    solution: "A clearer care trail makes handoffs feel less risky for family, sitters, and busy households.",
+    solution: "Share a dated PDF of selected records with a caregiver; coordinate new doses directly with them.",
   },
 ] as const;
 
@@ -238,7 +136,7 @@ export const valuePoints: readonly ValuePoint[] = [
   {
     icon: "shield-check",
     title: "Clearer handoffs",
-    body: "Given, Skipped, Pending, and Missed states help the next caregiver see what already happened.",
+    body: "Share selected history in a PDF so another caregiver can review what was recorded. Live household updates are not available.",
   },
   {
     icon: "calendar",

@@ -4,67 +4,31 @@ import { AppStoreButton } from "../AppStoreButton";
 import { Icon } from "../icons";
 import { SectionHeading } from "./SectionHeading";
 
-const PLAN_COMPARISON = offerCopy.planComparison;
+
 
 export function ProOffer() {
   return (
-    <section id="pro" className="scroll-mt-20 bg-surface py-16 sm:py-20">
+    <section id="pricing" className="scroll-mt-20 bg-surface py-16 sm:py-20">
       <div className="mx-auto max-w-intake px-5 sm:px-8">
         <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start lg:gap-14">
           <div>
             <SectionHeading
-              eyebrow="Furmacy Pro"
+              eyebrow="One-time purchase"
               title={offerCopy.proHeading}
               subtitle={offerCopy.proSubtitle}
             />
 
-            <div className="mt-7 grid gap-3 sm:grid-cols-2">
-              {PLAN_COMPARISON.map((plan) => (
-                <div key={plan.name} className="rounded-card border border-border bg-bg/70 p-5">
-                  <p className="text-xs font-semibold uppercase tracking-wide text-accent-strong">
-                    {plan.note}
-                  </p>
-                  <h3 className="mt-1 text-2xl font-bold text-text">{plan.name}</h3>
-                  <ul className="mt-4 grid gap-2">
-                    {plan.items.map((item) => (
-                      <li key={item} className="flex items-start gap-2 text-sm text-text">
-                        <Icon
-                          name="check"
-                          className="mt-0.5 h-4 w-4 flex-none text-accent-strong"
-                        />
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
-
-            <div className="mt-5 rounded-card border border-border bg-bg/70 p-6">
-              <p className="text-sm font-semibold text-text">Pro options</p>
-              <div className="mt-4 grid gap-3 sm:grid-cols-2">
-                <div className="rounded-control border border-border bg-surface p-4">
-                  <p className="text-2xl font-bold text-text">{launchPricing.annual}</p>
-                  <p className="mt-1 text-sm text-text-secondary">
-                    Built for ongoing care, with a {launchPricing.annualTrial} for eligible subscribers.
-                  </p>
-                </div>
-                <div className="rounded-control border border-border bg-surface p-4">
-                  <p className="text-2xl font-bold text-text">{launchPricing.weekly}</p>
-                  <p className="mt-1 text-sm text-text-secondary">
-                    Flexible weekly access when ongoing care needs more room.
-                  </p>
-                </div>
-              </div>
-              <p className="mt-4 text-xs leading-relaxed text-text-secondary">
-                Exact live prices are shown by the App Store before purchase.
-              </p>
+            <div className="mt-7 rounded-card border border-border bg-bg/70 p-6">
+              <p className="text-4xl font-bold text-text">{launchPricing.price}</p>
+              <p className="mt-3 text-text-secondary">{launchPricing.summary}</p>
+              <p className="mt-4 text-sm text-text-secondary">Already using Furmacy? Update the same app to keep your records and receive full access.</p>
+              <p className="mt-3 text-sm text-text-secondary">If you previously subscribed, check Apple subscription settings. Updating the app does not automatically cancel billing.</p>
             </div>
           </div>
 
           <div className="grid gap-5">
             <div className="rounded-card border border-border bg-bg/50 p-6">
-              <h3 className="text-lg font-bold text-text">Pro unlocks</h3>
+              <h3 className="text-lg font-bold text-text">Included with Furmacy</h3>
               <ul className="mt-5 grid gap-3 sm:grid-cols-2">
                 {proBenefits.map((benefit) => (
                   <li key={benefit} className="flex items-start gap-2.5 text-sm text-text">

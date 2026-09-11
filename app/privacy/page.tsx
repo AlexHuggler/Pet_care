@@ -7,7 +7,7 @@ import { breadcrumbLd, webPageLd } from "@/lib/structuredData";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
-    "How Furmacy handles your information: pet-care records stay on device or in your private iCloud, with RevenueCat used for Pro purchases and Apple Ads attribution.",
+    "How Furmacy handles your information: pet-care records stay on device or in your private iCloud, with Apple handling the one-time app purchase.",
   alternates: { canonical: "/privacy" },
 };
 
@@ -67,12 +67,11 @@ export default function PrivacyPage() {
 
         <h2 id="summary">The short version</h2>
         <ul>
-          <li>Your pet-care records stay on your device or, if you enable Pro sync, in your private iCloud.</li>
+          <li>Your pet-care records stay on your device or, if you enable optional sync, in your private iCloud.</li>
           <li>
             You can use the app <strong>without creating an account</strong>.
           </li>
-          <li>RevenueCat helps Furmacy validate Pro purchases and restore entitlements.</li>
-          <li>Apple&rsquo;s standard AdServices attribution token may be sent to RevenueCat for Apple Ads campaign reporting.</li>
+          <li>Version 1.0.5 and later include all features with the app download and do not initialize RevenueCat or send Apple Ads attribution tokens.</li>
           <li>Pet names, medications, dose history, notes, photos, scans, and health entries are not sent to RevenueCat.</li>
           <li>We do not sell personal information or build advertising profiles from your pet-care records.</li>
         </ul>
@@ -86,7 +85,7 @@ export default function PrivacyPage() {
           cannot access it.
         </p>
         <p>
-          If you subscribe to Furmacy Pro and turn on iCloud sync, your pet-care data is
+          If you turn on optional iCloud sync, your pet-care data is
           synced to your own private iCloud database managed by Apple and tied to your
           Apple Account. We do not have access to that private iCloud data. Sync is off
           by default and can be turned off in Settings.
@@ -100,20 +99,20 @@ export default function PrivacyPage() {
           message. We use it only to respond to you and to improve Furmacy.
         </p>
 
-        <h2 id="purchases-attribution">Purchases and Apple Ads attribution</h2>
+        <h2 id="purchases-attribution">App purchases and previous versions</h2>
         <p>
-          Weekly and annual Furmacy Pro subscriptions are processed by Apple through the
-          App Store. Furmacy uses RevenueCat to manage purchase status, validate
-          entitlements, and restore access. RevenueCat may receive an anonymous app user
-          ID, App Store product identifiers, transaction and receipt data, subscription
-          status, trial status, renewal status, and related diagnostics needed to make
-          purchases and restores work.
+          Apple processes the one-time App Store download purchase. Version 1.0.5
+          and later include all features without an in-app purchase or subscription.
+          These versions do not initialize RevenueCat or send Apple Ads attribution tokens.
         </p>
         <p>
-          Furmacy may also send RevenueCat Apple&rsquo;s standard AdServices attribution
-          token so RevenueCat can report whether subscription activity came from Apple
-          Ads campaigns. This campaign attribution does not include your pet-care
-          records and does not use the advertising identifier (IDFA).
+          Earlier versions used RevenueCat for Pro purchase status and restores.
+          RevenueCat could receive an anonymous app user ID, product identifiers,
+          transaction and receipt data, subscription and trial status, renewal status,
+          and related diagnostics. Earlier versions could also send Apple&rsquo;s
+          AdServices attribution token for Apple Ads campaign reporting. These flows
+          did not include pet-care records or use IDFA. Updating does not itself
+          delete information already processed by a provider.
         </p>
 
         <h2 id="no-tracking">No behavioral tracking or in-app ads</h2>
@@ -127,8 +126,8 @@ export default function PrivacyPage() {
         <p>
           We rely on a small number of providers to operate: Apple distributes the app
           through the App Store, processes purchases, and provides private iCloud sync
-          if you enable it; RevenueCat helps manage Pro subscription status and Apple
-          Ads attribution reporting; and our email provider helps us receive and respond
+          if you enable it; GitHub Pages hosts our website; RevenueCat supported purchases
+          and attribution in earlier app versions; and our email provider helps us receive and respond
           to messages you send us. These providers process information only as needed to
           provide their service.
         </p>
@@ -151,7 +150,7 @@ export default function PrivacyPage() {
         <h2 id="your-choices">Your choices &amp; rights</h2>
         <p>
           You can remove the information stored in the app at any time by deleting it
-          within the app or uninstalling Furmacy. For any information you&rsquo;ve sent
+          within the app. Uninstalling removes local app data but may leave data in your private iCloud or device backups; manage those copies through Apple settings. For any information you&rsquo;ve sent
           us directly, you may ask us to access or delete it by emailing{" "}
           <a href={`mailto:${site.contactEmail}`}>{site.contactEmail}</a>. Depending on
           where you live (for example, under Texas law, the CCPA in California, or the

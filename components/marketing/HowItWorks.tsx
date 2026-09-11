@@ -14,8 +14,8 @@ const STEPS: { icon: IconName; title: string; body: string }[] = [
   },
   {
     icon: "users",
-    title: "Choose Pro access",
-    body: "Furmacy currently requires Pro access, with weekly and annual options shown by the App Store before purchase.",
+    title: "Buy the app once",
+    body: "Furmacy costs $4.99 once in the U.S. App Store, with all features included and no subscription.",
   },
 ];
 

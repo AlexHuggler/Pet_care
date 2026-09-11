@@ -11,7 +11,7 @@ const POINTS: { icon: IconName; title: string; body: string }[] = [
   {
     icon: "user",
     title: "No Furmacy account required",
-    body: "Pro access is handled through the App Store. Furmacy does not ask you to create a separate login.",
+    body: "The one-time app purchase is handled through the App Store. Furmacy does not ask you to create a separate login.",
   },
   {
     icon: "shield-check",

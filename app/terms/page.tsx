@@ -15,7 +15,7 @@ const TOC = [
   { id: "acceptance", label: "Acceptance" },
   { id: "eligibility", label: "Eligibility" },
   { id: "license", label: "Your license" },
-  { id: "subscriptions", label: "Subscriptions" },
+  { id: "subscriptions", label: "App purchase" },
   { id: "data", label: "Your data" },
   { id: "acceptable-use", label: "Acceptable use" },
   { id: "not-vet", label: "Not veterinary advice" },
@@ -83,41 +83,29 @@ export default function TermsPage() {
           personal, non-commercial use.
         </p>
 
-        <h2 id="subscriptions">Subscriptions and purchases</h2>
-        <p>Furmacy Pro is available as weekly and annual auto-renewable subscriptions.</p>
-        <ul>
-          <li>The annual plan includes a 14-day free trial for new eligible subscribers.</li>
-          <li>
-            Payment is charged to your Apple Account at confirmation of purchase. For
-            the annual plan&rsquo;s free trial, payment is charged when the trial ends
-            unless you cancel at least 24 hours before the end of the trial.
-          </li>
-          <li>
-            Subscriptions renew automatically unless cancelled at least 24 hours before
-            the end of the current period.
-          </li>
-          <li>
-            You can manage or cancel subscriptions in your App Store account settings;
-            deleting the app does not cancel a subscription.
-          </li>
-          <li>
-            Prices are shown in the app before purchase and may change for future
-            periods; Apple will notify you as its policies require.
-          </li>
-          <li>
-            All billing, refunds, and payment handling are performed by Apple under its
-            terms. To request a refund, use Apple&rsquo;s Report a Problem page.
-          </li>
-        </ul>
+        <h2 id="subscriptions">App purchase and previous subscriptions</h2>
+        <p>
+          From version 1.0.5, Furmacy is a one-time paid App Store download with all
+          features included. No subscription or in-app upgrade is required. The U.S.
+          download price is $4.99; Apple displays the applicable local price before purchase.
+          Existing users receive full feature access by updating the same app.
+        </p>
+        <p>
+          Apple handles payment and refund requests under its terms. To request a
+          refund, use Apple&rsquo;s Report a Problem page.
+        </p>
+        <p>
+          Previous weekly and annual Pro subscriptions are no longer offered for
+          sale. If you previously subscribed, review your status in Apple subscription
+          settings. Updating or deleting the app does not itself cancel a subscription.
+        </p>
 
         <h2 id="data">Your data</h2>
         <p>
           Your pet-care data is stored on your device and, if you enable it, in your
           private iCloud database. You are responsible for maintaining backups,
           including before deleting the app or using the in-app delete features.
-          Furmacy uses RevenueCat to manage purchase status, but pet names, medication
-          details, dose history, notes, photos, scans, documents, and other health
-          entries are not sent to RevenueCat. See the{" "}
+          The paid update does not require a RevenueCat connection. See the{" "}
           <a href="/privacy">Furmacy Privacy Policy</a> for details.
         </p>
 

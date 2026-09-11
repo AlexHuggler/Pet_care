@@ -45,10 +45,10 @@ export function softwareApplicationLd(): Ld {
     url: site.url,
     image: absoluteUrl("/brand/furmacy-app-icon.png"),
     screenshot: [
-      absoluteUrl("/screenshots/scenarios/maple-dog-today-plan.png"),
-      absoluteUrl("/screenshots/scenarios/scout-dog-medication-detail.png"),
-      absoluteUrl("/screenshots/scenarios/olive-cat-vet-records.png"),
-      absoluteUrl("/screenshots/scenarios/kiwi-bird-health-trends.png"),
+      absoluteUrl("/screenshots/paid-1.0.5/today.png"),
+      absoluteUrl("/screenshots/paid-1.0.5/medications.png"),
+      absoluteUrl("/screenshots/paid-1.0.5/records.png"),
+      absoluteUrl("/screenshots/paid-1.0.5/health.png"),
     ],
     featureList: features.map((f) => f.title),
     publisher: { "@type": "Organization", name: site.company },
@@ -67,14 +67,16 @@ export function softwareApplicationLd(): Ld {
     ].join(", "),
     offers: {
       "@type": "Offer",
+        price: "4.99",
+        priceCurrency: "USD",
       availability: "https://schema.org/InStock",
       url: site.appStoreUrl,
-      category: "Paid subscription",
+      category: "Paid download",
       priceSpecification: {
         "@type": "PriceSpecification",
         priceCurrency: "USD",
         description:
-          "Furmacy currently requires Pro access. Weekly and annual options are shown by the App Store before purchase.",
+          "One-time $4.99 U.S. app download. All features included; no subscription.",
       },
     },
   };

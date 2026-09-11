@@ -10,7 +10,7 @@ export interface Faq {
 export const faqs: readonly Faq[] = [
   {
     q: "What is Furmacy?",
-    a: "Furmacy is a privacy-first iPhone app that helps pet caregivers manage medication reminders, dose history, refills, weight and symptom tracking, and vet records. Furmacy currently requires Pro access, with weekly and annual options shown by the App Store before purchase.",
+    a: "Furmacy is a privacy-first iPhone and iPad app that helps pet caregivers manage medication reminders, dose history, refills, weight and symptom tracking, and vet records. Furmacy costs $4.99 once in the U.S. App Store, with all features included and no subscription.",
   },
   {
     q: "What kinds of pets does Furmacy support?",
@@ -22,7 +22,7 @@ export const faqs: readonly Faq[] = [
   },
   {
     q: "How does Furmacy protect my privacy?",
-    a: "Furmacy is built privacy-first: your pet's health information is kept on your device or, if you enable Pro sync, in your private iCloud. There's no required account, no in-app ads, and pet-care records are not sent to RevenueCat.",
+    a: "Furmacy is built privacy-first: your pet's health information is kept on your device or, if you enable optional sync, in your private iCloud. There's no required account, no in-app ads, and the paid update does not connect to RevenueCat.",
   },
   {
     q: "Can Furmacy help with chronic conditions like diabetes or kidney disease?",
@@ -30,15 +30,15 @@ export const faqs: readonly Faq[] = [
   },
   {
     q: "Can I track more than one pet?",
-    a: "Yes. Furmacy Pro supports unlimited pets and unlimited active medications for households that need more room.",
+    a: "Yes. Furmacy includes unlimited pets and unlimited active medications for households that need more room.",
   },
   {
     q: "Can Furmacy help with family or sitter handoffs?",
-    a: "Yes. Dose states and history make it easier for partners, family members, and sitters to see what was given, skipped, missed, or is still pending.",
+    a: "You can choose records and share a PDF with family or a sitter. Shared accounts, live household updates, and multi-person dose logging are not available. Private iCloud sync connects your own Apple devices.",
   },
   {
-    q: "What does Furmacy Pro include?",
-    a: "Furmacy Pro unlocks unlimited pets, unlimited active medications, full dose history, more room for vet documents, iCloud sync across Apple devices, and fuller records for ongoing care.",
+    q: "What does the one-time purchase include?",
+    a: "Your one-time purchase includes unlimited pets, unlimited active medications, full dose history, more room for vet documents, iCloud sync across Apple devices, and fuller records for ongoing care.",
   },
   {
     q: "Is Furmacy a substitute for veterinary care?",
@@ -46,15 +46,19 @@ export const faqs: readonly Faq[] = [
   },
   {
     q: "Does Furmacy work on Android?",
-    a: "Furmacy is currently an iOS app for iPhone. An Android version isn't available yet.",
+    a: "Furmacy is currently an iOS app for iPhone and iPad. An Android version isn't available yet.",
   },
   {
     q: "How much does Furmacy cost?",
-    a: "Furmacy currently requires Pro access to use the app. Furmacy Pro has weekly and annual subscription options, and annual includes a 14-day trial for eligible subscribers. Exact live pricing is shown by the App Store before purchase.",
+    a: "Furmacy costs $4.99 once in the U.S. App Store. All features are included without a subscription or in-app upgrade. Apple shows local storefront prices before purchase.",
   },
   {
     q: "How do I get Furmacy?",
     a: "Download Furmacy from the App Store: https://apps.apple.com/us/app/furmacy-pet-med-tracker/id6767069388?uo=4.",
+  },
+  {
+    q: "What happens if I already have Furmacy?",
+    a: "Update the same app to keep your records and receive full feature access. If you previously started a subscription, review it in Apple subscription settings. Updating does not automatically cancel billing.",
   },
   {
     q: "Who makes Furmacy?",
